@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./06-2-css.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- chat-btn -->
+     <div class="chat-btn">
+        <a href="chat-btn"><img src="/main-pic/chat-btn.png" alt=""></a>
+    </div>
+
+
+<!-- nav-bar -->
+<div class="header">
+    <!-- logo -->
+    <div class="logo">
+        <img src="/main-pic/logo-first.png">
+    </div>
+    <!-- 漢堡 -->
+    <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- 選單 -->
+    <nav class="main-nav">
+        <a href="#">智能評估</a>
+        <a href="#">找功能</a>
+        <a href="#">熱賣組合</a>
+        <a href="#">所有商品</a>
+        <a href="#">我們的承諾</a>
+        <a href="#">健康專欄</a>
+        <a href="#">營養管理計畫</a>
+    </nav>
+    <!-- icons -->
+    <div class="nav-icon">
+        <a href="#">
+            <img src="/main-pic/member_icon.png" alt="">
+        </a>
+        <a href="#" class="shop-icon">
+            <img src="/main-pic/shopping_icon.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- survey -->
+
+    <div class="survey">
+        <div class="q1">
+            <h3>您希望透過保健品達到的改善？</h3>
+            <ul class="option1">
+                <li>抵抗力</li>
+                <li>工作不當機</li>
+                <li>入眠幫助</li>
+                <li>養顏美容</li>
+            </ul>
+        </div>
+        <div class="q2">
+            <h3>您平時有攝取足夠的蔬果嗎？</h3>
+            <ul class="option2">
+                <li>每天都吃足夠</li>
+                <li>每天至少吃2份蔬果</li>
+                <li>偶爾</li>
+                <li>很少吃</li>
+            </ul>
+        </div>
+        <div class="q3">
+            <h3>平時有足夠的運動量嗎？</h3>
+            <ul class="option3">
+                <li>一周超過3次</li>
+                <li>1周1~2次</li>
+                <li>偶爾運動</li>
+                <li>幾乎不運動</li>
+            </ul>
+        </div>
+    </div>
+    <div class="end">
+        <h4>您的RENUBOX即將完成！</h4>
+        <p>智能評估系統將根據您的作答以及需求，訂製出您所需要的產品項目，如需要更進一步與專業醫師及營養師諮詢<a href="#">點我線上諮詢</a></p>
+        <a href="./06-3.html" class="result"> <p> 查看您的BOX內容</p> </a>
+        
+    </div>
+
+    <script>
+        const ul_1 = document.querySelector(".option1"); 
+        const ul_2 = document.querySelector(".option2"); 
+        const ul_3 = document.querySelector(".option3");
+        
+        const q1 = document.querySelector(".q1");
+        const q2 = document.querySelector(".q2");
+        const q3 = document.querySelector(".q3");
+
+        const survey = document.querySelector(".survey");
+        const end = document.querySelector(".end");
+
+        // 1st q
+        ul_1.addEventListener("click", function(){
+            q1.style.display = "none";
+            q2.style.display = "block";
+        });
+         // 2nd q
+        ul_2.addEventListener("click", function(){
+            q2.style.display = "none";
+            q3.style.display = "block";
+        });
+         // THX 
+        ul_3.addEventListener("click", function(){
+            q3.style.display = "none";
+            survey.style.display = "none";
+            end.style.display = "block";
+        });
+
+    </script>
+
+    <!-- footer -->
+
+<div class="main-footer">
+
+    <!-- footer-icon -->
+    <div class="footer-icons">
+       <a href=""><img src="/main-pic/fb-icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/ig-icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/line_icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/twitter-icon.png" alt=""></a>
+    </div>
+
+
+
+
+   <div class="container">
+       <div class="footer-item">
+           <h4>RENUBOX</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F</a>
+               <a href="#"><i class="fa fa-angle-right"></i> (02)23326052</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 來信洽詢</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>關於我們</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 品牌使命</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 醫療團隊</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 安心證明</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>AI評估</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 專人初步評估</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>熱銷商品</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
+               <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>找功能</h4>
+           <nav class="footer-goal">
+               <a href="#"><i class="fa fa-angle-right"></i> 體態管理</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 抗老</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 過敏免疫</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 健康飲食</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 美容保養</a>
+           </nav>
+       </div>
+       <div class="footer-item footer-subs">
+           <h4>健康電子報</h4>
+           <form>
+               <input type="text" name="">
+               <input type="submit" value="訂閱">
+           </form>
+       </div>
+   </div>
+
+    
+</body>
+</html>

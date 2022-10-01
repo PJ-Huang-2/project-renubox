@@ -163,13 +163,13 @@
             position: relative;
             top: -50px;
         }
-        /* .info .wrap {
+        .info .wrap {
             padding-top: 50px;
             display: flex;
             margin: auto;
             width: 1200px;
             outline: 1px solid #fa0;
-        } */
+        }
         .info .wrap.up {
             flex-direction: row-reverse;
         }
