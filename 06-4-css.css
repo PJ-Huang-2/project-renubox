@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
     background-position: center top;
     background-size: 100% auto;
+    /* background-blend-mode: lighten; */
     background-color: #4d593e;
     font-family: 'Noto Sans', 'Noto Sans TC', sans-serif, serif;
         }
