@@ -238,7 +238,7 @@ body {
         display: flex;
         height: 30px;
         align-items: center;
-        background-color: #D9D9D9;
+        border-bottom: 2px solid #BCAB8A;
         text-align: center;
 
     }

@@ -175,12 +175,19 @@ body {
             font-size: 32px;
             background-color: #346C47;
             color: #fff;
-            height: 40px;
-            line-height: 40px;
+            height: 60px;
+            line-height: 60px;
             border-radius: 30px;
             font-weight: 300;
             width: 280px;  
             margin-bottom: 250px;
+            text-align: center;
+        }
+
+        .end .result p:hover {
+            background-color:#fff ;
+            color: #346C47;
+            border: 2px solid #346C47;
         }
 
          /* footer */
