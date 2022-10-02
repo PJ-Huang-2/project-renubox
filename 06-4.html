@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./06-4-css.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- chat-btn -->
+     <div class="chat-btn">
+        <a href="chat-btn"><img src="/main-pic/chat-btn.png" alt=""></a>
+    </div>
+
+
+<!-- nav-bar -->
+<div class="header">
+    <!-- logo -->
+    <div class="logo">
+        <img src="/main-pic/logo-first.png">
+    </div>
+    <!-- 漢堡 -->
+    <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- 選單 -->
+    <nav class="main-nav">
+        <a href="#">智能評估</a>
+        <a href="#">找功能</a>
+        <a href="#">熱賣組合</a>
+        <a href="#">所有商品</a>
+        <a href="#">我們的承諾</a>
+        <a href="#">健康專欄</a>
+        <a href="#">營養管理計畫</a>
+    </nav>
+    <!-- icons -->
+    <div class="nav-icon">
+        <a href="#">
+            <img src="/main-pic/member_icon.png" alt="">
+        </a>
+        <a href="#" class="shop-icon">
+            <img src="/main-pic/shopping_icon.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- car -->
+
+
+<div class="car">
+    <!-- left -->
+    <div class="left">
+
+        <!-- left-top -->
+        <div class="total">
+            <h3>結帳金額</h3>
+            <div class="price">
+                <span>商品小計</span>
+                <span>NT$1,380</span>
+            </div>
+            <div class="delivery">
+                <span>商品小計</span>
+                <span>NT$1,380</span>
+            </div>
+            <div class="pay">
+                <span>應付總額</span>
+                <span class="all-price">NT$1,440</span>
+            </div>
+        </div>
+        <!-- left btm -->
+        <div class="car-info">
+            <h3>購物車內容</h3>
+            <div class="item">
+                <div class="item-name">【體力MAX】-酵母維生素B群 - $16/日</div>
+                <div class="item-number">
+                    <span>30日</span><span>數量：1</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-name">【一次到位】綜合維他命 - $12/日</div>
+                <div class="item-number">
+                    <span>30日</span><span>數量：1</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-name">【好閨密】蔓越莓 - $18/日</div>
+                <div class="item-number">
+                    <span>30日</span><span>數量：1</span>
+                </div>
+            </div>
+            <p>合計有3項商品</p>
+            
+        </div>
+
+    </div>
+
+
+    <div class="right">
+        <div class="products">
+            <h3>> 購物車內容</h3>
+
+            <div class="product-list">
+
+                <div class="bar">
+                    <div class="title-name">商品明細</div>
+                    <div class="title-money">單價</div>
+                    <div class="title-count">數量</div>
+                    <div class="title-total">小計</div>
+                    <div class="title-delete"></div>
+                </div>
+                <div class="product">
+                    <div class="pic"><img src="./-sub2-pic/vitamin-b.jpeg" alt=""></div>
+                    <div class="name">【體力MAX】-酵母維生素B群 - $16/日 - 30日</div>
+                    <div class="money">NT$480</div>
+                    <div class="count">
+                        <button class="-btn">-</button>
+                        <input type="number" class="count-number" value="1">
+                        <button class="+btn">+</button>
+                    </div>
+                    <div class="total">NT$480</div>
+                    <div class="delete">
+                        <button class="delete-btn">x</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pic"><img src="./-sub2-pic/vitamin-plus.jpeg" alt=""></div>
+                    <div class="name">【一次到位】綜合維他命 - $12/日 - 30日</div>
+                    <div class="money">NT$360</div>
+                    <div class="count">
+                        <button class="-btn">-</button>
+                        <input type="number" class="count-number" value="1">
+                        <button class="+btn">+</button>
+                    </div>
+                    <div class="total">NT$360</div>
+                    <div class="delete">
+                        <button class="delete-btn">x</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pic"><img src="./-sub2-pic/vitamin-cranberry.jpeg" alt=""></div>
+                    <div class="name">【好閨密】蔓越莓 - $18/日 - 30日</div>
+                    <div class="money">NT$540</div>
+                    <div class="count">
+                        <button class="-btn">-</button>
+                        <input type="number" class="count-number" value="1">
+                        <button class="+btn">+</button>
+                    </div>
+                    <div class="total">NT$540</div>
+                    <div class="delete">
+                        <button class="delete-btn">x</button>
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+        
+        <div class="member">
+            <h3>>>會員專區</h3>
+
+            <div class="sign-in">
+                <h4>會員登入 <span>登入會員管理訂單更方便!</span></h4> 
+                <div class="sign-btn">
+                    <button class="line-sign"><img src="./-sub2-pic/line-icon.png" alt="line-icon"> 快速登入</button>
+                    <button class="fb-sign"><img src="./-sub2-pic/fb-icon.png" alt="fb-icon">快速登入 </button>
+                    <button class="normal-sign">會員登入</button>
+
+                </div>
+            </div>
+            <div class="member-item">
+                <h4>非會員購買</h4>
+                <input type="email" placeholder="聯絡信箱" class="email-input">
+                <input type="phone" placeholder="手機號碼">
+                <button class="classify">發送驗證碼</button>
+            </div>
+            <div class="cupon">
+                <h3>優惠券代碼</h3>
+                <div class="input-btn">
+                    <input type="text" placeholder="請輸入優惠券代碼">
+                    <button>確認</button>
+                </div>
+            </div> 
+            <div class="cupon">
+                <h3>推薦碼</h3>
+                <div class="input-btn">
+                    <input type="text" placeholder="請輸入推薦碼">
+                    <button>確認</button>
+                </div>
+            </div> 
+
+        </div>
+
+        <div class="payment">
+            <h3>>>>付款運送方式</h3>
+
+            <div class="deliver">
+                <h4>配送方式</h4>
+                <button>超商</button>
+                <button>宅配</button>
+            </div>
+          
+            <div class="deliver">
+                <h4>請選擇超商</h4>
+                <button>全家取貨(先付款)</button>
+                <button>7-11取貨(先付款)</button>
+                <button class="choose">請選擇取貨門市</button>
+            </div>
+            <div class="deliver">
+                <h4>付款方式</h4>
+                <button>信用卡</button>
+                <button>超商代碼</button>
+                <button>虛擬ATM</button>
+                <button>線上支付</button>
+                
+            </div>   
+<!-- 購買人資訊 -->
+            <div class="cupon">
+                <h4>購買者姓名</h4>
+                <div class="input-btn">
+                    <input type="text" placeholder="請輸入正確姓名">
+                </div>
+            </div>
+
+            <div class="cupon">
+                <h4>聯絡電話</h4>
+                <div class="input-btn">
+                    <input type="phone" placeholder="購買人聯絡電話，例：0928466555">
+                </div>
+            </div>
+
+            <div class="cupon">
+                <h4>客製化姓名（中文：6個字以內／英文：8個字以內）</h4>
+                <div class="input-btn">
+                    <input type="text" placeholder="請輸入客製化姓名（中文：6個字以內／英文：8個字以內）">
+                </div>
+            </div>
+            
+            <div class="last-check">
+                <p>會員權益確認</p>
+                <label><input type="checkbox">
+                用上述資料直接註冊會員</label>
+                <label><input type="checkbox">
+                同意會員責任規範及個資聲明與商家會員條款</label>
+                <label><input type="checkbox">
+                用上述資料直接註冊會員</label>
+                
+            </div>
+            </div>
+
+            <div class="deliver">
+                <button class="pay-now">立即結帳</button>
+            </div>
+
+        </div>
+        
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+<!-- footer -->
+
+<div class="main-footer">
+
+    <!-- footer-icon -->
+    <div class="footer-icons">
+       <a href=""><img src="/main-pic/fb-icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/ig-icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/line_icon.png" alt=""></a>
+       <a href=""><img src="/main-pic/twitter-icon.png" alt=""></a>
+    </div>
+
+
+
+
+   <div class="container">
+       <div class="footer-item">
+           <h4>RENUBOX</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F</a>
+               <a href="#"><i class="fa fa-angle-right"></i> (02)23326052</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 來信洽詢</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>關於我們</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 品牌使命</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 醫療團隊</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 安心證明</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>AI評估</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 專人初步評估</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>熱銷商品</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
+               <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>找功能</h4>
+           <nav class="footer-goal">
+               <a href="#"><i class="fa fa-angle-right"></i> 體態管理</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 抗老</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 過敏免疫</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 健康飲食</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 美容保養</a>
+           </nav>
+       </div>
+       <div class="footer-item footer-subs">
+           <h4>健康電子報</h4>
+           <form>
+               <input type="text" name="">
+               <input type="submit" value="訂閱">
+           </form>
+       </div>
+   </div>
+
+    
+</body>
+</html>

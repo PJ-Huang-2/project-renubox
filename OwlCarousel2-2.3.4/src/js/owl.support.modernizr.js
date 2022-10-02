@@ -47,7 +47,7 @@
         	// see:
         	// https://github.com/Modernizr/Modernizr/issues/897
         	// https://github.com/niksy/modernizr-detects/commit/05d148fc4f3813b1412c836325a9ca78c7a63f4d
-        	if (/Android 4\.[123]/.test(navigator.userAgent)) {
+        	if (./Android 4\.[123]/.test(navigator.userAgent)) {
                 	$.support.transition.end = 'webkitTransitionEnd';
         	}
 	}

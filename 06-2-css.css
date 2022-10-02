@@ -46,21 +46,21 @@ body {
     
     /* header */
         .header {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             display: flex;
             justify-content: space-between;
             padding: 10px;
             /* background-color: #ccc; */
             /* position: sticky; */
             top: 0;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             align-items: center;
             z-index: 5;
         }
         .logo img{
             vertical-align: top;
             width: 100px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         } 
         .main-nav a{
             display: block;
@@ -71,7 +71,7 @@ body {
             display: block;
             align-items: center;
             right: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             /* padding: 10px; */
         }
         /* .nav-icon .shop-icon {
@@ -80,7 +80,7 @@ body {
         .nav-icon img {
             width: 30px;
             margin-left: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         #menu-switch{
             display: none;
@@ -89,7 +89,7 @@ body {
         /* quiz */
 
         .survey {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             width: 100%;
             text-align: center;
             margin-top: 150px;
@@ -131,7 +131,7 @@ body {
         } 
 
         .end {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             width: 100%;
             text-align: center;
             margin-top: 150px;
@@ -155,7 +155,7 @@ body {
 
         }
         .end p a {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             text-decoration: none;
             background-color: #EEDAD2;
             border-radius: 30px;
@@ -170,7 +170,7 @@ body {
         }
 
         .end .result p {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             font-size: 32px;
             background-color: #346C47;
             color: #fff;
@@ -184,14 +184,14 @@ body {
 
          /* footer */
 
-   .main-footer {
-    width: 100%;
-    padding: 0 0 50px 0;
-    background-image: url(/main-pic/background2.jpg); 
-            }
+            .main-footer {
+                width: 100%;
+                padding: 0 0 50px 0;
+                background-image: url(./main-pic/background2.jpg); 
+                        }
 
             .main-footer .footer-icons {
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 width: 250px;
                 margin: auto;
                 display: flex;
@@ -210,7 +210,7 @@ body {
             }
 
             .main-footer .container{
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 display: flex;
                 width: 1200px;
                 margin: auto;
@@ -306,13 +306,13 @@ body {
                 justify-content: space-evenly;
                 align-items: center;
                 position: relative;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
             }
             .nav-icon {
                 display: block;
                 align-items: center;
                 right: 20px;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
                 position: absolute;
                 right: 70px;
     
@@ -387,7 +387,7 @@ body {
                 top: 300px;
             }
             .banner .banner-title {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             position: absolute;
             width: 265px;
             left: 20px;
@@ -397,7 +397,7 @@ body {
         .banner .banner-news {
             position: absolute;
             display: flex;
-            /* outline: 1px solid #fa0;
+            /* /* outline: 1px solid #fa0; */
             letter-spacing: 0.05em; */
             color: #598969;
             font-weight: 600;
@@ -421,7 +421,7 @@ body {
                 font-size: 16px;
                 font-weight: 600;
                 gap: 32px;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
                 
             }
             .main-nav a {
@@ -433,7 +433,7 @@ body {
             display: flex;
             align-items: center;
             right: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
       
     }

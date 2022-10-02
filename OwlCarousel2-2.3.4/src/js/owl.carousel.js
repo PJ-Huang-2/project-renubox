@@ -760,7 +760,7 @@
 		}
 
 		if ($.support.transform) {
-			stage = this.$stage.css('transform').replace(/.*\(|\)| /g, '').split(',');
+			stage = this.$stage.css('transform').replace(./.*\(|\)| /g, '').split(',');
 			stage = {
 				x: stage[stage.length === 16 ? 12 : 4],
 				y: stage[stage.length === 16 ? 13 : 5]

@@ -3,7 +3,7 @@
         font-family: 'Noto Sans', sans-serif, 'Noto Sans TC', 'Noto Serif HK', serif;
     }
     body {
-    background:  url(/main-pic/background.jpg);
+    background:  url(./main-pic/background.jpg);
     /* linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), */
     background-attachment: fixed;
     background-position: center top;
@@ -44,14 +44,14 @@
             position: sticky;
             top: 0;
             margin-bottom: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             align-items: center;
             z-index: 5;
         }
         .logo img{
             vertical-align: top;
             width: 100px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         } 
         .main-nav a{
             display: block;
@@ -62,7 +62,7 @@
             display: block;
             align-items: center;
             right: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             /* padding: 10px; */
         }
         /* .nav-icon .shop-icon {
@@ -71,7 +71,7 @@
         .nav-icon img {
             width: 30px;
             margin-left: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         #menu-switch{
             display: none;
@@ -86,7 +86,7 @@
             height: 771px;
             left: -19px;
             top: -70px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             z-index: 3;
          }
 
@@ -111,7 +111,7 @@
         }
 
         .banner .banner-title {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             position: absolute;
             width: 265px;
             left: 1028px;
@@ -134,7 +134,7 @@
             position: absolute;
             top: 730px;
             display: flex;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             margin-left: 20px;
             font-size: 20px;
             font-family: 'Noto Sans';
@@ -168,14 +168,14 @@
             display: flex;
             margin: auto;
             width: 1200px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         .info .wrap.up {
             flex-direction: row-reverse;
         }
         .info .wrap .info-pics {
             width: 600px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             display: flex;
             justify-content: flex-end;
             gap: 20px;
@@ -215,7 +215,7 @@
 
         .info .wrap .info-txt {
             width: 650px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         .info .wrap .info-txt .title {
             width: 500px;
@@ -227,7 +227,7 @@
             color: #346C47;
             margin-left: 100px;
             /* margin-top: ; */
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         .info .wrap .info-txt .title.title-down {
             margin-top: 40px;
@@ -268,7 +268,7 @@
             text-align: center;
             margin: auto;
             margin-top: 50px;
-            outline: 1px solid orange;
+            /* outline: 1px solid orange; */
         }
         .goals h2 {
             font-weight: 400;
@@ -288,7 +288,7 @@
         .owl-theme .item {
             /* height: 10rem; */
             padding: 1rem;
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             }
 
         .owl-carousel .item h4 {
@@ -296,7 +296,7 @@
             font-weight: 400;
             font-size: 1.4375rem;
             margin-top: 3rem;
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             }
             .goal-more {
                width: 100%;
@@ -306,7 +306,7 @@
                 color: #598969;
                 display: flex;
                 justify-content: flex-end;
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 margin-bottom: 50px;
             }
             .goal-more p {
@@ -342,7 +342,7 @@
                 color: #598969;
             }
             .top-wrap{
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 width: 1300px;
                 height: 2140px;
                 margin: auto;
@@ -358,14 +358,14 @@
             flex-direction: row-reverse;}
 
              .top-wrap .pic {
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 width: 650px;
                 height: 680px;
                 
                               
              }
              .top-wrap .pic img {
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 width: 78.461538%;
                 height: 100%;
                 vertical-align: middle;
@@ -381,7 +381,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
              }
              .top-wrap .txt .title {
                 font-weight: 600;
@@ -390,7 +390,7 @@
                 text-align: center;
                 letter-spacing: -2.4px;
                 color: #346C47;
-                outline: 1px solid #fa0; 
+                /* outline: 1px solid #fa0;  */
                 margin: 80px 30px;
              }
 
@@ -440,12 +440,12 @@
             height: 2600px;
             background-color: #ccc;
             background: url("/main-pic/background3.jpg") no-repeat  fixed center ;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             margin: auto;  
             /* background: lightblue url("img_tree.gif") no-repeat fixed center; */
         }
         .top5-group .top5-txt {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             width: 530px;
             height: 147px;
             margin: auto;
@@ -497,7 +497,7 @@
             transform: rotate(145.28deg);
         }
         .top5-group .top5-pics {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -585,14 +585,14 @@
         /* doctor */
 
         .dr {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             width: 100%;
             margin-top: 80px;
            
   
         }
         .dr .dr-tag {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             left: -50px;
             width: 294px;
             height: 70px;
@@ -612,7 +612,7 @@
             line-height: 70px;
         }
         .dr .dr-slogan {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             margin: auto;
             text-align: center;
             width: 800px;
@@ -645,7 +645,7 @@
         }
         .dr .dr-cards {
             
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             width: 1200px;
             margin: auto;
             display: flex;
@@ -694,12 +694,12 @@
         }
 
         .column {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             width: 100%;
             margin-top: 80px;
         }
         .column .clm-tag {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             left: -50px;
             width: 294px;
             height: 70px;
@@ -729,7 +729,7 @@
         }
         .column .clm-cards .clm-item {
             width: 300px;
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             margin: 10px;
         }
         .column .clm-cards .clm-item .clm-pic {
@@ -774,11 +774,11 @@
         .main-footer {
             width: 100%;
             padding: 0 0 50px 0;
-            background-image: url(/main-pic/background2.jpg); 
+            background-image: url(./main-pic/background2.jpg); 
         }
 
         .main-footer .footer-icons {
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             width: 250px;
             margin: auto;
             display: flex;
@@ -797,7 +797,7 @@
         }
 
         .main-footer .container{
-            outline: 1px solid #fa0; 
+            /* outline: 1px solid #fa0;  */
             display: flex;
             width: 1200px;
             margin: auto;
