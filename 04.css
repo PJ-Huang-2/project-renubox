@@ -884,13 +884,13 @@
                 justify-content: space-evenly;
                 align-items: center;
                 position: relative;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
             }
             .nav-icon {
                 display: block;
                 align-items: center;
                 right: 20px;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
                 position: absolute;
                 right: 70px;
 
@@ -965,7 +965,7 @@
                 top: 300px;
             }
             .banner .banner-title {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             position: absolute;
             width: 265px;
             left: 20px;
@@ -981,7 +981,7 @@
             position: absolute;
             top: 730px;
             display: flex;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             margin-left: 20px;
             font-size: 20px;
             font-family: 'Noto Sans';
@@ -1008,7 +1008,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 gap: 32px;
-                outline: 1px solid #fa0;
+                /* outline: 1px solid #fa0; */
                 
             }
             .main-nav a {
@@ -1020,7 +1020,7 @@
             display: flex;
             align-items: center;
             right: 20px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
         /* .banner .banner-mainpic {
             position: relative;
