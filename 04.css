@@ -101,7 +101,7 @@
             height: 466px;
             right: 0px;
             top: 300px;
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
             z-index: 3;
         }
 
