@@ -1,11 +1,11 @@
 * {
-    font-family: 'Noto Sans', sans-serif, 'Noto Sans TC', 'Noto Serif HK', serif;
+    font-family: 'Noto Sans TC', 'Noto Sans Mono','Noto Sans',sans-serif, monospace;
 }
 body {
 background: url(./main-pic/background.jpg);
 background-attachment: fixed;
 background-position: center top;
-background-size: 100% auto;
+background-size:  auto;
 background-color: #4d593e;
 }
 .chat-btn {
@@ -91,7 +91,7 @@ background-color: #4d593e;
     /* goal-banner */
     .goal-banner {
         /* outline: 1px solid #fa0; */
-        width:1530px;
+        width:100%;
         height: 400px;
         position: relative;
       
@@ -100,117 +100,124 @@ background-color: #4d593e;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
-
-
+        object-position: center center;
     }
     .goal-banner .banner-title {
         position: absolute;
         display: flex;
         flex-direction: column;
+        width: 300px;
         font-size: 50px;
         height: 160px;
         top: 200px;
-        margin-left: 400px;
+        left: 28%;
     }
     .goal-banner .banner-title h2 {
-
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 600;
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        -webkit-text-stroke: .5px #BCAB8A;
         font-size: 48px;
-        line-height: 80px;
+        line-height: 70px;
         letter-spacing: .6px;
-        color: #346C47;
-        
+        color: #BCAB8A;
     }
     .goal-banner .banner-title h2.title-btm {
-        margin-left: 120px;
+        margin-left: 150px;
     }
-    .goal-mainpage {
-        /* outline: 1px solid #fa0; */
-        width: 100%;
-    }
-    .goal-mainpage .goal-title {
-        width: 200px;
-        margin: auto;
-        width: 755px;
-        height: 62px;
-        left: 358px;
-        top: 647px;
-        font-family: 'Public Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 62px;
+
+    .goals-title  {
+        /* width: 100%; */
         text-align: center;
-        letter-spacing: -2.4px;
+        margin-top: 30px;
+    }
+    .goals-title h3 {
+        font-size: 32px;
+        font-weight: 500;
         color: #346C47;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        border: 2px solid #BCAB8A;
+        border-radius: 30px;
+        position: relative;
+        left: -30px;
+        -webkit-text-stroke: .5px #598969;
+
     }
-    .goal-wrap{
-        margin: auto;
+
+    .goals-title h4 {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: .6px;
+        color: #6B6B6B;
+    }
+
+
+    .goals {
+
         width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin-bottom: 40px;
-        
+        margin: auto;
+        margin-top: 30px;
     }
+
+
     .item{
-        /* outline: 1px solid #fa0; */
-        width: 350px;
-        height: 400px;
-        margin: 10px;
-        padding: 40px 0;
-        background: #EEDAD2;
-        border-radius: 5px;
-        filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
+        height: 250px;
+        margin: 30px;
+        border-radius: 30px;
+        position: relative;
+        overflow:hidden;
+        box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+     
     }
-    .item.item-even {
-        background-color: #BFDBC8;
-    }
-    .item .pic{
-        /* outline: 1px solid #fa0; */
-        width: 320px;
-        height: 280px;
-    }
-    .item .pic img{
+    .item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center center;
-        border-radius: 0px 200px 200px 0px;
-        /* vertical-align: top; */
+        border-radius: 30px;
+        transform:scale(1,1);
+        transition: all 1s ease-out;
+        cursor: pointer;
     }
-    .item .txt{
-      /* outline: 1px solid #fa0; */
-      width: 100%;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
+    .item img:hover {
+        transform:scale(1.2,1.2);
+    }
+    .item-content {
+        width: 260px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+        gap: 10px;
+    
+    }
+    .item-content h5 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        -webkit-text-stroke: .5px;
 
     }
-
-    .item .txt p {
-
-        width: 200px;
-        height: 39px;
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
-        letter-spacing: 0.05em;
-        color: #A08484;
-
+    .item-content p {
+        font-size: 18px;
+        -webkit-text-stroke: .5px;
     }
+
     /* footer */
 
     .main-footer {
+        margin-top: 30px;
         width: 100%;
         padding: 0 0 50px 0;
         background-image: url(./main-pic/background2.jpg); 
@@ -293,11 +300,13 @@ background-color: #4d593e;
         background-color: #598969; 
     }
 
-    
-    
-    
 
-    
+
+
+  
+
+
+
 
 
 
@@ -399,25 +408,25 @@ background-color: #4d593e;
         left: 20px;
         top: 200px;
         font-family: 'Noto Sans';
-    }
-    .banner .banner-news {
-        position: absolute;
-        display: flex;
-        /* /* outline: 1px solid #fa0; */
-        letter-spacing: 0.05em; 
-        color: #598969;
-        font-weight: 600;
+        }
+        .banner .banner-news {
+            position: absolute;
+            display: flex;
+            /* /* outline: 1px solid #fa0; */
+            letter-spacing: 0.05em; 
+            color: #598969;
+            font-weight: 600;
 
-    }
-    .banner .banner-news a {
-        text-decoration: none;
-        color: #598969;
-        margin-left: 20px;
-        font-size: 20px;
-        font-weight: 600;
-    }
-    
-    }
+        }
+        .banner .banner-news a {
+            text-decoration: none;
+            color: #598969;
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        }
     @media screen and (min-width: 768px){
         .hb { display: none;}
         .main-nav{
@@ -440,6 +449,11 @@ background-color: #4d593e;
         align-items: center;
         right: 20px;
         /* outline: 1px solid #fa0; */
-    }
+        }
+
+        .goals{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
   
 }
