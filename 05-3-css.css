@@ -66,7 +66,28 @@ font-family: 'Noto Sans', 'Noto Sans TC', sans-serif, serif;
     .main-nav a{
         display: block;
         padding: 10px;
+        transform: translateY(0px);
+        transition: .3s
     }
+
+    .main-nav a:hover{
+        transform: translateY(-10px);
+    }
+    .main-nav a:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -2.5px;
+        height: 0;
+        border-bottom: 2px solid #8A7867;
+        transition: .3s;
+    }
+    .main-nav a:hover:after{
+        left: 10px;
+        right: 10px;
+    }
+
 
     .nav-icon {
         display: block;

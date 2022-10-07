@@ -66,7 +66,28 @@ body {
         .main-nav a{
             display: block;
             padding: 10px;
+            transform: translateY(0px);
+	        transition: .3s
         }
+
+        .main-nav a:hover{
+            transform: translateY(-10px);
+        }
+        .main-nav a:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -2.5px;
+            height: 0;
+            border-bottom: 2px solid #8A7867;
+            transition: .3s;
+        }
+        .main-nav a:hover:after{
+            left: 10px;
+            right: 10px;
+        }
+    
     
         .nav-icon {
             display: block;
@@ -229,9 +250,7 @@ body {
         line-height: 24px;
         letter-spacing: .6px;
     }
-    .products .product-list {
-        /* outline: 1px solid #fa0; */
-    }
+  
     /* bar */
     .product-list .bar {
         /* outline: 1px solid #fa0; */
@@ -386,7 +405,7 @@ body {
         height: 32px;
         line-height: 32px;
         font-size: 16px
-        color: #555;
+        color: #6B6B6B;
     }
     .member .sign-in span {
         font-size: 12px;
@@ -571,6 +590,7 @@ body {
         border: #598969;
         border-radius: 5px;
     }
+
 
      /* footer */
 
@@ -776,7 +796,7 @@ body {
             position: absolute;
             display: flex;
             /* /* outline: 1px solid #fa0; */
-            letter-spacing: 0.05em; */
+            letter-spacing: 0.05em;
             color: #598969;
             font-weight: 600;
     
