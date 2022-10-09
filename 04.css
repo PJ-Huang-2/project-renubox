@@ -927,6 +927,7 @@
                 opacity: 0;
                 transition: opacity 1s 0s,
                             left    0s 1s;
+                z-index: 6;
                     
             }
             .hb span{
@@ -955,7 +956,7 @@
             }
 
             #menu-switch:checked + .header .main-nav{
-                /* display: block; */
+                display: block;
                 left: 0;
                 opacity: 1;
                 transition: opacity 1s;

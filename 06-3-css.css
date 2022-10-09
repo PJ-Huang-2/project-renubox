@@ -420,7 +420,8 @@ body {
                 background-color: rgb(215, 242, 205);
                 width: 100%;
                 left: -100%;
-                top: 100%;
+                top: 60px;
+                z-index: 1;
                 opacity: 0;
                 transition: opacity 1s 0s,
                             left    0s 1s;

@@ -332,6 +332,8 @@ background-color: #4d593e;
 
 
 
+    
+        
     @media screen and (max-width:767px) {
         .hb{
             width: 40px;
@@ -360,10 +362,11 @@ background-color: #4d593e;
             background-color: rgb(215, 242, 205);
             width: 100%;
             left: -100%;
-            top: 100%;
+            top: 60px;
             opacity: 0;
             transition: opacity 1s 0s,
                         left    0s 1s;
+            z-index: 1;
                 
         }
         .hb span{
@@ -392,7 +395,7 @@ background-color: #4d593e;
         }
 
         #menu-switch:checked + .header .main-nav{
-            /* display: block; */
+            display: block;
             left: 0;
             opacity: 1;
             transition: opacity 1s;
@@ -428,26 +431,35 @@ background-color: #4d593e;
         width: 265px;
         left: 20px;
         top: 200px;
+        font-weight: 500;
+        font-size: 35px;
+        /* color: #fbe5b9; */
+        z-index: 4;
         font-family: 'Noto Sans';
-        }
-        .banner .banner-news {
-            position: absolute;
-            display: flex;
-            /* /* outline: 1px solid #fa0; */
-            letter-spacing: 0.05em; 
-            color: #598969;
-            font-weight: 600;
+    }
+    .banner .banner-news {
+        width: 694px;
+        position: absolute;
+        top: 730px;
+        display: flex;
+        /* outline: 1px solid #fa0; */
+        margin-left: 20px;
+        font-size: 20px;
+        font-family: 'Noto Sans';
+        letter-spacing: 0.05em;
+        color: #598969;
+        font-weight: 600;
 
-        }
-        .banner .banner-news a {
-            text-decoration: none;
-            color: #598969;
-            margin-left: 20px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-        
-        }
+    }
+    .banner .banner-news a {
+        text-decoration: none;
+        color: #598969;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+    }
     @media screen and (min-width: 768px){
         .hb { display: none;}
         .main-nav{
@@ -470,11 +482,16 @@ background-color: #4d593e;
         align-items: center;
         right: 20px;
         /* outline: 1px solid #fa0; */
+    }
+    /* .banner .banner-mainpic {
+        position: relative;
+        top: -70px;
+        width: 700px;
         }
-
-        .goals{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-  
+        .banner .banner-subpic {
+            position: absolute;
+            width: 700px;
+            right: 0px;
+            top: 300px;
+        } */
 }

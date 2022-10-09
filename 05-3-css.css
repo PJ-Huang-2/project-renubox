@@ -524,8 +524,9 @@ font-family: 'Noto Sans', 'Noto Sans TC', sans-serif, serif;
             background-color: rgb(215, 242, 205);
             width: 100%;
             left: -100%;
-            top: 100%;
+            top:60px;
             opacity: 0;
+            z-index: 1;
             transition: opacity 1s 0s,
                         left    0s 1s;
                 
