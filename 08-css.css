@@ -34,9 +34,9 @@ body {
             justify-content: space-between;
             padding: 10px;
             /* background-color: #ccc; */
-            position: sticky;
+            /* position: sticky; */
             top: 0;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
             /* outline: 1px solid #fa0; */
             align-items: center;
             z-index: 5;
@@ -110,7 +110,7 @@ body {
         .banner-txt {
             outline: 1px solid #fa0;
             max-width: 768px;
-            width: 100%;
+            width: 100vw;
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -332,6 +332,10 @@ body {
             color: #346C47;
         }
 
+        .talk .p-down {
+            border-radius: 10px 0 10px 10px;
+        }
+
          /* footer */
 
      .main-footer {
@@ -509,40 +513,9 @@ body {
             right: 0px;
             top: 300px;
         }
-        .banner .banner-title {
-        /* outline: 1px solid #fa0; */
-        position: absolute;
-        width: 265px;
-        left: 20px;
-        top: 200px;
-        font-weight: 500;
-        font-size: 35px;
-        /* color: #fbe5b9; */
-        z-index: 4;
-        font-family: 'Noto Sans';
-    }
-    .banner .banner-news {
-        width: 694px;
-        position: absolute;
-        top: 730px;
-        display: flex;
-        /* outline: 1px solid #fa0; */
-        margin-left: 20px;
-        font-size: 20px;
-        font-family: 'Noto Sans';
-        letter-spacing: 0.05em;
-        color: #598969;
-        font-weight: 600;
-
-    }
-    .banner .banner-news a {
-        text-decoration: none;
-        color: #598969;
-        margin-left: 20px;
-        font-size: 20px;
-        font-weight: 600;
-
-    }
+   
+   
+   
     }
     @media screen and (min-width: 768px){
         .hb { display: none;}
