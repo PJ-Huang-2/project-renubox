@@ -181,7 +181,7 @@ body {
 
         .step1 ul li {
             outline:1px solid #fa0; 
-            width: 20%;
+            width: 200px;
             z-index: 1;
         } 
         .step1 ul li:nth-child(2) {
@@ -372,6 +372,9 @@ body {
             margin: 3vh 0;
             border-radius: 10px;
         }
+        .fade {
+            opacity: 1;
+          }
         .item .item_step {
             outline:1px solid #fa0;
             margin-left: -6px;
@@ -443,7 +446,7 @@ body {
             width: 50%;
         }
         .number-time .number h5 {
-            font-size: 1.8vw;
+            font-size: 1.8rem;
             text-align: center;
             font-weight: 600;
             color: #346C47;

@@ -103,13 +103,24 @@
             position: relative;
             top: 0;
             width: 1047px;
-            width: 1047px;
             height: 771px;
             left: -19px;
             top: -70px;
             /* outline: 1px solid #fa0; */
             z-index: 3;
+            animation: fade-left forwards 1.5s;
+            transform: translateX(-400px);
          }
+         @keyframes fade-left {
+            0% {
+              opacity: 0;
+              transform: translateX(-400px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
 
         .banner .banner-mainpic img {
             width: 100%;
@@ -124,7 +135,19 @@
             top: 300px;
             /* outline: 1px solid #fa0; */
             z-index: 3;
+            animation: fade-right forwards 2s;
+            transform: translateX(400px);
         }
+        @keyframes fade-right {
+            0% {
+              opacity: 0;
+              transform: translateX(400px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
 
         .banner .banner-subpic img {
             width: 100%;
@@ -142,10 +165,21 @@
             line-height: 52px;
             letter-spacing: 0.05em;
             color: #598969;
-            z-index: 1;
             font-family: 'Noto Sans';
             z-index: 4;
+            animation: fade-in forwards 4s ;
+            transform: translateY(-40px);
         }
+        @keyframes fade-in {
+            0% {
+              opacity: 0;
+              transform: translateY(-30px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         .banner .banner-title p {
             font-size: 35px;
             font-weight: 400;
@@ -172,6 +206,40 @@
             font-weight: 600;
 
         }
+        svg {
+            outline: 1px solid pink;
+            width: 535px;
+            display: block;
+            position: relative;
+            top: -130px;
+
+          }
+
+          /* ---------- Path ---------- */
+        path {
+            stroke: white;
+            stroke-width: 3px;
+            stroke-dasharray: 535;
+            stroke-dashoffset: 535;
+            animation: path 5s alternate infinite;
+        }
+        
+        @keyframes path {
+            from {
+            stroke-dashoffset: 535;
+            }
+            
+            to {
+            stroke: #FFD9C9;
+            fill: rgba(0,0,0,0.25);
+            stroke-dashoffset: 0;
+            }
+        }
+  
+
+
+
+
         /* main-page-info */
         .info {
             width: 100%;
@@ -1008,13 +1076,13 @@
             font-size: 20px;
             font-family: 'Noto Sans';
             letter-spacing: 0.05em;
-            color: #598969;
+            
             font-weight: 600;
 
         }
         .banner .banner-news a {
             text-decoration: none;
-            color: #598969;
+
             margin-left: 20px;
             font-size: 20px;
             font-weight: 600;
