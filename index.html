@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./main-pic/page-tag-pic.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./reset.css">
-<!-- owl -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    </link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    </link>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="./04.css">
     <title>&#x2705;RENUBOX</title>
@@ -36,7 +32,7 @@
     <div class="header">
         <!-- logo -->
         <div class="logo">
-            <a href="./index.html"><img src="./main-pic/logo-first.png"></a>
+            <a href="./index.html"><img src="./main-pic/logo-first.png" alt="renubox-logo"></a>
         </div>
         <!-- 漢堡 -->
         <label for="menu-switch" class="hb">
@@ -48,7 +44,6 @@
         <nav class="main-nav">
             <a href="./06.html">智能評估</a>
             <a href="./05-1.html">找功能</a>
-            <a href="#">熱賣懶人包 &#128293;</a>
             <a href="./07.html">所有商品</a>
             <a href="./08.html">我們的承諾</a>
             <a href="./10.html">健康專欄</a>
@@ -57,20 +52,39 @@
         <!-- icons -->
         <div class="nav-icon">
             <a href="#">
-                <img src="./main-pic/member_icon.png" alt="">
+                <img src="./main-pic/member_icon.png" alt="nav-mem-icon">
             </a>
             <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="">
+                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
             </a>
         </div>
     </div>
+    <!-- navbar-scroll -->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $(".header").css("background" , "#eae6e398");
+            }
+
+            else{
+                $(".header").css("background" , "transparent");  	
+            }
+        })
+        })
+    </script>
+
+
+
+
     <!-- banner -->
     <div class="banner">
         <div class="banner-mainpic">
             <img src="./main-pic/main-pic-top2.jfif" alt="">
         </div>
         <div class="banner-title">
-            <h2>RENUBOX</h2>
+            <h1>RENUBOX</h1>
             <p>REplace</p>
             <p>NUtritions</p>
             <p>you really</p>
@@ -88,7 +102,7 @@
         </div>
          <svg>
             <g fill="none">
-              <path d="M0,40 L600,40" />
+              <path d="M0,40 L535,40" />
           </svg>
        
     </div>
@@ -150,50 +164,51 @@
                         從自身最需要的功能來挑選自己適合的產品
                         </p>
                 </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                    <h4><img src="./slider/slider1.png" alt=""></h4>
-                    </div>
-                    <div class="item">
-                    <h4><img src="./slider/slider2.png" alt=""></h4>
-                    </div>
-                    <div class="item">
-                    <h4><img src="./slider/slider3.png" alt=""></h4>
-                    </div>
-                    <div class="item">
-                    <h4><img src="./slider/slider3.png" alt=""></h4>
-                    </div>
-                    <div class="item">
-                    <h4><img src="./slider/slider2.png" alt=""></h4>
-                    </div>
-                    <div class="item">
-                    <h4><img src="./slider/slider1.png" alt=""></h4>
-                    </div>
-                </div>
-              <script>
-                $(".owl-carousel").owlCarousel({
-                    loop: true, // 循環播放
-                    margin: 10, // 外距 10px
-                    nav: true, // 顯示點點
-                    responsive: {
-                        0: {
-                        items: 1 // 螢幕大小為 0~600 顯示 1 個項目
-                        },
-                        768: {
-                        items: 2 // 螢幕大小為 600~1000 顯示 3 個項目
-                        },
-                        1024: {
-                        items: 3 // 螢幕大小為 1000 以上 顯示 5 個項目
-                        }
-                    }
-                    });
-              </script>
-                <div class="goal-more">
-                        <div class="more-btn">
-                            <a href="./05-1.html"><p>更多功能</p></a>
+                <div class="goals-main">
+                    <div class="container">
+                        <div class="panel active" style="background-image: url('./-sub-pic/goal-fit.jpg')">
+                          <h3>體態管理</h3>
                         </div>
-                </div>  
+                        <div class="panel" style="background-image: url('./-sub-pic/goal-defence.jpg')">
+                          <h3>營養補充</h3>
+                        </div>
+                        <div class="panel" style="background-image: url('./-sub-pic/goal-antiage.webp')">
+                          <h3>抗老回春</h3>
+                        </div>
+                        <div class="panel" style="background-image: url('./-sub-pic/goal-insomnia.jpg')">
+                          <h3>失眠焦慮</h3>
+                        </div>
+                        <div class="panel" style="background-image: url('./-sub-pic/goal-food.jpg')">
+                          <h3>健康飲食</h3>
+                        </div>
+                        <div class="panel" style="background-image: url('./-sub-pic/goal-pretty.jpg')">
+                            <h3>美容保養</h3>
+                          </div>
+                  
+                    </div>
 
+                </div>
+                <!-- goals main JS -->
+                <script>
+                    const panels = document.querySelectorAll('.panel')
+
+                    panels.forEach(panel => {
+                        panel.addEventListener('click', () => {
+                            removeActiveClasses()
+                            panel.classList.add('active')
+                        })
+                    })
+
+                    function removeActiveClasses() {
+                        panels.forEach(panel => {
+                            panel.classList.remove('active')
+                        })
+                    }
+                </script>
+
+
+                
+              
                     <!-- TOP 3  -->
 
                     <div class="top3">
@@ -365,48 +380,65 @@
 <!-- health column -->
 
         <div class="column">
-            <div class="clm-tag">
-                <h2>保健專欄</h2>
-            </div>
-        
-            <div class="clm-cards">
-                <div class="clm-item">
-                    <div class="clm-pic">
-                        <img src="./main-pic/clm1.jpeg">
+
+
+            <div class="container">
+	
+                <h3>健康專欄</h3>
+            
+                <div class="tabs">
+                    <div class="tabby-tab">
+                        <input type="radio" id="tab-1" name="tabby-tabs" checked>
+                        <label for="tab-1">免疫抵抗力</label>
+                        <div class="tabby-content">
+                            <a href="./10.html">
+                            <img src="./main-pic/clm3.jpg"/>
+                            <h4>過敏總是不會好？若沒注意這件事冬天會更難受</h4>
+                            <p>這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p></a>
+                        </div>
                     </div>
-                    <div class="clm-txt">
-                    什麼時候吃保健品最有效？醫師最推這個時間！
+
+                    <div class="tabby-tab">
+                        <input type="radio" id="tab-2" name="tabby-tabs" checked>
+                        <label for="tab-2">新陳代謝</label>
+                        <div class="tabby-content">
+                            <a href="./10.html">
+                            <img src="./main-pic/da2d0c629ba7684fa44aad7ccb01526c-1536x1024.jpeg"/>
+                            <h4>每天正確喝水好處多，該喝多少？什麼時間喝？</h4>
+                            <p>人類可以10天不吃飯，但只要3天不喝水，恐怕就要有見上帝的準備了！
+                                水分是維持人體運作的重要條件，ex. 水可以將養份運送到細胞、新陳代謝系統需要水將身體廢棄物排出、水能協助人體調節體溫…等等。每天喝水不足的壞處很多，隨便列舉都是落落一長條，ex. 以酷熱的夏天來說，喝水能協助身體排出足夠汗水將熱能帶出，避免中暑。</p></a>
+                        </div>
                     </div>
+
+                    <div class="tabby-tab">
+                        <input type="radio" id="tab-3" name="tabby-tabs" checked>
+                        <label for="tab-3">飲食保健</label>
+                        <div class="tabby-content">
+                            <a href="./10.html">
+                            <img src="./main-pic/clm4.jpg"/>
+                            <h4>過敏總是不會好？若沒注意這件事冬天會更難受</h4>
+                            <p>這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p></a>
+                        </div>
+                    </div>
+
+                    <div class="tabby-tab">
+                        <input type="radio" id="tab-4" name="tabby-tabs" checked>
+                        <label for="tab-4">營養補充</label>
+                        <div class="tabby-content">
+                            <a href="./10.html">
+                            <img src="./main-pic/clm2.jpg"/>
+                            <h4>保健品吃多反傷身！醫：選對自己最需要的就好</h4>
+                            <p>這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p></a>
+                        </div>
+                    </div>
+            
+                    
+                    
                 </div>
-                <div class="clm-item">
-                    <div class="clm-pic">
-                        <img src="./main-pic/clm2.jpg">
-                    </div>
-                    <div class="clm-txt">
-                        保健品不是同一種一直吃就好！醫師建議這樣挑
-                    </div>
-                </div>
-                <div class="clm-item">
-                    <div class="clm-pic">
-                        <img src="./main-pic/clm3.jpg">
-                    </div>
-                    <div class="clm-txt">
-                        過敏真的可以根治嗎？ 從根本提升保護力才正確！
-                    </div>
-                </div>
-                <div class="clm-item">
-                    <div class="clm-pic">
-                        <img src="./main-pic/clm4.jpg">
-                    </div>
-                    <div class="clm-txt">
-                        如何吃才能打造易受體質？醫師：瘦菌最愛這些食物
-                    </div>
-                </div>
+           
                 
             </div>
-            <div class="clm-more">
-                <a href="#">更多文章</a>
-            </div>
+
         </div>
 
 
@@ -452,13 +484,7 @@
                     <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
                 </nav>
             </div>
-            <div class="footer-item">
-                <h4>熱銷商品</h4>
-                <nav>
-                    <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
-                    <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
-                </nav>
-            </div>
+     
             <div class="footer-item">
                 <h4>找功能</h4>
                 <nav class="footer-goal">

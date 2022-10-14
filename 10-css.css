@@ -247,6 +247,7 @@ body {
         margin-top: 125px;
     }
 }
+/* 顏色 看看 */
 
 :root{
 
@@ -256,9 +257,9 @@ body {
     --fontcolor: #6B6B6B;
    
 }
-/* 通用顏色 end */
 
-/* 通用字級 start */
+
+/* 字級 start */
 body, header, footer, div, nav, aside, p, span, a, h1, h2, h3, h4, ul, ol, li{
     color:var(--fontcolor);
     text-decoration: none;
@@ -393,7 +394,7 @@ body{
     color: var(--subcolordark);
     position: absolute;
     font-size: 30px;
-    font-style: italic;
+    font-weight: 4N00;
     z-index: 1;
     left: 78%;
     top: -3%;

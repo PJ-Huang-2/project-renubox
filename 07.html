@@ -52,6 +52,21 @@
             </a>
         </div>
     </div>
+     <!-- navbar-scroll -->
+     <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $(".header").css("background" , "#eae6e398");
+            }
+
+            else{
+                $(".header").css("background" , "transparent");  	
+            }
+        })
+        })
+    </script>
 
 
     <!-- all- banner -->
@@ -442,13 +457,7 @@
                    <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
                </nav>
            </div>
-           <div class="footer-item">
-               <h4>熱銷商品</h4>
-               <nav>
-                   <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
-                   <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
-               </nav>
-           </div>
+
            <div class="footer-item">
                <h4>找功能</h4>
                <nav class="footer-goal">
