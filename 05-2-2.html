@@ -301,7 +301,8 @@
 	
 
     <!-- side-bar -->
-    <div class="side-bar" id="sideBar"> 
+    <div class="side-bar sidebar-animation" id="sideBar">
+        <button onclick="closeSideBar()">X</button> 
         <div class="bar-wrap">
             <ol>
                 <li class="menu-item"><a href="#0" class="menu-title">找功能</a></li>
@@ -335,19 +336,27 @@
             
         </div> 
     </div>
+
+    <div class="open-btn" id="openBtn">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <p>Click on the hamburger </p>
+    </div>
+    <script>
+        function openNav() {
+           let sideBar =  document.querySelector('#sideBar');
+           sideBar.classList.remove("side-Bar");
+           sideBar.classList.add("sidebar-open");
+        }
+        function closeSideBar(){
+            let sideBar =  document.querySelector('#sideBar');
+            sideBar.classList.remove("sidebar-open");
+            sideBar.classList.add("side-Bar");
+        }
+    
+        </script>
  <!--goal-products  -->
     <div class="goal-products">
-		<div class="open-btn" id="openBtn">
-			<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-			<p>Click on the hamburger </p>
-		</div>
-		<script>
-			function openNav() {
-				document.getElementById("openBtn").style.left= "0";
-			
-			}
 		
-			</script>
 
         <div class="card">
             <div class="tag">熱銷TOP1</div>

@@ -11,6 +11,7 @@ body {
         right: 20px;
         bottom: 10px;
         animation: breath 2.5s ease-in-out infinite;
+        z-index: 5;
        
     }
     @keyframes breath {
