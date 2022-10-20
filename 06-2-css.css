@@ -2,7 +2,7 @@ body {
     background: url(./-sub2-pic/sub-02-bgp.jpg);
     background-attachment: fixed;
     background-position: center top;
-    background-size: 1500px 100vh;
+    background-size: 1500px auto;
     background-color: #F7F4EB;
     font-family: 'Noto Sans', 'Noto Sans TC', sans-serif, serif;
     }
@@ -12,6 +12,7 @@ body {
         right: 20px;
         bottom: 10px;
         animation: breath 2.5s ease-in-out infinite;
+        z-index: 5;
        
     }
     @keyframes breath {
@@ -282,9 +283,9 @@ body {
             font-size: 1.2rem;
             font-weight: 400;
             color: #8A7867;
-            letter-spacing: .4px;
+            letter-spacing: -0.4px;
             background-color: #D9D9D9;
-            line-height: 5vh;
+            line-height: 4vh;
             padding: 0 1vw;
             border-radius: 30px;
         }
@@ -322,7 +323,6 @@ body {
     width: 100%;
     padding: 0 0 50px 0;
     background-image: url(./main-pic/background2.jpg); 
-    margin-top: 10vh;
 }
 
 .main-footer .footer-icons {
