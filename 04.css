@@ -602,7 +602,7 @@
 
         /* TOP5 */
 
-
+        
         .top5-group {
             width: 100%;
             height: 2600px;
@@ -890,55 +890,11 @@
             overflow: hidden;
         }
         
-        .column-tab
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
-    </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
- {
+        .tabby-tab {
             flex: 1;
         }
         
-        .column-tab
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
-    </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
- label {
+        .tabby-tab label {
             display: block;
             box-sizing: border-box;
             /* tab content must clear this */
@@ -954,29 +910,7 @@
             
         }
         
-        .column-tab
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
-    </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
- label:hover {
+        .tabby-tab label:hover {
             background: #A08484;
         }
         
@@ -1033,29 +967,7 @@
         
         /* MAKE IT WORK ----- */
         
-        .column-tab
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
-    </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
- [type=radio] { display: none; }
+        .tabby-tab [type=radio] { display: none; }
         [type=radio]:checked ~ label {
             background: #EEDAD2;
             z-index: 2;
@@ -1076,29 +988,7 @@
         
         @media screen and (max-width: 480px) {
             .tabs { min-height: 580px; }
-            .column-tab
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
-    </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
- label { 
+            .tabby-tab label { 
                 height: 60px;
             }
             .tabby-content { top: 60px; }

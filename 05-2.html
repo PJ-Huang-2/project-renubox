@@ -56,21 +56,6 @@
         </a>
     </div>
 </div>
- <!-- navbar-scroll -->
- <script>
-    $(document).ready(function(){
-        $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 100) {
-            $(".header").css("background" , "#eae6e398");
-        }
-
-        else{
-            $(".header").css("background" , "transparent");  	
-        }
-    })
-    })
-</script>
 
 <!-- banner -->
 <div class="goal-banner">
@@ -87,6 +72,11 @@
 </div>
 
 <div class="goal-main">
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      </div>
     <!-- side-bar -->
     <div class="side-bar"> 
         <div class="bar-wrap">
@@ -122,12 +112,24 @@
             
         </div> 
     </div> 
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
     <div class="goal-products">
         <div class="card">
             <div class="tag">熱銷TOP1</div>
             <img src="./-sub-pic/product1.webp" onmouseover="this.src= ' ./-sub-pic/product1-2.webp';" onmouseout="this.src=' ./-sub-pic/product1.webp ';" width="300px">
             <div class="product-btn">
-                <button class="btn-left"><a href="#">產品詳情</a></button>
+                <button class="btn-left"><a href="./05-3.html">產品詳情</a></button>
                 <button class="btn-right"><a href="#">加入購物車</a></button>
             </div>
             <p>NT$550 / 28日</p>
@@ -137,7 +139,7 @@
             <div class="tag">熱銷TOP3</div>
             <img src="./-sub-pic/product2.jpg">
             <div class="product-btn">
-                <button class="btn-left"><a href="#">產品詳情</a></button>
+                <button class="btn-left"><a href="./05-3.html">產品詳情</a></button>
                 <button class="btn-right"><a href="#">加入購物車</a></button>
             </div>
             <p>NT$550 / 28日</p>
@@ -146,7 +148,7 @@
         <div class="card">
             <img src="./-sub-pic/product3.jpg">
             <div class="product-btn">
-                <button class="btn-left"><a href="#">產品詳情</a></button>
+                <button class="btn-left"><a href="./05-3.html">產品詳情</a></button>
                 <button class="btn-right"><a href="#">加入購物車</a></button>
             </div>
             <p>NT$550 / 28日</p>
@@ -164,7 +166,7 @@
         <div class="card">
             <img src="./-sub-pic/product5.webp">
             <div class="product-btn">
-                <button class="btn-left"><a href="#">產品詳情</a></button>
+                <button class="btn-left"><a href="./05-3.html">產品詳情</a></button>
                 <button class="btn-right"><a href="#">加入購物車</a></button>
             </div>
             <p>NT$550 / 28日</p>
@@ -173,7 +175,7 @@
         <div class="card">
             <img src="./-sub-pic/product6.jpg">
             <div class="product-btn">
-                <button class="btn-left"><a href="#">產品詳情</a></button>
+                <button class="btn-left"><a href="./05-3.html">產品詳情</a></button>
                 <button class="btn-right"><a href="#">加入購物車</a></button>
             </div>
             <p>NT$550 / 28日</p>
@@ -228,7 +230,13 @@
                <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
            </nav>
        </div>
-
+       <div class="footer-item">
+           <h4>熱銷商品</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
+               <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
+           </nav>
+       </div>
        <div class="footer-item">
            <h4>找功能</h4>
            <nav class="footer-goal">
