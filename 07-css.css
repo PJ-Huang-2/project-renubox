@@ -160,6 +160,7 @@ body {
 
         .tags .tag {
             width: 180px;
+            min-width: 180px;
             height: 40px;
             line-height: 40px;
             
@@ -169,7 +170,8 @@ body {
             width: 130px;   
         }
         .tags .tag-long {
-            width: 250px;   
+            width: 250px;
+            min-width: 250px;   
         }
 
         .tags .tag a {
@@ -528,7 +530,8 @@ body {
                 background-color: rgb(215, 242, 205);
                 width: 100%;
                 left: -100%;
-                top: 100%;
+                top: 60px;
+                z-index: 1;
                 opacity: 0;
                 transition: opacity 1s 0s,
                             left    0s 1s;

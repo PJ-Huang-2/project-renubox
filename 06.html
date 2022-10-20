@@ -7,21 +7,23 @@
     <link rel="icon" href="./main-pic/page-tag-pic.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="./06-css.css">
-    <title>Document</title>
+    <title>智能評估 | RENUBOX</title>
 </head>
 <body>
-     <!-- chat-btn -->
-     <div class="chat-btn">
-        <a herf="#"><img src="./main-pic/chat-btn.png" alt=""></a>
-    </div>
+ <!-- chat-btn -->
+ <div class="chat-btn">
+    <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
+</div>
 
-
+<input type="checkbox" name="" id="menu-switch">
 <!-- nav-bar -->
 <div class="header">
     <!-- logo -->
     <div class="logo">
-        <a href="./index.html"><img src="./main-pic/logo-first.png"></a>
+        <a href="./index.html"><img src="./main-pic/logo-first.png" alt="renubox-logo"></a>
     </div>
     <!-- 漢堡 -->
     <label for="menu-switch" class="hb">
@@ -29,32 +31,46 @@
         <span></span>
         <span></span>
     </label>
-
     <!-- 選單 -->
     <nav class="main-nav">
         <a href="./06.html">智能評估</a>
         <a href="./05-1.html">找功能</a>
-        <a href="#">熱賣懶人包 &#128293;</a>
         <a href="./07.html">所有商品</a>
-        <a href="#">我們的承諾</a>
-        <a href="#">健康專欄</a>
-        <a href="#">營養管理計畫</a>
+        <a href="./08.html">我們的承諾</a>
+        <a href="./10.html">健康專欄</a>
+        <a href="./09.html">營養管理計畫</a>
     </nav>
     <!-- icons -->
     <div class="nav-icon">
         <a href="#">
-            <img src="./main-pic/member_icon.png" alt="">
+            <img src="./main-pic/member_icon.png" alt="nav-mem-icon">
         </a>
         <a href="./06-4.html" class="shop-icon">
-            <img src="./main-pic/shopping_icon.png" alt="">
+            <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
         </a>
     </div>
 </div>
+<!-- navbar-scroll -->
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".header").css("background" , "#eae6e398");
+        }
+
+        else{
+            $(".header").css("background" , "transparent");  	
+        }
+    })
+    })
+</script>
+
 
 <!-- quiz -->
     <div class="quiz">
     
-            <h2>讓感覺良好成為日常</h2>
+            <h1>讓感覺良好成為日常</h1>
             <p>參加簡單的智能評估測驗，獲取最適合您的需求、生活方式和飲食的RENUBOX。每包平居低於30元/天。並且每月交貨，隨時可以調整產品內容，打造完美的每一天。</p> 
 
             <div class="quiz-btn">
@@ -74,22 +90,22 @@
 
     <div class="how">
         <div class="title">
-            <h3>這個怎麼運作？</h3>
+            <h2>這個怎麼運作？</h2>
         </div>
         <div class="pic-info">
             <div class="items">
                 <img src="./-sub2-pic/how-1.webp" alt="">
-                <h4>回答評估測驗</h4>
+                <h3>回答評估測驗</h3>
                 <p>對您的健康狀態及生活方式，及告訴我們您對於保健的目標需求，測驗免費及簡單操作。</p>
             </div>
             <div class="items">
                 <img src="./-sub2-pic/how-2.webp" alt="">
-                <h4>客製屬於你的RENUBOX</h4>
+                <h3>客製屬於你的RENUBOX</h3>
                 <p>根據您的評估，獲得哪些產品最符合您的需求，以及身體初步狀況探討，如果需要更進一步由專業營養師及醫師評估，請點右下方聊天室。</p>
             </div>
             <div class="items">
                 <img src="./-sub2-pic/how-3.jpg" alt="">
-                <h4>開始您的健康習慣</h4>
+                <h3>開始您的健康習慣</h3>
                 <p>系統將為您推薦專屬的產品組合及項目，只需簡單步驟下單，即可在幾天內收到屬於自己的RENUBOX，就能獲得每天需要的營養補充！且隨時可以調整內容，及依照需求改變！</p>
             </div>
 
@@ -97,6 +113,84 @@
 
 
     </div>
+
+    <!-- users -->
+    <div class="user-container">
+        <div class="user-wrapper">
+            <div class="user-card">
+                <div class="card-thumb">
+                    <img src="./-sub2-pic/user1.jpg" class="client-img" alt="">
+                    <span class="client-name">K小姐</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="card-thumb">
+                    <img src="./-sub2-pic/user2.jpg" class="client-img" alt="">
+                    <span class="client-name">J先生</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="card-thumb">
+                    <img src="./-sub2-pic/user3.jpg" class="client-img" alt="">
+                    <span class="client-name">S小姐</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                        <img src="./-sub2-pic/star.png" class="star" alt="">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector('.user-wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+    </script>
+
+    
+        
     <!-- footer -->
 
     <div class="main-footer">
@@ -111,7 +205,7 @@
 
 
 
-
+<div class="users">
    <div class="container">
        <div class="footer-item">
            <h4>RENUBOX</h4>
@@ -138,13 +232,7 @@
                <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
            </nav>
        </div>
-       <div class="footer-item">
-           <h4>熱銷商品</h4>
-           <nav>
-               <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
-               <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
-           </nav>
-       </div>
+      
        <div class="footer-item">
            <h4>找功能</h4>
            <nav class="footer-goal">
@@ -163,7 +251,9 @@
                <input type="submit" value="訂閱">
            </form>
        </div>
-   </div>
+   </div>  
+</div>
+  
 
 
    

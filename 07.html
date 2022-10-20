@@ -18,7 +18,7 @@
             <a herf="#"><img src="./main-pic/chat-btn.png" alt=""></a>
         </div>
     
-    
+        <input type="checkbox" name="" id="menu-switch">
     <!-- nav-bar -->
     <div class="header">
         <!-- logo -->
@@ -36,7 +36,6 @@
         <nav class="main-nav">
             <a href="./06.html">智能評估</a>
             <a href="./05-1.html">找功能</a>
-            <a href="#">熱賣懶人包 &#128293;</a>
             <a href="./07.html">所有商品</a>
             <a href="#">我們的承諾</a>
             <a href="#">健康專欄</a>
@@ -52,6 +51,21 @@
             </a>
         </div>
     </div>
+     <!-- navbar-scroll -->
+     <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $(".header").css("background" , "#eae6e398");
+            }
+
+            else{
+                $(".header").css("background" , "transparent");  	
+            }
+        })
+        })
+    </script>
 
 
     <!-- all- banner -->
@@ -442,13 +456,7 @@
                    <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
                </nav>
            </div>
-           <div class="footer-item">
-               <h4>熱銷商品</h4>
-               <nav>
-                   <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
-                   <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
-               </nav>
-           </div>
+
            <div class="footer-item">
                <h4>找功能</h4>
                <nav class="footer-goal">
@@ -468,13 +476,8 @@
                </form>
            </div>
        </div>
-    
-    
+  
 
-      
-
-
-   
     </body>
    </html>
 

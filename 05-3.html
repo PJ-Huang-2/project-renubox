@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./main-pic/page-tag-pic.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./05-3-css.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- chat-btn -->
-    <div class="chat-btn">
-        <a herf="#"><img src="./main-pic/chat-btn.png" alt=""></a>
-    </div>
+   <!-- chat-btn -->
+  <div class="chat-btn">
+    <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
+</div>
 
-
+<input type="checkbox" name="" id="menu-switch">
 <!-- nav-bar -->
 <div class="header">
     <!-- logo -->
     <div class="logo">
-        <a href="./index.html"><img src="./main-pic/logo-first.png"></a>
+        <a href="./index.html"><img src="./main-pic/logo-first.png" alt="renubox-logo"></a>
     </div>
     <!-- 漢堡 -->
     <label for="menu-switch" class="hb">
@@ -29,27 +29,40 @@
         <span></span>
         <span></span>
     </label>
-
     <!-- 選單 -->
     <nav class="main-nav">
         <a href="./06.html">智能評估</a>
         <a href="./05-1.html">找功能</a>
-        <a href="#">熱賣懶人包 &#128293;</a>
         <a href="./07.html">所有商品</a>
-        <a href="#">我們的承諾</a>
-        <a href="#">健康專欄</a>
-        <a href="#">營養管理計畫</a>
+        <a href="./08.html">我們的承諾</a>
+        <a href="./10.html">健康專欄</a>
+        <a href="./09.html">營養管理計畫</a>
     </nav>
     <!-- icons -->
     <div class="nav-icon">
         <a href="#">
-            <img src="./main-pic/member_icon.png" alt="">
+            <img src="./main-pic/member_icon.png" alt="nav-mem-icon">
         </a>
         <a href="./06-4.html" class="shop-icon">
-            <img src="./main-pic/shopping_icon.png" alt="">
+            <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
         </a>
     </div>
 </div>
+<!-- navbar-scroll -->
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".header").css("background" , "#eae6e398");
+        }
+
+        else{
+            $(".header").css("background" , "transparent");  	
+        }
+    })
+    })
+</script>
 
 <!-- banner -->
 <div class="goal-banner">
@@ -68,16 +81,38 @@
 
 <div class="main-area">
     <div class="product-pic">
+            <img id="large" src="./-sub-pic/product-main.jpg" alt="商品大圖">
+        <div class="else-pic" id="smallPanel">
             <img src="./-sub-pic/product-main.jpg" alt="">
-        <div class="else-pic">
             <img src="./-sub-pic/else1.jpg" alt="">
             <img src="./-sub-pic/else2.jpg" alt="">
             <img src="./-sub-pic/else3.jpg" alt="">
         </div>
     </div>
+
+
+    <script>
+		function showLarge(e) {
+			// 換大圖
+			let small = e.target;
+			document.getElementById("large").src = small.src;
+		}
+		function init() {
+			// 小圖可以點按
+			let imgs = document.querySelectorAll("#smallPanel img");
+			for(let i = 0; i < imgs.length;i++) {
+				imgs[i].onclick = showLarge;
+			}
+
+		}
+		
+		window.addEventListener("load", init, false);
+	</script>
+
+
     <div class="product-info">
-        <div class="subject"><p>營養補充</p></div>
-        <div class="name"><p>綜合維生素錠</p></div>
+        <div class="subject"><h1><p>營養補充</p></h1></div>
+        <div class="name"><h2><p>綜合維生素錠</p></h2></div>
         <div class="tag"><span>#一日所需</span><span>#綜合</span><span>#維生素</span></div>
         <div class="intro">
             ▸ 12種國際高吸收率成分、17種關鍵營養素<br>
@@ -87,15 +122,64 @@
         <div class="price">
             <span>NT$980</span>
             <div class="icons">
-                <img src="./-sub-pic/price-icon1.png" alt="">
-                <img src="./-sub-pic/price-icon2.png" alt="">
+                <img src="./-sub-pic/price-icon1.png" alt="加入收藏icon" title="加入收藏" id="heart">
+                <img src="./-sub-pic/price-icon2.png" alt="分享icon">
             </div>
         </div>
+        <script>
+            //加入收藏 或 取消收藏
+            function switchFavorite(e){
+              let heart = document.getElementById("heart"); 
+            
+              if(heart.title == "加入收藏"){
+                heart.src = "./-sub-pic/price-icon1-2.png";
+                heart.title="取消收藏";
+              }else{ //取消(紅心)
+                heart.src = "./-sub-pic/price-icon1.png";
+                heart.title = "加入收藏";
+              }
+            }
+            
+            function init(){
+              //設定[加入收藏 或 取消收藏]的點按事件
+              //什麼事？ 發生在哪一個物件上? 該什麼？
+              document.getElementById("heart").onclick = switchFavorite;
+              
+            }//init
+            window.addEventListener("load", init, false);
+            </script> 
+
         <div class="many">
-            <img src="./-sub-pic/cut-btn.png" alt="">
-            <span>3</span>
-            <img src="./-sub-pic/plus-btn.png" alt="">
+            <input type="button" class="btnMinus" value="-">
+		    <input type="text" class="qty" size="4" value="0" id="qty0">
+		    <input type="button" class="btnPlus" value="+">	
         </div>
+
+        <script>
+            window.addEventListener("load", function(){
+	//-------------------
+	let btnPluses = document.getElementsByClassName("btnPlus");
+	let btnMinuses = document.getElementsByClassName("btnMinus");
+	let qtys = document.getElementsByClassName("qty");
+
+	for(let i=0; i<btnPluses.length; i++){
+		//------註冊 + 按鈕
+		btnPluses[i].onclick = function(){
+			qtys[i].value = parseInt(qtys[i].value) + 1; 
+			// let qtyBox = e.target.previousElementSibling;
+			// qtyBox.value = parseInt(qtyBox.value)+1;
+		}
+
+		//------註冊 - 按鈕
+		btnMinuses[i].onclick = function(){
+			if(qtys[i].value > 0){
+				qtys[i].value = qtys[i].value - 1;
+			}
+		}
+	}
+})
+        </script>
+
         <div class="footer-btn">
             <a href="./06-4.html"><button class="car"><p>加入購物車</p></button></a>
             <a href="./06-4.html"><button class="buy"><p>立即購買</p></button></a>
@@ -106,7 +190,7 @@
 </div>
 <div class="element">
     <div class="items item-title">
-        <h3>4大主力成分in 1 BOX</h3>
+        <h3>3大主力成分in 1 BOX</h3>
     </div>
     <div class="items">
         <img src="./-sub-pic/pills1.webp" alt="">
@@ -121,13 +205,9 @@
     <div class="items">
         <img src="./-sub-pic/pills3.webp" alt="">
         <h4>維生素E</h4>
-        <p>目前已知充足的維生素E，可防止不飽和脂肪酸在體內過度氧化，具有抗氧化、抗發炎的作用。清除自由基的功能，可保護體內承受氧化壓力的組織和細胞。</p>
+        <p>目前已知充足的維生素E，可防止不飽和脂肪酸在體內過度氧化，具有抗氧化、抗發炎的作用。</p>
     </div>
-    <div class="items">
-        <img src="./-sub-pic/pills4.avif" alt="" class="double-pill">
-        <h4>植化素+</h4>
-        <p>南非醉茄、紅景天、人參、薑黃素和朝鮮薊等萃取植化素，有助於從身心壓力中恢復。它們還可以幫助提高免疫力和對抗疲勞。</p>
-    </div>
+
     
 </div>
 
@@ -172,13 +252,7 @@
                <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
            </nav>
        </div>
-       <div class="footer-item">
-           <h4>熱銷商品</h4>
-           <nav>
-               <a href="#"><i class="fa fa-angle-right"></i> 熱銷懶人包</a>
-               <a href="#"><i class="fa fa-angle-right"></i> TOP5組合</a>
-           </nav>
-       </div>
+
        <div class="footer-item">
            <h4>找功能</h4>
            <nav class="footer-goal">
