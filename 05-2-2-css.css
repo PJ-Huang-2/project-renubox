@@ -434,11 +434,6 @@ background-color: #4d593e;
     display: flex;
 
 }
-/* open-btn */
-.open-btn {
-    display: none;
-}
-
 
 /* side-bar */
 
@@ -520,6 +515,11 @@ background-color: #4d593e;
     font-weight: 600;
 }  
 
+/* open-btn */
+.open-btn {
+    width: 100%;
+    display: none;
+}
 
 
 
