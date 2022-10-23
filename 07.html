@@ -10,63 +10,63 @@
     <link rel="stylesheet" href="./07-css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+   
+
     <title>全部商品 | RENUBOX</title>
 </head>
 <body>
-        <!-- chat-btn -->
-        <div class="chat-btn">
-            <a herf="#"><img src="./main-pic/chat-btn.png" alt=""></a>
-        </div>
-    
-        <input type="checkbox" name="" id="menu-switch">
-    <!-- nav-bar -->
-    <div class="header">
-        <!-- logo -->
-        <div class="logo">
-            <a href="./index.html"><img src="./main-pic/logo-first.png"></a>
-        </div>
-        <!-- 漢堡 -->
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    
-        <!-- 選單 -->
-        <nav class="main-nav">
-            <a href="./06.html">智能評估</a>
-            <a href="./05-1.html">找功能</a>
-            <a href="./07.html">所有商品</a>
-            <a href="#">我們的承諾</a>
-            <a href="#">健康專欄</a>
-            <a href="#">營養管理計畫</a>
-        </nav>
-        <!-- icons -->
-        <div class="nav-icon">
-            <a href="#">
-                <img src="./main-pic/member_icon.png" alt="">
-            </a>
-            <a href="./06-4.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="">
-            </a>
-        </div>
+     <!-- chat-btn -->
+  <div class="chat-btn">
+    <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
+</div>
+
+<input type="checkbox" name="" id="menu-switch">
+<!-- nav-bar -->
+<div class="header">
+    <!-- logo -->
+    <div class="logo">
+        <a href="./index.html"><img src="./main-pic/logo-first.png" alt="renubox-logo"></a>
     </div>
-     <!-- navbar-scroll -->
-     <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
+    <!-- 漢堡 -->
+    <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <!-- 選單 -->
+    <nav class="main-nav">
+        <a href="./06.html">智能評估</a>
+        <a href="./05-1.html">找功能</a>
+        <a href="./07.html">所有商品</a>
+        <a href="./08.html">我們的承諾</a>
+        <a href="./10.html">健康專欄</a>
+        <a href="./09.html">營養管理計畫</a>
+    </nav>
+    <!-- icons -->
+    <div class="nav-icon">
+        <a href="#">
+            <img src="./main-pic/member_icon.png" alt="nav-mem-icon">
+        </a>
+        <a href="./06-4.html" class="shop-icon">
+            <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
+        </a>
+    </div>
+</div>
+<!-- navbar-scroll -->
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".header").css("background" , "#eae6e398");
+        }
 
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
+        else{
+            $(".header").css("background" , "transparent");  	
+        }
+    })
+    })
+</script>
 
     <!-- all- banner -->
 
@@ -140,9 +140,14 @@
     </div>  
 
     <!-- side bar -->
+    <div class="open-btn" id="openBtn">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <p>Click on the hamburger </p>
+    </div>
   
 
-    <div class="side-bar">
+    <div class="side-bar sidebar-animation" id="sideBar">
+        <button onclick="closeSideBar()">X</button> 
       
         <div class="menu">
             <div class="item"><a href="#" class="side-title"><i class=""></i>所有商品</a></div>
@@ -239,6 +244,20 @@
           
           
       </div>
+
+      <script>
+        function openNav() {
+           let sideBar =  document.querySelector('#sideBar');
+           sideBar.classList.remove("side-Bar");
+           sideBar.classList.add("sidebar-open");
+        }
+        function closeSideBar(){
+            let sideBar =  document.querySelector('#sideBar');
+            sideBar.classList.remove("sidebar-open");
+            sideBar.classList.add("side-Bar");
+        }
+    
+        </script>
      
    
             <script type="text/javascript">
@@ -272,20 +291,21 @@
 
   <!-- setting filter -->
 
-        <div class="filter-area">
-            <div class="filter">
-                <label for="filter-select">排序方式</label>
-                <select name="filters" id="filter-select">
-                    <option value="popular">暢銷</option>
-                    <option value="popular">價格由高至低</option>
-                    <option value="popular">價格由低至高</option>
-                    <option value="popular">最新</option>
-                    <option value="popular">折扣最多</option>
-                </select>
-            </div>
-        </div>
+        
 
         <div class="all-products">
+            <div class="filter-area">
+                <div class="filter">
+                    <label for="filter-select">排序方式</label>
+                    <select name="filters" id="filter-select">
+                        <option value="popular">暢銷</option>
+                        <option value="popular">價格由高至低</option>
+                        <option value="popular">價格由低至高</option>
+                        <option value="popular">最新</option>
+                        <option value="popular">折扣最多</option>
+                    </select>
+                </div>
+            </div>
             
             <div class="card">
                 <a href="./05-3.html">
