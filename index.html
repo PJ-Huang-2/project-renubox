@@ -9,7 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <link rel="stylesheet" href="./aos.css">  
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="./04-1-css.css">
     <title>RENUBOX</title>
@@ -91,7 +92,7 @@
 
         <div class="banner-news">
             <p>*9/20  2周體驗優惠組合開賣！限量500組 </p>
-            <a href="#">>>搶先體驗</a>
+            <a href="./07.html">>>搶先體驗</a>
         </div>
         <svg>
             <g fill="none">
@@ -101,10 +102,15 @@
     </div>
 
     <!-- mainpage-2 -->
+    <script>
+        AOS.init({
+        duration: 1000,
+        });
+    </script>
 
     <!-- main-page-informations -->
     <div class="info">
-        <div class="wrap up">
+        <div class="wrap up" data-aos="fade-up">
              <div class="info-pics">
                  <div class="info-pic info-pic1">
                      <img src="./main-pic/main-2-product.jpg" alt="test-pic" class="pic-down">
@@ -129,7 +135,7 @@
              </div>
         </div>
 
-         <div class="wrap down">
+         <div class="wrap down" data-aos="fade-up">
                  <div class="info-pics">
                      <div class="info-pic3">
                          <img src="./main-pic/main-pic3.jpg" alt="" class="pic-down">
@@ -156,7 +162,7 @@
 
 <!-- goals -->
 
-        <div class="goals">
+        <div class="goals" data-aos="fade-left">
                 <h2>
                 找功能
                 </h2>
@@ -164,7 +170,7 @@
                 從自身最需要的功能來挑選自己適合的產品
                 </p>
         </div>
-        <div class="goals-main">
+        <div class="goals-main" data-aos="fade-left">
             <div class="container">
                 <div class="panel active" style="background-image: url('./-sub-pic/goal-fit.jpg')">
                 <h3>體態管理</h3>
@@ -210,19 +216,16 @@
             }
         </script>
 
-
-             
-           
     <!-- TOP 3  -->
 
-            <div class="top3">
+            <div class="top3" data-aos="fade-up">
             <h2>
                 熱銷懶人包
             </h2>
             <p>無從找起？這些複方組合包為您身體全方位把關</p>
             </div>
 
-        <div class="top-wrap">
+        <div class="top-wrap" data-aos="fade-up">
             <div class="item">
                 <div class="pic">
                     <img src="./main-pic/top3-1.jpg">
@@ -244,7 +247,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-up">
                 <div class="pic">
                     <img src="./main-pic/product-main.jpg">
                 </div>
@@ -264,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-up">
                 <div class="pic">
                     <img src="./main-pic/top3-3.jpg">
                 </div>
@@ -290,7 +293,7 @@
 
 
  <!-- TOP5 -->
- <div class="top5-group">
+ <div class="top5-group" data-aos="zoom-out">
 
      <div class="top5-txt">
          <div class="capsule-left">
@@ -360,10 +363,10 @@
 <!-- doctor -->
      <div class="dr">
          
-         <div class="dr-tag">
+         <div class="dr-tag" data-aos="fade-up">
              <h2>專業醫療團隊</h2>
          </div>
-         <div class="dr-slogan">
+         <div class="dr-slogan" data-aos="fade-up">
              <h3 class="dr-title">
                  「從整合角度出發，找出疾病的根源，改善病因而非症狀，提供醫學新思維與實踐！」
              </h3>
@@ -373,7 +376,7 @@
          </div>
          <div class="dr-cards">
             <div class="dr-card">
-                <div class="dr-pic">
+                <div class="dr-pic" data-aos="flip-left">
                     <img src="./main-pic/dr-male.jpg" alt="醫師照片2">
                 </div>
                 <h3>專業營養師<br>
@@ -381,14 +384,14 @@
                 </h3>
             </div>
              <div class="dr-card">
-                 <div class="dr-pic">
+                 <div class="dr-pic" data-aos="flip-left">
                     <img src="./main-pic/dr-female2.jpg" alt="醫師照片2">
                 </div>
                  <h3>專業營養師<br>
                      林沛瑤
                  </h3>
              </div>
-             <div class="dr-card">
+             <div class="dr-card" data-aos="flip-left">
                  <div class="dr-pic">
                     <img src="./main-pic/dr-male2.jpg" alt="醫師照片3">
                 </div>
@@ -408,7 +411,7 @@
 
 <!-- health column -->
 
-     <div class="column">
+     <div class="column" data-aos="slide-up">
 
 
         <div class="container">

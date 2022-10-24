@@ -67,83 +67,417 @@
     })
 </script>
 
+<div class="cart">
+        <div class="cart-title">
+            <h1>我的RENUBOX
+            <div class="cartIconDIV"></div>
+            </h1>
+
+        </div>
+    
+    <div style="clear:both;"></div>
+        
+        <div class="cartmain">
+            <table id="cartTable">
+
+                <thead>
+                    <tr class="tr-title">
+                         <th>
+                            <label for="fl select-all">
+                                <input type="checkbox" class="check-all check"/>
+                                <span><a href="javascript:void(0)" class="selectAll">全選</a></span>
+                            </label>
+                        </th>
+                        <th>商 品</th>
+                        <th>價 格</th>
+                        <th>數 量</th>
+                        <th>金 額</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="checkbox">
+                            <input type="checkbox" class="check-one check"/>
+                        </td>
+                        <td class="goods">
+                            <img src="./-sub2-pic/vitamin-b.jpeg" alt="維生素B群"/>
+                            <span><a href="./05-3.html" class="goodsTitle">維生素B群錠</a></span><br/>
+                        </td>
+                        <td class="price">480</td>
+                        <td class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" class="count-input" value="1"/>
+                            <span class="add">+</span>
+                        </td>
+                        <td class="subtotal">480</td>
+                        <td class="opration">
+                            <span class="deleteOne">删 除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox">
+                            <input type="checkbox" class="check-one check"/>
+                        </td>
+                        <td class="goods">
+                            <img src="./-sub2-pic/vitamin-cranberry.jpeg" alt="蔓越莓錠"/>
+                            <span><a href="./05-3.html" class="goodsTitle">蔓越莓錠</a></span><br/>
+                        </td>
+                        <td class="price">480</td>
+                        <td class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" class="count-input" value="1"/>
+                            <span class="add">+</span>
+                        </td>
+                        <td class="subtotal">480</td>
+                        <td class="opration">
+                            <span class="deleteOne">删 除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox">
+                            <input type="checkbox" class="check-one check"/>
+                        </td>
+                        <td class="goods">
+                            <img src="./-sub2-pic/vitamin-plus.jpeg" alt="綜合維他命"/>
+                            <span><a href="./05-3.html" class="goodsTitle">綜合維他命</a></span><br/>
+                        </td>
+                        <td class="price">480</td>
+                        <td class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" class="count-input" value="1"/>
+                            <span class="add">+</span>
+                        </td>
+                        <td class="subtotal">480</td>
+                        <td class="opration">
+                            <span class="deleteOne">删 除</span>
+                        </td>
+                    </tr>
+                
+                    
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="cartFooter" id="cartFooter">
+            <div class="selall fl">
+                <label for="fl select-all">
+                    <input type="checkbox" class="check-all check"/>
+                    <span><a href="javascript:void(0)" class="selectAll">全選</a></span>
+                </label>
+            </div>
+            <div class="fr total">總共:NT$<span id="priceTotal">0</span></div>
+            <div class="fr selected" id="selected">
+                商品件數
+                <span id="selectedTotal">0</span>件
+                <span class="arrow up">△</span>
+                <span class="arrow down">▽</span>
+            </div>
+            <div class="selected-view">
+                <div id="selectedViewList" class="clearfix">
+                    <!-- <div><img src="images/1.jpg"/>
+                        <span class="selCount">1</span>
+                        <span class="del">取消选择</span>
+                    </div> -->
+                </div>
+                <span class="arrow">◆<span>◆</span></span>
+            </div>
+        </div>
+</div>
+<script>
+    window.onload=function(){
+	//兼容document.getElementsByClassName 方法；
+	if(!document.getElementsByClassName){
+		document.getElementsByClassName=function(cls){
+			var ret=[];
+			var els=document.getElementsByTagName('*');
+			for (var i = 0; i < els.length; i++) {
+				if(els[i].className===cls
+				 || els[i].className.indexOf(cls +' ')>=0
+				  || els[i].className.indexOf(' '+cls)>=0 
+				  || els[i].className.indexOf(' '+cls +' ')>=0){
+					ret.push(els[i]);
+				}
+			};
+			return ret;
+		}
+	}
+	var cartTable=document.getElementById('cartTable');
+	var tr=cartTable.children[1].rows; //children子节点;
+	var checkInputs=document.getElementsByClassName('check');
+	var checkAllInput=document.getElementsByClassName('check-all');
+	var selectedTotal=document.getElementById('selectedTotal');
+	var priceTotal=document.getElementById('priceTotal');
+	var selected=document.getElementById('selected');
+	var cartFooter=document.getElementById('cartFooter');
+	var selectedViewList=document.getElementById('selectedViewList');
+	var multiDelete=document.getElementById('multiDelete');
+	var allDelete=document.getElementById('allDelete');
+	var selectAll=document.getElementsByClassName('selectAll');
+
+	//选择框事件；
+	for (var i = 0; i < checkInputs.length; i++) {
+		checkInputs[i].onclick=function(){
+			if (this.className==='check-all check') { //全选；
+				for(var j=0;j<checkInputs.length;j++){
+					checkInputs[j].checked=this.checked;
+				}
+			};
+			if(this.checked==false){
+				for(var k=0;k<checkAllInput.length;k++){
+					checkAllInput[k].checked=false;
+				}
+			}
+			getTotal();
+		}
+	};
+	selectAll[0].onclick=selectAll[1].onclick=function(){
+		for(var k=0;k<checkAllInput.length;k++){
+			if(checkAllInput[k].checked){
+				checkAllInput[k].checked=false;
+				
+			}else{
+				checkAllInput[k].checked=true;
+			}
+		}
+		for(var j=0;j<checkInputs.length;j++){
+			checkInputs[j].checked=checkAllInput[0].checked;
+		}
+		getTotal();
+	}
+
+	//计算；
+	function getTotal(){
+		var selected=0;
+		var price=0;
+		var HTMLstr='';
+		for (var i = 0; i < tr.length; i++) {
+			var perCount=tr[i].getElementsByTagName('input')[1].value;
+			if(tr[i].getElementsByTagName('input')[0].checked){
+				tr[i].className="on";
+				selected+=parseInt( tr[i].getElementsByTagName('input')[1].value);
+				price+=parseFloat( tr[i].cells[4].innerHTML );
+				HTMLstr+='<div><img src="'+tr[i].getElementsByTagName('img')[0].src+'"/><span class="selCount">'+perCount+'</span><span class="del" index="'+i+'">刪除</span></div>'
+			}else{
+				tr[i].className=" ";
+			}
+		};
+		selectedTotal.innerHTML=selected;
+		priceTotal.innerHTML=price;
+		selectedViewList.innerHTML=HTMLstr;
+		//选中0时；
+		if(selected==0){
+			cartFooter.className="cartFooter";
+		}
+	}
+
+	//已选框的显示与隐藏；
+	selected.onclick=function(){
+		if(cartFooter.className=='cartFooter'){
+			if(selectedTotal.innerHTML!=0){
+				cartFooter.className='cartFooter show';
+			}
+		}else{
+			cartFooter.className="cartFooter";
+		}
+	}
+
+	//取消选择---》事件代理
+	selectedViewList.onclick=function(e){
+		e=e||window.event;
+		var el=e.srcElement;
+		if(el.className=="del"){
+			var index=el.getAttribute('index');
+			var input=tr[index].getElementsByTagName('input')[0];
+			input.checked=false;
+			input.onclick();
+		}
+	}
+
+	//加减事件；
+	for (var i = 0; i < tr.length; i++) {
+		//加减按钮；
+		tr[i].onclick=function(e){
+			e=e||window.event;
+    		document.onselectstart=new Function("event.returnValue=false;");
+			var el=e.target||e.srcElement;
+			var cls=el.className;
+			var input=this.getElementsByTagName('input')[1];
+			var val=parseInt(input.value);
+			var reduce=this.getElementsByTagName('span')[3];
+			switch(cls){
+				case 'add':
+				     input.value=val+1;
+				     reduce.innerHTML='刪 除';
+				     getSubtotal(this);
+				     break;
+				case 'reduce':
+				     if(val>1){
+				     	input.value=val-1;
+				     	getSubtotal(this);
+				     }
+				     if(input.value<=1){
+				     	reduce.innerHTML='刪 除';
+				     }
+				     break;
+				case 'deleteOne':
+				//单行删除；
+				     var conf=confirm('确定要删除吗？');
+				     if(conf){
+				     	this.parentNode.removeChild(this);
+				     }
+				     break;
+				default:
+				     break;
+			}
+			getTotal();
+		}
+		//input输入事件；
+		tr[i].getElementsByTagName('input')[1].onkeyup=function(){
+			var val=parseInt(this.value);
+			var tr=this.parentNode.parentNode;
+			var reduce=tr.getElementsByTagName('span')[3];
+			if(isNaN(val)||val<1){
+				val=1;
+			}
+			this.value=val; //输入控制法；
+			if(val<=1){
+				reduce.innerHTML="";
+			}else{
+				reduce.innerHTML="-";
+			}
+			getSubtotal(tr);
+			getTotal();
+		}
+	};
+	//小计
+	function getSubtotal(tr){
+		var tds=tr.cells;
+		var price=parseFloat(tds[2].innerHTML);
+		var count=tr.getElementsByTagName('input')[1].value;
+		var subTotal=parseFloat(price*count);
+		tds[4].innerHTML=subTotal;
+	}
+
+	//删除；
+	multiDelete.onclick=function(){
+		if(selectedTotal.innerHTML!='0'){
+			var conf=confirm('确定删除吗？');
+			if(conf){
+				cartDel();
+				getTotal();
+			}
+		}
+	}
+	allDelete.onclick=function(){
+		var conf=confirm('确定清空购物车吗？');
+		if(conf){
+			checkAllInput[0].checked=true;
+			checkAllInput[0].onclick();
+			cartDel();
+			getTotal();
+		}
+	}
+	function cartDel(){
+		for (var i = 0; i < tr.length; i++) {
+			var input=tr[i].getElementsByTagName('input')[0];
+			if (input.checked) {
+				tr[i].parentNode.removeChild(tr[i]);
+				i--; //删除时注意i 的变化；
+			};
+		};
+	}
+}
+</script>
+
 <div class="pay-wrap">
     <div class="title">
-        <h1>Payment</h1>
-        <p>Choose payment method</p>
+        <h2>付款方式</h2>
+        <p>請選擇付款方式</p>
     </div>
     <div class="payment-methods">
         <div class="methods">
-            <img src="./-sub2-pic/star.png" alt="">
+            <div class="method-pic">
+              <img src="./-sub2-pic/creditcard.png" alt="信用卡付款">  
+            </div>
+            
             <span>信用卡</span>
         </div>
         <div class="methods">
-            <img src="./-sub2-pic/star.png" alt="">
+            <div class="method-pic">
+                <img src="./-sub2-pic/LINE-Pay(h)_W238_n.png" alt="LINE PAY">
+            </div>
+           
             <span>LINE PAY</span>
         </div>
         <div class="methods">
-            <img src="./-sub2-pic/star.png" alt="">
+            <div class="method-pic">
+                <img src="./-sub2-pic/getAndPay.jpg" alt="貨到付款">
+            </div>
+            
             <span>貨到付款</span>
         </div>
     </div>
-    <div id="info">
+    <div class="info">
         <div class="billing-info">
-            <h4>Billing info</h4>
+            <h4>付款資訊</h4>
             <div>
-                <label for="full-name">Full name</label>
-                <input type="text" id="full-name" placeholder="John Doe">
-            </div>
-            <div>
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="407 Evergreen Rd.">
+                <label for="full-name">姓名</label>
+                <input type="text" id="full-name" placeholder="請輸入全名">
             </div>
             <div>
                 <div>
-                    <label for="city">city</label>
-                    <input type="text" id="city" placeholder="Roseville">
-                </div>
-                <div>
-                    <label for="zip-code">Zip code</label>
-                    <input type="text" id="zip-code" placeholder="95673">
-                </div>
-            </div>
-            <div>
-                <label for="country">Country</label>
+                <label for="country">收件縣市</label>
                 <select id="country">
-                    <option value="USA">United States</option>
-                    <option value="NGA">Nigeria</option>
+                    <option value="TPC">台北市</option>
+                    <option value="NPC">新北市</option>
                 </select>
             </div>
+                <input type="text" id="address" placeholder="郵遞區號 行政區">
+            </div>
+            <div>
+                <div>
+                    <label for="road">路名</label>
+                    <input type="text" id="road" placeholder="詳細地址">
+                </div>
+                <div>
+                    <label for="floor">樓層</label>
+                    <input type="text" id="floor" placeholder="幾樓之幾">
+                </div>
+            </div>
+            
         </div>
         <div class="card-info">
-            <h4>Credit card info</h4>
+            <h4>信用卡資訊</h4>
             <div>
                 <div>
-                    <label for="card-number">Card number</label>
-                    <input type="number" id="card-number" placeholder="1234   5678   3456   2456">
+                    <label for="card-number">信用卡號</label>
+                    <input type="number" id="card-number" placeholder="1234   5678   2234   5678">
                 </div>
-                <div>
-                    <p>Visa</p>
-                </div>
+                
             </div>
             <div>
-                <label for="holder-name">Cardholder name</label>
-                <input type="text" id="holder-name" placeholder="John Doe">
+                <label for="holder-name">持卡人姓名</label>
+                <input type="text" id="holder-name" placeholder="請輸入全名">
             </div>
             <div>
-                <label for="exp">Expire date</label>
+                <label for="exp">有效日期</label>
                 <input type="month" id="exp" value="2021-05">
             </div>
             <div>
                 <div>
-                    <label for="cvv">Cvv</label>
+                    <label for="cvv">有效密碼</label>
                     <input type="text" id="cvv" placeholder="123">
                 </div>
             </div>
         </div>
-        <input type="submit" value="Proceed">
+        
     </div>
 </div>
+<div class="confirm">
+    <input type="submit" value="確認">
+</div>
+
     
   
 <!-- footer -->
