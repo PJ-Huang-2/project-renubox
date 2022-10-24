@@ -73,16 +73,16 @@
         <div class="cart-title">
             <h3>ABC的購物盒</h3>  
         </div>
-        <div class="items">
+        <div class="items item1">
             <div class="item-pic">
                 <img src="./-sub2-pic/vitamin-b-item.png" alt="B群錠照片">
             </div>
             <div class="item-info">
                     <h4>維生素B群錠</h4>
                 <div class="info-count">
-                    <button>-</button>
-                    <input type="number" name="" id="">
-                    <button>+</button>
+                    <button  class="btnMinus" value="-">-</button>
+                    <input type="text" class="qty" size="4" value="1" id="qty0">
+                    <button class="btnPlus" value="+">+</button>
                 </div>
             </div>
             <div class="info-price">
@@ -92,16 +92,16 @@
             </div>
 
         </div>
-        <div class="items">
+        <div class="items item2">
             <div class="item-pic">
                 <img src="./-sub2-pic/vitamin-b-item.png" alt="B群錠照片">
             </div>
             <div class="item-info">
                     <h4>維生素B群錠</h4>
                 <div class="info-count">
-                    <button>-</button>
-                    <input type="number" name="" id="">
-                    <button>+</button>
+                    <button  class="btnMinus" value="-">-</button>
+                    <input type="text" class="qty" size="4" value="1" id="qty0">
+                    <button class="btnPlus" value="+">+</button>
                 </div>
             </div>
             <div class="info-price">
@@ -111,16 +111,16 @@
             </div>
 
         </div>
-        <div class="items">
+        <div class="items item3">
             <div class="item-pic">
                 <img src="./-sub2-pic/vitamin-b-item.png" alt="B群錠照片">
             </div>
             <div class="item-info">
                     <h4>維生素B群錠</h4>
                 <div class="info-count">
-                    <button>-</button>
-                    <input type="number" name="" id="">
-                    <button>+</button>
+                    <button  class="btnMinus" value="-">-</button>
+                    <input type="text" class="qty" size="4" value="1" id="qty0">
+                    <button class="btnPlus" value="+">+</button>
                 </div>
             </div>
             <div class="info-price">
@@ -130,16 +130,16 @@
             </div>
 
         </div>
-        <div class="items">
+        <div class="items item4">
             <div class="item-pic">
                 <img src="./-sub2-pic/vitamin-b-item.png" alt="B群錠照片">
             </div>
             <div class="item-info">
                     <h4>維生素B群錠</h4>
                 <div class="info-count">
-                    <button>-</button>
-                    <input type="number" name="" id="">
-                    <button>+</button>
+                    <button  class="btnMinus" value="-">-</button>
+                    <input type="text" class="qty" size="4" value="1" id="qty0">
+                    <button class="btnPlus" value="+">+</button>
                 </div>
             </div>
             <div class="info-price">
@@ -151,6 +151,32 @@
         </div>
 
     </div>
+
+    <script>
+        window.addEventListener("load", function(){
+        //-------------------
+        let btnPluses = document.getElementsByClassName("btnPlus");
+        let btnMinuses = document.getElementsByClassName("btnMinus");
+        let qtys = document.getElementsByClassName("qty");
+
+        for(let i=0; i<btnPluses.length; i++){
+            //------註冊 + 按鈕
+            btnPluses[i].onclick = function(){
+                qtys[i].value = parseInt(qtys[i].value) + 1; 
+                // let qtyBox = e.target.previousElementSibling;
+                // qtyBox.value = parseInt(qtyBox.value)+1;
+            }
+
+            //------註冊 - 按鈕
+            btnMinuses[i].onclick = function(){
+                if(qtys[i].value > 0){
+                    qtys[i].value = qtys[i].value - 1;
+                            };
+                };
+            };
+        });
+       
+    </script>
 
     <div class="cart-right">
         <h3>購物盒摘要</h3>
@@ -200,11 +226,14 @@
 
     <!-- footer-icons -->
     <div class="footer-icons">
-       <a href=""><img src="./main-pic/fb-icon.png" alt=""></a>
-       <a href=""><img src="./main-pic/ig-icon.png" alt=""></a>
-       <a href=""><img src="./main-pic/line_icon.png" alt=""></a>
-       <a href=""><img src="./main-pic/twitter-icon.png" alt=""></a>
+       <a href="#"><img src="./main-pic/fb-icon.png" alt="RENUBOX的臉書"></a>
+       <a href="#"><img src="./main-pic/ig-icon.png" alt="RENUBOX的IG"></a>
+       <a href="#"><img src="./main-pic/line_icon.png" alt="RENUBOX的LINE"></a>
+       <a href="#"><img src="./main-pic/twitter-icon.png" alt="RENUBOX的twitter"></a>
     </div>
+
+
+
 
    <div class="container">
        <div class="footer-item">
@@ -218,29 +247,30 @@
        <div class="footer-item">
            <h4>關於我們</h4>
            <nav>
-               <a href="#"><i class="fa fa-angle-right"></i> 品牌使命</a>
-               <a href="#"><i class="fa fa-angle-right"></i> 醫療團隊</a>
-               <a href="#"><i class="fa fa-angle-right"></i> 安心證明</a>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 品牌使命</a>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 醫療團隊</a>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 安心證明</a>
            </nav>
        </div>
        <div class="footer-item">
            <h4>智能評估</h4>
            <nav>
                <a href="./06.html"><i class="fa fa-angle-right"></i> AI智能評估</a>
-               <a href="#"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
-               <a href="#"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
-               <a href="#"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
            </nav>
        </div>
+
        <div class="footer-item">
            <h4>找功能</h4>
            <nav class="footer-goal">
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 體態管理</a>
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 抗老</a>
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 營養補充</a>
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 健康飲食</a>
-               <a href="./05-2.html"><i class="fa fa-angle-right"></i> 美容保養</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 體態管理</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 抗老</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 營養補充</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 健康飲食</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 美容保養</a>
            </nav>
        </div>
        <div class="footer-item footer-subs">
@@ -253,11 +283,6 @@
    </div>
    
 </div>
-
-
-
-
-
 
 
 </body>

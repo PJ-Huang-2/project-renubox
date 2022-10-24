@@ -34,7 +34,6 @@ body {
 .chat-btn a img {
     width: 100%;
     filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.2));
-    animation: animation_puni-data-v-9797c524 2s infinite running;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-delay: 0s;
@@ -42,7 +41,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    animation-name: animation_puni-data-v-9797c524;
 } 
 
         /* header */
@@ -103,300 +101,133 @@ body {
             #menu-switch{
                 display: none;
             }
-/* cart */
-.cart {
-    outline: 1px solid deeppink;
-    width: 100vw;
-    margin: auto;
-    display: flex;
-}
-.cart-left {
-    outline: 1px solid deeppink;
-    margin: 5vw 0 0 5vw;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.cart-title {
-    outline: 1px solid deeppink;
-    text-align: center;
-    height: 10vh;
-    
-}
-.cart-title h3 {
-    line-height: 10vh;
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    color: #346C47;
-}
-.items {
-    width: 940px;
-    height: 200px;
-    display: flex;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    padding: 10px;
 
-}
-.item-pic {
-    outline: 1px solid deeppink;
-    width: 200px;
-    height: 200px;
-    display: flex;
-}
-.item-pic img {
-    width: 70px;
-    height: 70px;
-    margin: auto;
-}
 
-.items .item-info {
-    outline: 1px solid deeppink;
+/* main */
+.pay-wrap {
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
 }
-.item-info h4 {
-    outline: 1px solid deeppink;
-    width: 300px;
-    line-height: 50px;
-    font-size: 1.2rem;
-    letter-spacing: 5px;
-    font-weight: 500;
-    color: #598969;
+
+.title {
+    margin-bottom: 1rem;
 }
-.info-count {
-    outline: 1px solid deeppink;
-    width: 300px;
-    height: 30px;
+
+.title p {
+    font-size: .7rem;
+    color: #BCBCBC;
+    letter-spacing: .2rem;
+}
+
+.payment-methods {
+    outline: 1px solid ;
+    width: 100%;
+    margin: auto;
     display: flex;
+    margin: 50px 30px;
     justify-content: space-between;
 }
-.info-count button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid#346C47;
-    background-color: #C4C4C4;
-    color: #346C47;
-    font-size: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-}
-.info-count input {
-    width: 70%;
+
+.payment-methods .methods {
+    width: 200px;
     border-radius: 5px;
+    background: #FFFFFF;
+    color: #000;
+    padding: 30px;
+    font-weight: 700;
+}
+
+#payment-methods div:first-child {
+    border: 2px solid #790DCB;
+}
+
+
+#payment-methods div:nth-child(2) span:first-child {
+    color: #002C8A;
+}
+
+#payment-methods div:nth-child(2) span:last-child {
+    color: #009BE1;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    grid-column-gap: 40px;
+}
+
+#info div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#info div > div {
+    margin: 5px 0 10px 0;
+}
+
+#info div > div > label {
+    color: #BCBCBC;
+    font-weight: bold;
+    font-size: .7rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#info div > div input, #info div > div select {
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#info .billing-info div:nth-child(4) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+
+#info .card-info > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 5px;
+}
+
+#info .card-info > div:nth-child(2) > div:last-child {
+    padding-top: 20px;
+}
+
+#info .card-info > div:nth-child(2) > div:last-child > p {
+    background: #fff;
+    padding: 8px 5px 5px 5px;
+    color: #000;
+    border-radius: 5px;
+    text-transform: uppercase;
     text-align: center;
-    background-color: transparent;
-    border: 2px solid #346C47;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.info-price {
-    outline: 1px solid deeppink;
-    width: 20%;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
-    gap: 10px;
-}
-.info-price button {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-
-    font-size: .3rem;
-    font-weight: 600;
-    color: #346C47;
-}
-.info-price h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: .6px;
-    line-height: 30px;
-    color: #598969;
-}
-.info-price p {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: .6px;
-    color: #8A7867;
-}
-.cart-right {
-    outline: 1px solid deeppink;
-    width: 25vw;
-    height: 50vh;
-    position: sticky;
-    margin-left: 30px;
-    margin-top: 5vw;
-    background-color: #D9D9D9;
-    border-radius: 10px;
+#info .card-info > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.cart-right h3 {
-    outline: 1px solid deeppink;
-    line-height: 5vh;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    color: #8A7867;
+input[type='submit'] {
+    margin: 10px 10px 10px 0;
+    width: 30%;
+    padding: 14px;
+    border-radius: 5px;
+    background: #790DCB;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: .7rem;
 }
-.cart-right p {
-    outline: 1px solid deeppink;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: .6px;
-    margin-bottom: 6vh;
-    border-bottom: 1.5px solid#4d593e;
-    color:#346C47;
-
-}
-.cart-right .cart-price p {
-    display: flex;
-    justify-content: end;
-}
-.cart-price .total-price {
-    font-size: 1.5rem;
-}
-.cart-right .cart-cupon li{
-    color: #4d593e;
-    font-size: 1.2rem;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-.hide { 
-    display: none; 
-}
-.hide input {
-
-}
-.cart-right .continue-btn {
-    width: 100%;
-
-   
-}
-.continue-btn button {
-    width: 100%;
-    margin-top: 15px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #346C47;
-    color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 500;
-    background-color: #346C47;
-    cursor: pointer;
-
-} 
-
-@media screen and (max-width:1200px) {
-
-}
-@media screen and (max-width:1024px) {
-    .cart {
-        flex-wrap: wrap;
-    }
-    .cart-left {
-        width: 85vw;
-        margin: auto;
-    }
-    .cart-right {
-        width: 85vw;
-        margin: auto;
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width:768px) {
-    .cart-left {
-        width: 100vw;
-        margin: auto;
-
-    }
-    .cart-left .items {
-        padding: 0;
-        width: 100%;
-    }
-    .item-pic {
-        width: 20%;
-    }
-    .items .item-info{
-        width: 60%;
-    }
-    .item-info h4 {
-        width: 100%;
-    }
-    .info-count {
-        width: 100%;
-        height: 60px;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .info-count button {
-        width: 20px;
-        height: 25px;
-        border-radius: 50%;
-        border: 1px solid#346C47;
-        font-size: .8rem;
-        text-align: center;
-        cursor: pointer;
-    }
-    .info-count input {
-        width: 50%;
-        border-radius: 5px;
-        text-align: center;
-        background-color: transparent;
-        border: 2px solid #346C47;
-    }
-    .info-price {
-        width: 15%;
-        gap: 10px;
-        margin-left:0;
-    }
-    .info-price button {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        font-size: .3rem;
-        font-weight: 600;
-        color: #346C47;
-    }
-    .info-price h5 {
-        font-size: .8rem;
-        font-weight: 400;
-        letter-spacing: .6px;
-        line-height: 30px;
-        color: #598969;
-    }
-    .info-price p {
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: .6px;
-        color: #8A7867;
-    }
-
-    .cart-right {
-        width: 100vw;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .continue-btn {
-        width: 80%;
-        margin: auto;
-
-    }
-    .continue-btn button{
-     
-        margin-top: 10px;
-    }
-}
-
-/* footer */
+  
+  /* footer */
 
 .main-footer {
     margin-top: 100px;

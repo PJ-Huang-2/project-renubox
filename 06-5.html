@@ -7,13 +7,14 @@
     <link rel="icon" href="./main-pic/page-tag-pic.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./05-1-css.css">
-   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <title>RENUBOX | 找功能</title>
+    <link rel="stylesheet" href="./06-5-css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    
+
+    <title>結帳 | RENUBOX</title>
 </head>
 <body>
-    
-  <!-- chat-btn -->
+     <!-- chat-btn -->
   <div class="chat-btn">
     <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
 </div>
@@ -66,83 +67,85 @@
     })
 </script>
 
-<!-- banner -->
-<div class="goal-banner">
-   
-        <img src="./-sub-pic/main-goals-banner.jpg" alt="找功能首圖">
-        <div class="banner-title">
-            <h1>找到自己</h1>
-            <h1 class="title-btm">最需要的。</h1>
+<div class="pay-wrap">
+    <div class="title">
+        <h1>Payment</h1>
+        <p>Choose payment method</p>
+    </div>
+    <div class="payment-methods">
+        <div class="methods">
+            <img src="./-sub2-pic/star.png" alt="">
+            <span>信用卡</span>
         </div>
+        <div class="methods">
+            <img src="./-sub2-pic/star.png" alt="">
+            <span>LINE PAY</span>
+        </div>
+        <div class="methods">
+            <img src="./-sub2-pic/star.png" alt="">
+            <span>貨到付款</span>
+        </div>
+    </div>
+    <div id="info">
+        <div class="billing-info">
+            <h4>Billing info</h4>
+            <div>
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" placeholder="John Doe">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="407 Evergreen Rd.">
+            </div>
+            <div>
+                <div>
+                    <label for="city">city</label>
+                    <input type="text" id="city" placeholder="Roseville">
+                </div>
+                <div>
+                    <label for="zip-code">Zip code</label>
+                    <input type="text" id="zip-code" placeholder="95673">
+                </div>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="USA">United States</option>
+                    <option value="NGA">Nigeria</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-info">
+            <h4>Credit card info</h4>
+            <div>
+                <div>
+                    <label for="card-number">Card number</label>
+                    <input type="number" id="card-number" placeholder="1234   5678   3456   2456">
+                </div>
+                <div>
+                    <p>Visa</p>
+                </div>
+            </div>
+            <div>
+                <label for="holder-name">Cardholder name</label>
+                <input type="text" id="holder-name" placeholder="John Doe">
+            </div>
+            <div>
+                <label for="exp">Expire date</label>
+                <input type="month" id="exp" value="2021-05">
+            </div>
+            <div>
+                <div>
+                    <label for="cvv">Cvv</label>
+                    <input type="text" id="cvv" placeholder="123">
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Proceed">
+    </div>
 </div>
-
-
-<div class="goals-title">
-    <h2>找功能</h2>
-    <h3>不知道怎麼選擇嗎？可以從自己想要達到的功能選起，我們將進一步推薦給您 &deg;</h3>
-</div>
-
-<!-- goal cards -->
-<div class="goals">
- 
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-fit.jpg" alt="">
-                <div class="item-content">
-                    <h4>體態管理</h4>
-                    <p>加速代謝，打造易瘦體質</p> 
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-antiage.webp" alt="">
-                <div class="item-content">
-                    <h4>抗老回春</h4>
-                    <p>加速代謝，打造易瘦體質</p> 
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-defence.jpg" alt="">
-                <div class="item-content">
-                    <h4>營養補充</h4>
-                    <p>補足身體所需營養素</p> 
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-food.jpg" alt="">
-                <div class="item-content">
-                    <h4>健康飲食</h4>
-                    <p>增加飲食健康度，美味加分</p> 
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-sleep.jpg" alt="">
-                <div class="item-content">
-                    <h4>失眠焦慮</h4>
-                    <p>撫平自律神經，改善焦慮、失眠</p> 
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./05-2-2.html">
-                <img src="./-sub-pic/goal-pretty.jpg" alt="">
-                <div class="item-content">
-                    <h4>美容保養</h4>
-                    <p>提升體內循環、代謝，由內而外打造完美的好氣色</p> 
-                </div>
-            </a>
-        </div>
-        
-
-</div>
-
+    
+  
 <!-- footer -->
 <div class="main-footer">
 
@@ -205,9 +208,6 @@
    </div>
    
 </div>
-
-
-
 
 
 </body>

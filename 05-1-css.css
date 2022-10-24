@@ -211,7 +211,7 @@ background-color: #4d593e;
     transition: all 1s ease-out;
     cursor: pointer;
 }
-.item img:hover {
+.item:hover img {
     transform:scale(1.2,1.2);
 }
 .item-content {

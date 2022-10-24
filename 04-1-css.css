@@ -369,7 +369,7 @@ stroke-dashoffset: 0;
     padding-top: 50px;
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 80%;
     /* outline: 1px solid #fa0; */
 }
 .info .wrap.up {
@@ -439,9 +439,6 @@ stroke-dashoffset: 0;
    
   
 }
-.info .wrap .info-txt .title.title-down {
-
-}
 .info .wrap .info-txt .title p {
     margin-left: 10%;
 }
@@ -473,15 +470,32 @@ stroke-dashoffset: 0;
 .info .wrap .info-txt .btn a {
     text-decoration: none;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 22px;
     color: #fff;           
 }
 
+@media screen and (max-width: 1200px) {
+    .info .wrap .info-txt .btn {
+        width: 30%;
+    }
+    .info .wrap .info-txt .btn a {
+        font-size: 18px;
+    }
+    
+
+}
+@media screen and (max-width: 1024px) {
+    .info .wrap .info-txt .btn {
+        width: 40%;
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
     .info .wrap {
         flex-wrap: wrap;
+        width: 100%;
     }
     .info .wrap .info-pics {
         width: 100%;
@@ -525,24 +539,14 @@ stroke-dashoffset: 0;
     .info .wrap .info-txt .btn {
         width: 30%;
     }
+
+
     .info .wrap .info-txt .infos {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .info .wrap .info-txt .btn {
-        width: 30%;
-    }
-    
-    
-}
 
-@media screen and (max-width: 1200px) {
-    .info .wrap .info-txt .btn {
-        width: 30%;
-    }
-}
 
 /* goals */
 
@@ -593,12 +597,12 @@ stroke-dashoffset: 0;
 
 @media screen and (max-width: 1024px) {
     .goals-main .goal-more button {
-        width: 15vw;
+        width: 12vw;
     }
 }
 @media screen and (max-width: 768px) {
     .goals-main .goal-more button {
-        width: 20vw;
+        width: 30vw;
 
     }
     .goals-main .goal-more {
@@ -832,8 +836,10 @@ stroke-dashoffset: 0;
             padding: 0.5rem;        
             margin: 2vh auto;
          }
-
+         .top-wrap .txt .detail a {
+            font-size: 20px;
       }
+    }
 
       @media (max-width: 1024px) {
         .top-wrap .txt .tags {
@@ -848,16 +854,12 @@ stroke-dashoffset: 0;
  
          }
          .top-wrap .txt .detail {
-            width: 25%;
+            width: 30%;
          }
+         .top-wrap .txt .detail a {
+            font-size: 24px;
       }
-
-
-
-
-
-
-
+      }
 
 /* TOP5 */
 .top5-group {
@@ -1109,10 +1111,6 @@ stroke-dashoffset: 0;
 
 
 
-
-
-
-
 /* doctor */
 
 .dr {
@@ -1283,7 +1281,7 @@ stroke-dashoffset: 0;
         margin: 20px 0;
     }
     .dr .dr-more {
-        width: 28%;
+        width: 38%;
         font-size: 1rem;
     }
     .dr .dr-more a {
@@ -1321,7 +1319,7 @@ stroke-dashoffset: 0;
     min-height: 400px;
     margin: auto;
     border-radius: 8px 8px 0 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .tabby-tab {
@@ -1337,7 +1335,7 @@ stroke-dashoffset: 0;
     text-align: center;
     background: #F9E7DF;
     cursor: pointer;
-    transition: background 0.5s ease;
+    /* transition: background 0.5s ease; */
     color: #346C47;
     font-size: 18px;
     font-weight: 500;
@@ -1396,7 +1394,7 @@ stroke-dashoffset: 0;
     outline: 1px solid deeppink;
     margin: auto;
     width: 20%;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #346C47;
     font-weight: 300;
     font-size: 1.4rem;
@@ -1458,9 +1456,6 @@ stroke-dashoffset: 0;
         border-radius: 0;
         overflow: hidden;
     }
-  
-    
-    
     .tabby-tab label {
         display: block;
         box-sizing: border-box;
@@ -1500,7 +1495,7 @@ stroke-dashoffset: 0;
         }
 
         .column .container .dr-more {
-            width: 28%;
+            width: 40%;
             font-size: 1rem;
         }
         .column .container .dr-more a {
