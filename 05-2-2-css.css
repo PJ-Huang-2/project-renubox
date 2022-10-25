@@ -63,14 +63,14 @@ background-color: #4d593e;
     position: sticky;
     top: 0;
     /* margin-bottom: 20px; */
-    outline: 1px solid #fa0;
+    
     align-items: center;
     z-index: 5;
 }
 .logo img{
     vertical-align: top;
     width:120px;
-    outline: 1px solid #fa0;
+    
 
 } 
 .main-nav a{
@@ -103,7 +103,7 @@ background-color: #4d593e;
     display: block;
     align-items: center;
     right: 20px;
-    outline: 1px solid #fa0;
+    
     /* padding: 10px; */
 }
 /* .nav-icon .shop-icon {
@@ -112,7 +112,7 @@ background-color: #4d593e;
 .nav-icon img {
     width: 30px;
     margin-left: 20px;
-    outline: 1px solid #fa0;
+    
 }
 #menu-switch{
     display: none;
@@ -394,12 +394,11 @@ background-color: #4d593e;
     
             
   .breadcrumb-wrap{
-    border: solid 2px hotpink;
     padding: 10px 0;
     box-shadow: 0px 5px 5px hsla(260,100%,20%,.5);
 }
 .breadcrumb{
-    /* outline: 1px solid #fa0; */
+    /*  */
     width: 100%;
     /* margin-left: 20px; */
     display: flex;
@@ -429,7 +428,7 @@ background-color: #4d593e;
 
    /* goal-main */
 .goal-main {
-    outline: 1px solid #E2B734;
+  
     width: 100%;
     display: flex;
 
@@ -438,7 +437,7 @@ background-color: #4d593e;
 /* side-bar */
 
 .side-bar {
-    outline: 1px solid deeppink;
+    
     width: 200px;
     margin-top: 30px;
     font-family: 'Noto Sans', sans-serif;
@@ -557,10 +556,10 @@ background-color: #4d593e;
 
 
 .goal-products {
-    outline: 1px solid deeppink;
+    
     width: 70%;
     margin: auto;
-    /* outline: 1px solid #fa0; */
+    /*  */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -568,8 +567,8 @@ background-color: #4d593e;
     
 }
 .card{
-    /* outline: 1px solid #fa0; */
-    outline: 1px solid deeppink;
+    /*  */
+    
     width: 300px;
     margin: 2%;
     position: relative;
@@ -727,7 +726,7 @@ background-color: #4d593e;
     }
     
     .main-footer .footer-icons {
-        /* outline: 1px solid #fa0;  */
+        /*   */
         width: 20rem;
         margin: auto;
         display: flex;
@@ -746,7 +745,7 @@ background-color: #4d593e;
     }
     
     .main-footer .container{
-        /* outline: 1px solid #fa0;  */
+        /*   */
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -824,13 +823,13 @@ background-color: #4d593e;
             align-items: center;
             position: relative;
             border-radius: 30px;
-            /* outline: 1px solid #fa0; */
+            /*  */
         }
     
         .nav-icon {
             display: block;
             align-items: center;
-            /* outline: 1px solid #fa0; */
+            /*  */
             position: absolute;
             margin-right: 50px;
            
@@ -930,7 +929,7 @@ background-color: #4d593e;
             font-size: 16px;
             font-weight: 600;
             gap: 32px;
-            /* outline: 1px solid #fa0; */
+            /*  */
             
         }
         .main-nav a {

@@ -38,14 +38,14 @@ body {
         position: sticky;
         top: 0;
         margin-bottom: 20px;
-        outline: 1px solid #fa0;
+        
         align-items: center;
         z-index: 5;
     }
     .logo img{
         vertical-align: top;
         width:120px;
-        outline: 1px solid #fa0;
+        
     
     } 
     .main-nav a{
@@ -78,14 +78,14 @@ body {
         display: block;
         align-items: center;
         right: 20px;
-        outline: 1px solid #fa0;
+        
         /* padding: 10px; */
     }
 
     .nav-icon img {
         width: 30px;
         margin-left: 20px;
-        outline: 1px solid #fa0;
+        
     }
     #menu-switch{
         display: none;
@@ -246,7 +246,6 @@ body, header, footer, div, nav, aside, p, span, a, h1, h2, h3, h4, ul, ol, li{
 h1{
     font-size: 52px;
     font-weight: 500;
-    outline: 1px solid orange;
     display: flex;
     flex-direction: column;
     letter-spacing: 1.2px;
@@ -281,7 +280,6 @@ a{
 
 /* 分欄通用 */
 .container{
-    outline: 1px solid pink;
     width: 100%;
     max-width: 1200px;
     padding: 0 40px;
@@ -389,7 +387,7 @@ a{
 }
 
 .main-footer .footer-icons {
-    /* outline: 1px solid #fa0;  */
+    /*   */
     width: 15rem;
     margin: auto;
     display: flex;
@@ -408,7 +406,7 @@ a{
 }
 
 .main-footer .container{
-    /* outline: 1px solid #fa0;  */
+    /*   */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -479,13 +477,13 @@ a{
         align-items: center;
         position: relative;
         border-radius: 30px;
-        /* outline: 1px solid #fa0; */
+        /*  */
     }
 
     .nav-icon {
         display: block;
         align-items: center;
-        /* outline: 1px solid #fa0; */
+        /*  */
         position: absolute;
         margin-right: 50px;
        
@@ -585,7 +583,7 @@ a{
         font-size: 16px;
         font-weight: 600;
         gap: 32px;
-        /* outline: 1px solid #fa0; */
+        /*  */
         
     }
     .main-nav a {
@@ -606,6 +604,6 @@ a{
     display: flex;
     align-items: center;
     right: 20px;
-    /* outline: 1px solid #fa0; */
+    /*  */
 }
 

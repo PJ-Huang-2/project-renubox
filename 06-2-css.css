@@ -155,7 +155,7 @@ body {
         } 
 
         .end {
-            outline: 1px solid #fa0;
+            
             width: 80vw;
             margin: auto;
             margin-top:50px;
@@ -164,7 +164,7 @@ body {
            
         }
         .end .product-soon {
-            outline: 1px solid #fa0;
+            
             width: 50%;
 
         }
@@ -185,7 +185,7 @@ body {
             left: 40%;
         }
         .end .product-name {
-            outline: 1px solid #fa0;
+            
             width: 50%;
             margin-bottom: 40px;
         }
@@ -197,7 +197,7 @@ body {
             margin-bottom: 10%;
         }
         .end .product-name label {
-            outline: 1px solid #fa0;
+            
             width: 100%;
             font-size: 1.5rem;
             letter-spacing: .6px;
@@ -206,7 +206,7 @@ body {
             line-height: 5vh;
         }
         .end .product-name label input {
-            outline: 1px solid #fa0;
+            
             border: none;
             background-color: transparent;
             border-bottom: 2px solid #4d593e;
@@ -328,7 +328,7 @@ body {
 }
 
 .main-footer .footer-icons {
-    /* outline: 1px solid #fa0;  */
+    /*   */
     width: 20rem;
     margin: auto;
     display: flex;

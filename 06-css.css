@@ -37,14 +37,14 @@ body {
         position: sticky;
         top: 0;
         margin-bottom: 20px;
-        outline: 1px solid #fa0;
+        
         align-items: center;
         z-index: 5;
     }
     .logo img{
         vertical-align: top;
         width:120px;
-        outline: 1px solid #fa0;
+        
     
     } 
     .main-nav a{
@@ -77,7 +77,7 @@ body {
         display: block;
         align-items: center;
         right: 20px;
-        outline: 1px solid #fa0;
+        
         /* padding: 10px; */
     }
     /* .nav-icon .shop-icon {
@@ -86,7 +86,7 @@ body {
     .nav-icon img {
         width: 30px;
         margin-left: 20px;
-        outline: 1px solid #fa0;
+        
     }
     #menu-switch{
         display: none;
@@ -96,14 +96,12 @@ body {
     
         /* quiz */
         .quiz {
-            outline: 1px solid deeppink;
             width: 80%;
             height: 80vh;
             margin: auto;
             padding-top: 10vh;
         }
         .quiz h1 {
-            outline: 1px solid deeppink;
             font-size: 3rem;
             text-align: center;
             font-weight: 500;
@@ -112,7 +110,6 @@ body {
             color: #346C47;
         }
         .quiz p {
-            outline: 1px solid deeppink;
             width: 70%;
             margin: auto;
             font-size: 1.5rem;
@@ -123,7 +120,6 @@ body {
         }
 
         .quiz .quiz-btn {
-            outline: 1px solid deeppink;
             width: 10rem;
             margin: auto;
             text-align: center;
@@ -149,7 +145,6 @@ body {
         }
 
         .other {
-            outline: 1px solid deeppink;
             width: 200px;
             margin: auto;
             padding: 2%;
@@ -180,8 +175,7 @@ body {
                 font-size: 2rem;
             }
             .quiz p {
-                outline: 1px solid deeppink;
-                width: 80%;
+                    width: 80%;
                 font-size: 1.2rem;
                 font-weight: 400;
                 margin-top: 60px;
@@ -193,17 +187,15 @@ body {
 
         /* how */
         .how {
-            outline: 1px solid deeppink;
             width: 90%;
             margin: auto;
             margin-top: 60px;
             padding-bottom: 10vh;
-            /* outline: 1px solid #fa0; */
+            /*  */
             background-color: #D9D9D9;
         }
 
         .how .title {
-            outline: 1px solid deeppink;
             width:80%;
             margin: auto;
             text-align: center;
@@ -215,7 +207,6 @@ body {
         }
 
         .pic-info {
-            outline: 1px solid deeppink;
             margin: auto;
             width: 80%;
             display: flex;
@@ -422,7 +413,7 @@ button.active{
 }
 
 .main-footer .footer-icons {
-    /* outline: 1px solid #fa0;  */
+    /*   */
     width: 15rem;
     margin: auto;
     display: flex;
@@ -441,7 +432,7 @@ button.active{
 }
 
 .main-footer .container{
-    /* outline: 1px solid #fa0;  */
+    /*   */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -512,13 +503,13 @@ button.active{
         align-items: center;
         position: relative;
         border-radius: 30px;
-        /* outline: 1px solid #fa0; */
+        /*  */
     }
 
     .nav-icon {
         display: block;
         align-items: center;
-        /* outline: 1px solid #fa0; */
+        /*  */
         position: absolute;
         margin-right: 50px;
        
@@ -618,7 +609,7 @@ button.active{
         font-size: 16px;
         font-weight: 600;
         gap: 32px;
-        /* outline: 1px solid #fa0; */
+        /*  */
         
     }
     .main-nav a {
@@ -639,6 +630,6 @@ button.active{
     display: flex;
     align-items: center;
     right: 20px;
-    /* outline: 1px solid #fa0; */
+    /*  */
 }
 

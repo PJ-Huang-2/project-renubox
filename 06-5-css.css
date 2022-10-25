@@ -105,7 +105,7 @@ body {
 
             /* cart */
             .cart{
-                outline: 1px solid deeppink;
+                
                 width: 80%;
                 margin: 40px auto;
             }
@@ -122,15 +122,15 @@ body {
                 margin-bottom: 20px;
             }
             .cartmain {
-                outline: 1px solid deeppink;
+                
                 
             }
 
             .fl{float: left;
-                outline: 1px solid deeppink;
+                
             }
             .fr {
-                outline: 1px solid deeppink;
+                
                 float: right;
             }
 
@@ -148,7 +148,6 @@ body {
                 height: 160px;
             }
             th {
-                outline: 1px solid #fa0;
                 height: 50px;
                 line-height: 50px;
                 font-weight: normal;
@@ -156,7 +155,7 @@ body {
          
             
             td {
-                outline: 1px solid deeppink;
+                
                 /* padding: 10px 10px; */
                 color: #444;
                 font-weight: 400;
@@ -218,7 +217,7 @@ body {
                 width: 300px;
             }
             .goods span {
-                outline: 1px solid deeppink;
+                
                 width: 140px;
                 margin: auto;
                 text-align: center;
@@ -477,7 +476,7 @@ body {
 
 /* main */
 .pay-wrap {
-    outline: 1px solid deeppink;
+    
     width: 80%;
     margin: auto;
     text-align: center;
@@ -504,7 +503,7 @@ body {
 }
 
 .payment-methods {
-    outline: 1px solid ;
+   
     width: 100%;
     margin: auto;
     display: flex;

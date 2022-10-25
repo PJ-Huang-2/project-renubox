@@ -41,14 +41,14 @@ html, body {
         position: sticky;
         top: 0;
         margin-bottom: 20px;
-        outline: 1px solid #fa0;
+        
         align-items: center;
         z-index: 5;
     }
     .logo img{
         vertical-align: top;
         width:120px;
-        outline: 1px solid #fa0;
+        
     
     } 
     .main-nav a{
@@ -81,7 +81,7 @@ html, body {
         display: block;
         align-items: center;
         right: 20px;
-        outline: 1px solid #fa0;
+        
         /* padding: 10px; */
     }
     /* .nav-icon .shop-icon {
@@ -90,7 +90,7 @@ html, body {
     .nav-icon img {
         width: 30px;
         margin-left: 20px;
-        outline: 1px solid #fa0;
+        
     }
     #menu-switch{
         display: none;
@@ -105,7 +105,7 @@ html, body {
         }
 
         .banner-area {
-            outline: 1px solid #fa0;
+            
                 background: url(./sub5-pic/chat-online.jpg) no-repeat;
                 height: 450px;
                 background-position: center center;
@@ -114,7 +114,7 @@ html, body {
             }
 
         .banner-txt {
-            outline: 1px solid #fa0;
+            
             max-width: 768px;
             width: 100%;
             margin: auto;
@@ -140,7 +140,6 @@ html, body {
 
         /* step1 */
         .step1 {
-            outline:1px solid #fa0;
             width: 100vw;
             margin: auto;
             margin-top: 3vw;
@@ -148,8 +147,7 @@ html, body {
             text-align: center;
             
         }
-        .step-title .deco1 {
-            outline:1px solid #fa0; 
+        .step-title .deco1 { 
             width: 50px;
             margin: auto;
         }
@@ -173,8 +171,7 @@ html, body {
             line-height: 30px
         }
 
-        .step1 ul {
-            outline:1px solid #fa0; 
+        .step1 ul { 
             margin: auto;
             width: 100%;
             display: flex;
@@ -185,8 +182,7 @@ html, body {
             z-index: 4;
         }
 
-        .step1 ul li {
-            outline:1px solid #fa0; 
+        .step1 ul li { 
             width: 200px;
             z-index: 1;
         } 
@@ -233,8 +229,7 @@ html, body {
         }
 
 
-        .app {
-           outline:1px solid #fa0; 
+        .app { 
            background-color: #FCE4D6;
            width: 100vw;
            margin: auto;
@@ -244,14 +239,12 @@ html, body {
 
            
         }
-        .app-container {
-            outline:1px solid #fa0; 
+        .app-container { 
             width: 80vw;
             margin: auto;
             
         }
-        .app-container .deco1 {
-            outline:1px solid #fa0; 
+        .app-container .deco1 { 
             width: 50px;
             margin: auto; 
             
@@ -270,15 +263,13 @@ html, body {
             line-height: 40px;
 
         }
-        .app-container .app-txt {
-            outline:1px solid #fa0; 
+        .app-container .app-txt { 
             width: 90%;
             margin: auto;
         }
 
        
-        .app-container p {
-            outline:1px solid #fa0; 
+        .app-container p { 
             font-size: 18px;
             font-weight: 400;
             color: #8A7867;
@@ -287,8 +278,7 @@ html, body {
             line-height: 25px;
         }
 
-        .app-container .app-dl {
-            outline:1px solid #fa0; 
+        .app-container .app-dl { 
             width: 100%;
             background-color: #fff;
             display: flex;
@@ -296,13 +286,11 @@ html, body {
 
         }
         .app-dl .appstore {
-            outline:1px solid #fa0;
             margin: 1vw;
         }
 
 
         .app-dl .appstore h4 {
-            outline:1px solid #fa0;
             font-size: 20px;
             margin-left: 1vw;
             color: #346C47;
@@ -329,7 +317,6 @@ html, body {
         }
 
         .app-dl .app-how {
-            outline:1px solid #fa0;
             text-align: center;
         }
         
@@ -388,7 +375,6 @@ html, body {
         }
 
         .line {
-            outline:1px solid #fa0;
             width: 100%;
             height: 100%;
             
@@ -404,7 +390,6 @@ html, body {
         }
         .line h4 {
             text-align: center;
-            outline:1px solid #fa0;
             font-size: 1.6rem;
             color: #346C47;
             letter-spacing: 1.2px;
@@ -413,7 +398,6 @@ html, body {
         }
 
         .list-item {
-            outline:1px solid #fa0;
             width: 80%;
             margin: auto;
             display: block;
@@ -435,7 +419,6 @@ html, body {
             opacity: 1;
           }
         .item .item_step {
-            outline:1px solid #fa0;
             margin-left: -6px;
             width: 120px;
             height: 38px;
@@ -463,6 +446,118 @@ html, body {
             }
         }
 
+        /* program */
+        .program {
+            width: 80%;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+        .program-title{
+            text-align: center;
+            color: #346C47;
+            font-size:30px;
+            margin-top: 30px;
+          }
+          .program-wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin:0 auto;
+            text-align: center;
+
+          }
+          .program-item {
+             display: block;
+             width: 100%;
+             margin-bottom:20px;
+             float:left;
+             background: #D9D9D9;
+             border-radius:10px;
+             cursor:pointer;
+             transition: all 0.3s ease;
+             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+             margin: 0 10px;
+             margin-bottom: 10px;
+          
+          }
+          .program-item:hover,  .program-item.active{
+              transform: scale(1.03);
+              transition: all 0.3s;
+              z-index:2;
+          
+          }
+          .program-item .details{
+              padding:20px;
+              position:relative;	
+          }
+    
+              .program-item .image img {
+                width:100%;
+                height: 30vh;
+                object-fit: cover;
+                object-position: center center;                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+          }
+          .program-item .image {
+              position: relative;
+              margin: 0;
+              padding: 0;
+          }
+          .program-item .image figcaption {
+              position: absolute;
+              top: 0;
+              width: 100%;
+              text-align: center;
+              bottom: 4px;
+              background: rgba(0,0,0,0.5);
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          
+          }
+          figcaption .caption{
+              position:relative;
+              top:50%;
+              transform:translateY(-50%);
+          
+          }
+          figcaption h1{
+                color: #fff;
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 1.2px;
+                line-height: 20px;
+                text-transform: uppercase;
+          }
+          figcaption p{
+            color:white;
+            font-size:12px;
+          }
+          .details h4 {
+              font-size: 13px;
+              text-align: center;
+              padding: 5px 10px;
+              font-weight: bold;
+          }
+          .details h4:not(:last-child){
+             border-bottom: 1px solid #ccc;
+          }
+          .program-item:hover div.image figcaption {
+                 background: rgba(0,0,0, 0);;
+          }
+          @media only screen and (min-width:540px){
+              .program-item {
+                display: block;
+                width: calc(100%/4);
+              }
+          }
+          @media only screen and (min-width:1024px){
+              .program-wrap{
+                  padding: 30px;
+              }
+          }
+
+        /* phone */
         .phone {
             width: 100%;
             background-color: #fff;
@@ -473,7 +568,6 @@ html, body {
         .phone .phone-container {
             width: 80%;
             margin: auto;
-            outline:1px solid #fa0;
         }
 
         .phone-container .phone-icon {
@@ -486,7 +580,6 @@ html, body {
 
         .phone-container h4 {
             text-align: center;
-            outline:1px solid #fa0;
             font-size: 32px;
             color: #346C47;
             letter-spacing: 1.2px;
@@ -494,8 +587,7 @@ html, body {
             font-weight: 500;
         }
 
-        .phone-container p {
-            outline:1px solid #fa0; 
+        .phone-container p { 
             font-size: 20px;
             font-weight: 400;
             color: #8A7867;
@@ -509,16 +601,14 @@ html, body {
             width: 100%;
             display: flex;
         }
-        .number-time .number {
-            outline:1px solid #fa0; 
+        .number-time .number { 
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             
         }
-        .number-time .time {
-            outline:1px solid #fa0; 
+        .number-time .time { 
             width: 50%;
         }
         .number-time .number h5 {
@@ -532,8 +622,7 @@ html, body {
             width: 100%;
         }
 
-        .phone ul {
-            outline:1px solid #fa0; 
+        .phone ul { 
             width: 80%;
             margin: auto;
             border: 4px dashed #979797;
@@ -584,7 +673,7 @@ html, body {
 }
 
 .main-footer .footer-icons {
-    /* outline: 1px solid #fa0;  */
+    /*   */
     width: 20rem;
     margin: auto;
     display: flex;
@@ -603,7 +692,7 @@ html, body {
 }
 
 .main-footer .container{
-    /* outline: 1px solid #fa0;  */
+    /*   */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -684,13 +773,13 @@ html, body {
         align-items: center;
         position: relative;
         border-radius: 30px;
-        /* outline: 1px solid #fa0; */
+        /*  */
     }
 
     .nav-icon {
         display: block;
         align-items: center;
-        /* outline: 1px solid #fa0; */
+        /*  */
         position: absolute;
         margin-right: 50px;
        
@@ -790,7 +879,7 @@ html, body {
         font-size: 16px;
         font-weight: 600;
         gap: 32px;
-        /* outline: 1px solid #fa0; */
+        /*  */
         
     }
     .main-nav a {
@@ -811,7 +900,7 @@ html, body {
     display: flex;
     align-items: center;
     right: 20px;
-    /* outline: 1px solid #fa0; */
+    /*  */
 }
 
 
