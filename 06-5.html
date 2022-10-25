@@ -175,10 +175,7 @@
             </div>
             <div class="selected-view">
                 <div id="selectedViewList" class="clearfix">
-                    <!-- <div><img src="images/1.jpg"/>
-                        <span class="selCount">1</span>
-                        <span class="del">取消选择</span>
-                    </div> -->
+                    
                 </div>
                 <span class="arrow">◆<span>◆</span></span>
             </div>
@@ -186,7 +183,7 @@
 </div>
 <script>
     window.onload=function(){
-	//兼容document.getElementsByClassName 方法；
+	//兼容document.getElementsByClassName的方法!!；
 	if(!document.getElementsByClassName){
 		document.getElementsByClassName=function(cls){
 			var ret=[];
@@ -203,7 +200,7 @@
 		}
 	}
 	var cartTable=document.getElementById('cartTable');
-	var tr=cartTable.children[1].rows; //children子节点;
+	var tr=cartTable.children[1].rows; //children節點;
 	var checkInputs=document.getElementsByClassName('check');
 	var checkAllInput=document.getElementsByClassName('check-all');
 	var selectedTotal=document.getElementById('selectedTotal');
@@ -215,10 +212,10 @@
 	var allDelete=document.getElementById('allDelete');
 	var selectAll=document.getElementsByClassName('selectAll');
 
-	//选择框事件；
+	//選擇事件；
 	for (var i = 0; i < checkInputs.length; i++) {
 		checkInputs[i].onclick=function(){
-			if (this.className==='check-all check') { //全选；
+			if (this.className==='check-all check') { //全選；
 				for(var j=0;j<checkInputs.length;j++){
 					checkInputs[j].checked=this.checked;
 				}
@@ -246,7 +243,7 @@
 		getTotal();
 	}
 
-	//计算；
+	//計算；
 	function getTotal(){
 		var selected=0;
 		var price=0;
@@ -265,13 +262,13 @@
 		selectedTotal.innerHTML=selected;
 		priceTotal.innerHTML=price;
 		selectedViewList.innerHTML=HTMLstr;
-		//选中0时；
+		//如果是0??；
 		if(selected==0){
 			cartFooter.className="cartFooter";
 		}
 	}
 
-	//已选框的显示与隐藏；
+	//已經選擇顯示隱藏；
 	selected.onclick=function(){
 		if(cartFooter.className=='cartFooter'){
 			if(selectedTotal.innerHTML!=0){
@@ -282,7 +279,7 @@
 		}
 	}
 
-	//取消选择---》事件代理
+	//取消選擇 ---> 事件
 	selectedViewList.onclick=function(e){
 		e=e||window.event;
 		var el=e.srcElement;
@@ -294,9 +291,9 @@
 		}
 	}
 
-	//加减事件；
+	//加減事件；
 	for (var i = 0; i < tr.length; i++) {
-		//加减按钮；
+	//加减按鈕；
 		tr[i].onclick=function(e){
 			e=e||window.event;
     		document.onselectstart=new Function("event.returnValue=false;");
@@ -321,7 +318,7 @@
 				     }
 				     break;
 				case 'deleteOne':
-				//单行删除；
+				//單行删除；
 				     var conf=confirm('確定要刪除嗎？');
 				     if(conf){
 				     	this.parentNode.removeChild(this);
@@ -332,7 +329,7 @@
 			}
 			getTotal();
 		}
-		//input输入事件；
+		//input輸入事件；
 		tr[i].getElementsByTagName('input')[1].onkeyup=function(){
 			var val=parseInt(this.value);
 			var tr=this.parentNode.parentNode;
@@ -340,7 +337,7 @@
 			if(isNaN(val)||val<1){
 				val=1;
 			}
-			this.value=val; //输入控制法；
+			this.value=val; //輸入控制
 			if(val<=1){
 				reduce.innerHTML="";
 			}else{
@@ -350,7 +347,7 @@
 			getTotal();
 		}
 	};
-	//小计
+	//金額小計
 	function getSubtotal(tr){
 		var tds=tr.cells;
 		var price=parseFloat(tds[2].innerHTML);
@@ -383,7 +380,7 @@
 			var input=tr[i].getElementsByTagName('input')[0];
 			if (input.checked) {
 				tr[i].parentNode.removeChild(tr[i]);
-				i--; //删除时注意i 的变化；
+				i--; //!!删除時注意i 的變化!!；
 			};
 		};
 	}
