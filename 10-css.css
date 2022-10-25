@@ -38,14 +38,12 @@ body {
         position: sticky;
         top: 0;
         margin-bottom: 20px;
-        
         align-items: center;
         z-index: 5;
     }
     .logo img{
         vertical-align: top;
         width:120px;
-        
     
     } 
     .main-nav a{
@@ -78,19 +76,20 @@ body {
         display: block;
         align-items: center;
         right: 20px;
-        
         /* padding: 10px; */
     }
-
+    /* .nav-icon .shop-icon {
+        padding-bottom: 5px;
+    } */
     .nav-icon img {
         width: 30px;
         margin-left: 20px;
-        
     }
     #menu-switch{
         display: none;
     }
-
+    
+    
 
 
 /* columns */
@@ -387,7 +386,7 @@ a{
 }
 
 .main-footer .footer-icons {
-    /*   */
+    /* outline: 1px solid #fa0;  */
     width: 15rem;
     margin: auto;
     display: flex;
@@ -406,7 +405,7 @@ a{
 }
 
 .main-footer .container{
-    /*   */
+    /* outline: 1px solid #fa0;  */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -477,13 +476,13 @@ a{
         align-items: center;
         position: relative;
         border-radius: 30px;
-        /*  */
+        /* outline: 1px solid #fa0; */
     }
 
     .nav-icon {
         display: block;
         align-items: center;
-        /*  */
+        /* outline: 1px solid #fa0; */
         position: absolute;
         margin-right: 50px;
        
@@ -583,7 +582,7 @@ a{
         font-size: 16px;
         font-weight: 600;
         gap: 32px;
-        /*  */
+        /* outline: 1px solid #fa0; */
         
     }
     .main-nav a {
@@ -604,6 +603,6 @@ a{
     display: flex;
     align-items: center;
     right: 20px;
-    /*  */
+    /* outline: 1px solid #fa0; */
 }
 
