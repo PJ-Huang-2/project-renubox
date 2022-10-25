@@ -255,28 +255,28 @@ background-color: #4d593e;
   .slide--1 { z-index: 0; }
   
   .slide--1 .slide__img-wrapper {
-    background: url("./-sub-pic/sub-p2-banner2.jpg") center center no-repeat;
+    background: url("./sub1-pic/sub-p2-banner2.jpg") center center no-repeat;
     background-size: cover;
   }
   
   .slide--2 { z-index: 1; }
   
   .slide--2 .slide__img-wrapper {
-    background: url("./-sub-pic/sub-p2-banner1-1.jpg") center center no-repeat;
+    background: url("./sub1-pic/sub-p2-banner1-1.jpg") center center no-repeat;
     background-size: cover;
   }
   
   .slide--3 { z-index: 2; }
   
   .slide--3 .slide__img-wrapper {
-    background: url("./-sub-pic/sub-p2-banner3.jpg") center center no-repeat;
+    background: url("./sub1-pic/sub-p2-banner3.jpg") center center no-repeat;
     background-size: cover;
   }
   
   .slide--4 { z-index: 3; }
   
   .slide--4 .slide__img-wrapper {
-    background: url("./-sub-pic/sub-p2-banner4.jpg") center center no-repeat;
+    background: url("./sub1-pic/sub-p2-banner4.jpg") center center no-repeat;
     background-size: cover;
   }
   
@@ -520,6 +520,36 @@ background-color: #4d593e;
     width: 100%;
     display: none;
 }
+/* close-btn */
+.closeBar {
+    color: #4d593e;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.open-btn button{
+   margin: 10px 0 20px 20px;
+   width: 120px; 
+   height: 30px;
+   color: #346C47;
+   font-size: 16px;
+   background-color: #d9d9d9;
+   border-radius: 300px;
+   border: 2px solid #346C47;
+   cursor: pointer;
+
+}
+.open-btn button:hover {
+    color: #346C47;
+    background-color: #d9d9d9;
+    border: 2px solid #346C47;
+
+}
 
 
 
@@ -649,9 +679,12 @@ background-color: #4d593e;
     letter-spacing: -0.6px;
     color: #346C47;
 }
-@media screen and (max-width:1200px) {
-}
-@media screen and (max-width:1024px) {
+
+@media screen and (min-width:769px) {
+    .closeBar {
+        display: none;
+    }
+
 }
 @media screen and (max-width:768px) {
   .side-bar {
@@ -670,8 +703,6 @@ background-color: #4d593e;
     width: 100%;
     margin:5vh 0;
   }
-  
-
   .sidebar-open {
     position: fixed;
     left: 0;

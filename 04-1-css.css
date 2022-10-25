@@ -601,6 +601,9 @@ stroke-dashoffset: 0;
     }
 }
 @media screen and (max-width: 768px) {
+   .goals-main .container .panel {
+    height: 250px;
+   }
     .goals-main .goal-more button {
         width: 30vw;
 
@@ -681,7 +684,7 @@ stroke-dashoffset: 0;
 
 
     .top3 {
-        width: 100%;
+        width: 80%;
         margin: auto;
         
     }
@@ -704,7 +707,7 @@ stroke-dashoffset: 0;
     }
     .top-wrap{
         /* outline: 1px solid #fa0;  */
-        width: 100%;
+        width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -738,7 +741,7 @@ stroke-dashoffset: 0;
      }
      .top-wrap .txt {
         outline: 1px solid #fa0; 
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -802,16 +805,19 @@ stroke-dashoffset: 0;
      }
 
      @media (max-width: 768px) {
-       
+        .top-wrap{
+            width: 90%;
+        }
         .top p{
             font-size: 1.5rem;
         }
+       
         .top-wrap .item {
             flex-wrap: wrap;
         }
         .top-wrap .pic {
             width: 100%;
-            height: 60vh;
+            height: 40vh;
         }
         .top-wrap .pic img {
             width: 100%;
@@ -822,6 +828,10 @@ stroke-dashoffset: 0;
         }
         .top-wrap .txt {
             width: 100%;
+        }
+        .top-wrap .txt .top-info {
+            width: 100%;
+            margin: 0 0 10px 0;
         }
         .top-wrap .txt .title {
             margin: 1vh 0;
@@ -1024,6 +1034,10 @@ stroke-dashoffset: 0;
     .top5-group .top5-txt {
         width: 55%;
     }
+    .top5-group .top5-pics .top5-2 .top2 {
+        height: 50vh;
+        position: relative;
+    }
     .top5-group .top5-pics .top5-2 .top2 .top5-info {
         font-size: 1.2rem;
     }
@@ -1045,18 +1059,13 @@ stroke-dashoffset: 0;
         font-size: 1rem;
     }
 
-    .top5-group .top5-txt .capsule-left {
-       
-    }
-    .top5-group .top5-txt .capsule-right {
-
-    }
 }
 
 @media (max-width: 768px){
     
     .top5-group .top5-txt {
         width: 80%;
+        margin-bottom: 20px;
     }
  
     .top5-group .top5-txt .top5-title  {
@@ -1069,13 +1078,14 @@ stroke-dashoffset: 0;
 
     .top5-group .top5-pics .top5-2 .top2 {
         width: 100%;
+        height: 25vh;
     }
     .top5-group .top5-pics .top5-2 .top2 .top5-info p{
         font-size: .6rem;
     }
     .top5-group .top5-pics .top5-3  {
         width: 100%;
-        height: 40vh;
+        height: 20vh;
     }
     .top5-3 .top3 .top3-info {
         flex-wrap: wrap;
@@ -1107,6 +1117,7 @@ stroke-dashoffset: 0;
     .top5-group .top5-txt .capsule-right img {
         width: 100%;
     }
+
 }
 
 
@@ -1287,6 +1298,12 @@ stroke-dashoffset: 0;
     .dr .dr-more a {
         line-height: 6vh;
     }
+    .dr .dr-slogan h4 {
+        font-size: 1rem;
+        line-height: 4vh;
+
+    
+    }
     
 }
 
@@ -1316,17 +1333,17 @@ stroke-dashoffset: 0;
     position: relative;
     display: flex;
     width: 95%;
-    min-height: 400px;
+    min-height: 300px;
     margin: auto;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
 }
 
-.tabby-tab {
+.tabable-tab {
     flex: 1;
 }
 
-.tabby-tab label {
+.tabable-tab label {
     display: block;
     box-sizing: border-box;
     /* tab content must clear this */
@@ -1342,11 +1359,11 @@ stroke-dashoffset: 0;
     
 }
 
-.tabby-tab label:hover {
+.tabable-tab label:hover {
     background: #A08484;
 }
 
-.tabby-content {
+.tabable-content {
     position: absolute;
     left: 0; bottom: 0; right: 0;
     /* clear the tab labels */
@@ -1366,24 +1383,25 @@ stroke-dashoffset: 0;
     
 }
 
-.tabby-tab .tabby-content  {
+.tabable-tab .tabable-content  {
     outline: 1px solid deeppink;
     display: flex;
+    overflow: hidden;
 
 }
-.tabby-tab .tabby-content img {
+.tabable-tab .tabable-content img {
     outline: 1px solid deeppink;
     width: 50%;
     object-fit: cover; 
     object-position: center center;
-    float: left;
+    /* float: left; */
     margin-right: 20px;
     border-radius: 8px; 
 }
-.tabby-content p span {
+.tabable-content p span {
     font-size: 2rem;
 }
-.tabby-content p {
+.tabable-content p {
     width: 50%;
     color: #5F6D5B;
     line-height: 6vh;
@@ -1456,7 +1474,7 @@ stroke-dashoffset: 0;
         border-radius: 0;
         overflow: hidden;
     }
-    .tabby-tab label {
+    .tabable-tab label {
         display: block;
         box-sizing: border-box;
         /* tab content must clear this */
@@ -1464,20 +1482,20 @@ stroke-dashoffset: 0;
         
     }
     
-    .tabby-tab label:hover {
+    .tabable-tab label:hover {
         background: #A08484;
     }
     
-    .tabby-content {
+    .tabable-content {
             margin-right: 0;
             border-radius: 8px;
             padding: 0;
             flex-wrap: wrap;
         }
-        .tabby-content p span {
+        .tabable-content p span {
             font-size: 2rem;
         }
-        .tabby-tab .tabby-content img {
+        .tabable-tab .tabable-content img {
             width: 100%;
             height: 50%;
             object-fit: cover; 
@@ -1486,7 +1504,7 @@ stroke-dashoffset: 0;
             margin-right:0;
             border-radius: 8px; 
         }
-        .tabby-content p {
+        .tabable-content p {
             width: 100%;
 
             color: #5F6D5B;
@@ -1510,13 +1528,13 @@ stroke-dashoffset: 0;
 
 /* MAKE IT WORK ----- */
 
-.tabby-tab [type=radio] { display: none; }
+.tabable-tab [type=radio] { display: none; }
 [type=radio]:checked ~ label {
     background: #EEDAD2;
     z-index: 2;
 }
 
-[type=radio]:checked ~ label ~ .tabby-content {
+[type=radio]:checked ~ label ~ .tabable-content {
     z-index: 1;
     
     /* show/hide */
@@ -1531,18 +1549,16 @@ stroke-dashoffset: 0;
 
 @media screen and (max-width: 480px) {
     .tabs { min-height: 580px; }
-    .tabby-tab label { 
+    .tabable-tab label { 
         height: 60px;
     }
-    .tabby-content { top: 60px; }
-    .tabby-content img {
+    .tabable-content { top: 60px; }
+    .tabable-content img {
         float: none;
         margin-right: 0;
         margin-bottom: 20px;
     }
 }
-
-
 
 /* footer */
 
@@ -1554,7 +1570,7 @@ stroke-dashoffset: 0;
 
 .main-footer .footer-icons {
     /* outline: 1px solid #fa0;  */
-    width: 20rem;
+    width: 15rem;
     margin: auto;
     display: flex;
     gap: 30px;

@@ -313,7 +313,7 @@ background-color: #4d593e;
     }
 }
 
-    /* footer */
+ /* footer */
 
 .main-footer {
     width: 100%;
@@ -323,7 +323,7 @@ background-color: #4d593e;
 
 .main-footer .footer-icons {
     /* outline: 1px solid #fa0;  */
-    width: 20rem;
+    width: 15rem;
     margin: auto;
     display: flex;
     gap: 30px;
@@ -332,7 +332,7 @@ background-color: #4d593e;
 
 }
 .main-footer .footer-icons img {
-    width: 50%;
+    width: 100%;
     vertical-align: middle;
     opacity: 50%;
   
@@ -400,17 +400,7 @@ background-color: #4d593e;
 
 
 
-  
-
-
-
-
-
-
-
-    
-        
- /* nav rwd */
+/* nav rwd */
 @media screen and (max-width:768px) {
     .hb{
         width: 35px;
@@ -551,5 +541,4 @@ background-color: #4d593e;
     right: 20px;
     /* outline: 1px solid #fa0; */
 }
-
 

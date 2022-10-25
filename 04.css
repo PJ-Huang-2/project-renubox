@@ -168,7 +168,6 @@
             outline: 1px solid #fa0;
             position: absolute;
             width: 20%;
-            height: ;
             left: 70%;
             top: 10%;
             font-weight: 600;
@@ -890,11 +889,11 @@
             overflow: hidden;
         }
         
-        .tabby-tab {
+        .tabable-tab {
             flex: 1;
         }
         
-        .tabby-tab label {
+        .tabable-tab label {
             display: block;
             box-sizing: border-box;
             /* tab content must clear this */
@@ -910,11 +909,11 @@
             
         }
         
-        .tabby-tab label:hover {
+        .tabable-tab label:hover {
             background: #A08484;
         }
         
-        .tabby-content {
+        .tabable-content {
             position: absolute;
             
             left: 0; bottom: 0; right: 0;
@@ -935,14 +934,14 @@
                 transform-origin: top left;
             
         }
-        .tabby-content a {
+        .tabable-content a {
             text-decoration: none;
             font-size: 18px;
             line-height: 4vh;
             color: #5F6D5B;
         }
         
-        .tabby-content img {
+        .tabable-content img {
             width: 50%;
             height: 100%;
             object-fit: cover;
@@ -951,14 +950,14 @@
             margin-right: 20px;
             border-radius: 8px;
         }
-        .tabby-content a h4 {
+        .tabable-content a h4 {
             font-size: 24px;
             letter-spacing: 1.2px;
             font-weight: 500;
             height: 20vh;
             color: #598969;
         }
-        .tabby-content a p {
+        .tabable-content a p {
             letter-spacing: .6px;
         }
 
@@ -967,13 +966,13 @@
         
         /* MAKE IT WORK ----- */
         
-        .tabby-tab [type=radio] { display: none; }
+        .tabable-tab [type=radio] { display: none; }
         [type=radio]:checked ~ label {
             background: #EEDAD2;
             z-index: 2;
         }
         
-        [type=radio]:checked ~ label ~ .tabby-content {
+        [type=radio]:checked ~ label ~ .tabable-content {
             z-index: 1;
             
             /* show/hide */
@@ -988,11 +987,11 @@
         
         @media screen and (max-width: 480px) {
             .tabs { min-height: 580px; }
-            .tabby-tab label { 
+            .tabable-tab label { 
                 height: 60px;
             }
-            .tabby-content { top: 60px; }
-            .tabby-content img {
+            .tabable-content { top: 60px; }
+            .tabable-content img {
                 float: none;
                 margin-right: 0;
                 margin-bottom: 20px;

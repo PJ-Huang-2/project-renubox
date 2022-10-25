@@ -6,6 +6,9 @@ body {
     font-family: 'Noto Sans TC','Noto Sans',  sans-serif, serif;
     scroll-behavior: smooth;
     }
+html, body {
+    scroll-behavior: smooth;
+}
     .chat-btn {
         width: 80px;
         position: fixed;

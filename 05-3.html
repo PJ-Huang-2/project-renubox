@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./05-3-css.css">
-    <title>Document</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>商品詳情 | RENUBOX</title>
 </head>
 <body>
-   <!-- chat-btn -->
-  <div class="chat-btn">
+<!-- chat-btn -->
+<div class="chat-btn">
     <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
 </div>
 
@@ -21,7 +22,7 @@
 <div class="header">
     <!-- logo -->
     <div class="logo">
-        <a href="./index.html"><img src="./main-pic/logo-first.png" alt="renubox-logo"></a>
+        <a href="./index.html"><img src="./main-pic/logo-first.png" alt="RENUBOX-logo"></a>
     </div>
     <!-- 漢堡 -->
     <label for="menu-switch" class="hb">
@@ -66,7 +67,7 @@
 
 <!-- banner -->
 <div class="goal-banner">
-        <img src="./-sub-pic/05-3banner.jpg">
+        <img src="./sub1-pic/banner-new.png">
 </div>
 
 <!-- breadcrumb -->
@@ -81,12 +82,12 @@
 
 <div class="main-area">
     <div class="product-pic">
-            <img id="large" src="./-sub-pic/product-main.jpg" alt="商品大圖">
+            <img id="large" src="./sub1-pic/product-main.jpg" alt="商品大圖">
         <div class="else-pic" id="smallPanel">
-            <img src="./-sub-pic/product-main.jpg" alt="">
-            <img src="./-sub-pic/else1.jpg" alt="">
-            <img src="./-sub-pic/else2.jpg" alt="">
-            <img src="./-sub-pic/else3.jpg" alt="">
+            <img src="./sub1-pic/product-main.jpg" alt="">
+            <img src="./sub1-pic/else1.jpg" alt="">
+            <img src="./sub1-pic/else2.jpg" alt="">
+            <img src="./sub1-pic/else3.jpg" alt="">
         </div>
     </div>
 
@@ -111,9 +112,9 @@
 
 
     <div class="product-info">
-        <div class="subject"><h1><p>營養補充</p></h1></div>
-        <div class="name"><h2><p>綜合維生素錠</p></h2></div>
-        <div class="tag"><span>#一日所需</span><span>#綜合</span><span>#維生素</span></div>
+        <div class="subject"><h1>營養補充</h1></div>
+        <div class="name"><h2>綜合維生素錠</h2></div>
+        <div class="tag"><a href="#">#一日所需</a><a href="#">#綜合</a><a href="#">#維生素</a></div>
         <div class="intro">
             ▸ 12種國際高吸收率成分、17種關鍵營養素<br>
             ▸ 天然、優質！嚴選原料榮獲10項國際專利<br>
@@ -122,8 +123,8 @@
         <div class="price">
             <span>NT$980</span>
             <div class="icons">
-                <img src="./-sub-pic/price-icon1.png" alt="加入收藏icon" title="加入收藏" id="heart">
-                <img src="./-sub-pic/price-icon2.png" alt="分享icon">
+                <img src="./sub1-pic/price-icon1.png" alt="加入收藏icon" title="加入收藏" id="heart">
+                <img src="./sub1-pic/price-icon2.png" alt="分享icon">
             </div>
         </div>
         <script>
@@ -132,10 +133,10 @@
               let heart = document.getElementById("heart"); 
             
               if(heart.title == "加入收藏"){
-                heart.src = "./-sub-pic/price-icon1-2.png";
+                heart.src = "./sub1-pic/price-icon1-2.png";
                 heart.title="取消收藏";
               }else{ //取消(紅心)
-                heart.src = "./-sub-pic/price-icon1.png";
+                heart.src = "./sub1-pic/price-icon1.png";
                 heart.title = "加入收藏";
               }
             }
@@ -148,7 +149,7 @@
             }//init
             window.addEventListener("load", init, false);
             </script> 
-
+            <!-- many -->
         <div class="many">
             <input type="button" class="btnMinus" value="-">
 		    <input type="text" class="qty" size="4" value="0" id="qty0">
@@ -181,38 +182,81 @@
         </script>
 
         <div class="footer-btn">
-            <a href="./06-4.html"><button class="car"><p>加入購物車</p></button></a>
-            <a href="./06-4.html"><button class="buy"><p>立即購買</p></button></a>
+            <a href="./06-5.html"><button class="car"><p>加入購物車</p></button></a>
+            <a href="./06-5.html"><button class="buy"><p>立即購買</p></button></a>
         </div>
 
 
     </div>
 </div>
-<div class="element">
-    <div class="items item-title">
-        <h3>3大主力成分in 1 BOX</h3>
-    </div>
-    <div class="items">
-        <img src="./-sub-pic/pills1.webp" alt="">
-        <h4>維生素C</h4>
-        <p>參與肝臟排毒的酶需要維生素 C 才能正常發揮作用。維生素 C 還有助於身體提高其產生穀胱甘肽的速度。</p>
-    </div>
-    <div class="items">
-        <img src="./-sub-pic/pills2.webp" alt="">
-        <h4>維生素B+</h4>
-        <p>包含7種維生素B，為健康身心的基石，對您的活力、大腦功能和細胞新陳代謝有直接影響。</p>
-    </div>
-    <div class="items">
-        <img src="./-sub-pic/pills3.webp" alt="">
-        <h4>維生素E</h4>
-        <p>目前已知充足的維生素E，可防止不飽和脂肪酸在體內過度氧化，具有抗氧化、抗發炎的作用。</p>
+
+    <div class="element">
+
+        <div class="nos">
+            <div class="no">
+                <img src="./sub1-pic/elements-1gmo.jpg" alt="非基改"> 
+                <h3>不使用基改原料</h3>
+            </div>
+            <div class="no">
+                <img src="./sub1-pic/elements-1vege.jpg" alt="可以素食">
+                <h3>素食者可以使用</h3>
+            </div>
+            <div class="no">
+                <img src="./sub1-pic/elements-3nolactose.jpg" alt="不含乳品成分">
+                <h3>不含乳品成分</h3>
+            </div>
+            <div class="no">
+                <img src="./sub1-pic/elements-4nogluten.jpg" alt="不含麩質">
+                <h3>不含麩質</h3>
+            </div>
+        </div>
+
+        <h4>我們相信您的維生素應該只包含您需要的最佳成分。</h4>
+
+        <div class='disclaimer'>
+            <div class="accordion">
+              <div class="accordion__single">
+                <input class="accordion__single__hidden" type="checkbox" id="question-one">
+                    <label class="accordion__single__question" for="question-one">【原料】由專業醫師及營養師團隊精心設計營養素組合</label>
+                    <p class="accordion__single__answer">
+                        原料： 甲鈷胺（共甲基鈷胺素）、酵母维他命B群、荔枝綠茶多酚、鼠尾草蘆筍磷脂醯
+                    </p>
+              </div>
+              <div class="accordion__single">
+                <input class="accordion__single__hidden" type="checkbox" id="question-two">
+                <label class="accordion__single__question" for="question-two">【效用】由專業功能醫學團隊研發設計最有效營養素</label>
+                <p class="accordion__single__answer">
+                    ◉酵母维他命B群：加拿大酵母生產專家LALLEMAND，增強體力，精神旺盛<br>
+                    ◉荔枝綠茶多酚：滋補強身，增強體力，精神旺盛，養顏美容、青春美麗<br>
+                    ◉鼠尾草蘆筍磷脂醯：國際原料，優選複方，工作不當機，輕鬆應對，競爭力再進化
+                </p>
+              </div>
+              <div class="accordion__single">
+                <input class="accordion__single__hidden" type="checkbox" id="question-three">
+                <label class="accordion__single__question" for="question-three">【免責聲明】</label>
+                <p class="accordion__single__answer">
+                    使用前，務必閱讀產品明細，並按照使用說明使用。維生素和營養素不應取代均衡飲食。如果您有任何預先存在的健康條件，或正在服用任何藥物，請務必在使用前諮詢您的醫療專家。
+                </p>
+              </div>
+             
+            </div>
+        </div>
+
+        <div class="support">
+            <div class="support-pic">
+                <img src="./sub1-pic/elements-1.png" alt="支持健康示意圖">
+            </div>
+            
+            <div class="support-txt">
+                <h4>支持能量生產及大腦認知功能</h4>
+                <p>我們的維生素以甲基鈷胺素的形式存在，這是一種天然存在的維生素形式，對最佳身體功能至關重要。我們的單劑量配方支持能量產生、神經系統健康和大腦功能。</p>
+            </div>
+        </div>
+
     </div>
 
-    
-</div>
-
-<!-- footer -->
-<div class="main-footer">
+ <!-- footer -->
+ <div class="main-footer">
 
     <!-- footer-icons -->
     <div class="footer-icons">
@@ -273,6 +317,9 @@
    </div>
    
 </div>
+
+
+
 
 
 </body>

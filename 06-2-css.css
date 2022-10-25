@@ -1,5 +1,5 @@
 body {
-    background: url(./-sub2-pic/sub-02-bgp.jpg);
+    background: url(./sub2-pic/sub-02-bgp.jpg);
     background-attachment: fixed;
     background-position: center top;
     background-size: 1500px auto;
@@ -187,6 +187,7 @@ body {
         .end .product-name {
             outline: 1px solid #fa0;
             width: 50%;
+            margin-bottom: 40px;
         }
         .end .product-name h2 {
             font-size: 2.5rem;
@@ -266,11 +267,12 @@ body {
             width: 100%;
         }
         .end .product-name h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
             margin: 1vh auto;
         }
         .end .product-name label {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             letter-spacing: .6px;
             color: #4d593e;
             line-height: 4vh;

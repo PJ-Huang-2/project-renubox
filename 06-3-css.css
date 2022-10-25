@@ -261,10 +261,11 @@ body {
             width: 100%;
             top: 200px;
         }
-        .banner-title h1 {
-            font-size: 1.3rem;
-
+        .result-banner .banner-title h1 {
+            font-size: 2rem;
+            line-height: 50px;
         }
+      
         .result-list .items {
             flex-wrap: wrap;
             height: auto;

@@ -1,5 +1,5 @@
 body {
-    background: url(./-sub2-pic/landing_page_hero.jpg)no-repeat top center;
+    background: url(./sub2-pic/landing_page_hero.jpg)no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
     background-color: #4d593e;
@@ -8,11 +8,10 @@ body {
     .chat-btn {
         width: 80px;
         position: fixed;
-        right: 20px;
+        right: 2%;
         bottom: 10px;
         animation: breath 2.5s ease-in-out infinite;
-        z-index: 5;
-       
+        z-index: 4;
     }
     @keyframes breath {
       70% {
@@ -28,39 +27,25 @@ body {
         transform: scale(1);
       }
     }
-    
-    
-    .chat-btn a img {
-        width: 100%;
-        filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.2));
-        animation: animation_puni-data-v-9797c524 2s infinite running;
-        animation-duration: 2s;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-fill-mode: none;
-        animation-play-state: running;
-        animation-name: animation_puni-data-v-9797c524;
-    } 
-    
+           
     /* header */
     .header {
-        /* outline: 1px solid #fa0; */
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        /* background-color: #ccc; */
-        /* position: sticky; */
+        background-color: transparent;
+        position: sticky;
         top: 0;
-        /* outline: 1px solid #fa0; */
+        margin-bottom: 20px;
+        outline: 1px solid #fa0;
         align-items: center;
         z-index: 5;
     }
     .logo img{
         vertical-align: top;
-        width: 100px;
-        /* outline: 1px solid #fa0; */
+        width:120px;
+        outline: 1px solid #fa0;
+    
     } 
     .main-nav a{
         display: block;
@@ -68,7 +53,7 @@ body {
         transform: translateY(0px);
         transition: .3s
     }
-
+    
     .main-nav a:hover{
         transform: translateY(-10px);
     }
@@ -80,19 +65,19 @@ body {
         bottom: -2.5px;
         height: 0;
         border-bottom: 2px solid #8A7867;
-        transition: .3s;
+       
     }
     .main-nav a:hover:after{
         left: 10px;
         right: 10px;
     }
-
-
+    
+    
     .nav-icon {
         display: block;
         align-items: center;
         right: 20px;
-        /* outline: 1px solid #fa0; */
+        outline: 1px solid #fa0;
         /* padding: 10px; */
     }
     /* .nav-icon .shop-icon {
@@ -101,11 +86,14 @@ body {
     .nav-icon img {
         width: 30px;
         margin-left: 20px;
-        /* outline: 1px solid #fa0; */
+        outline: 1px solid #fa0;
     }
     #menu-switch{
         display: none;
     }
+    
+    
+    
         /* quiz */
         .quiz {
             outline: 1px solid deeppink;
@@ -206,7 +194,8 @@ body {
         /* how */
         .how {
             outline: 1px solid deeppink;
-            width: 100%;
+            width: 90%;
+            margin: auto;
             margin-top: 60px;
             padding-bottom: 10vh;
             /* outline: 1px solid #fa0; */
@@ -351,6 +340,12 @@ body {
     position: relative;
     padding-bottom: 50px;
 }
+.card-body p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .6px;
+    color: #6B6B6B;
+}
 
 .review{
     font-size: 20px;
@@ -418,21 +413,17 @@ button.active{
 }
 
 
-
-
 /* footer */
 
 .main-footer {
-    position: relative;
     width: 100%;
     padding: 0 0 50px 0;
     background-image: url(./main-pic/background2.jpg); 
-    margin-top: 10vh;
 }
 
 .main-footer .footer-icons {
     /* outline: 1px solid #fa0;  */
-    width: 20rem;
+    width: 15rem;
     margin: auto;
     display: flex;
     gap: 30px;
@@ -441,7 +432,7 @@ button.active{
 
 }
 .main-footer .footer-icons img {
-    width: 50%;
+    width: 100%;
     vertical-align: middle;
     opacity: 50%;
   
@@ -506,24 +497,11 @@ button.active{
     color: #FFD9C9;
     background-color: #598969; 
 }
-  
 
 
 
-
-
-   
-
-
-
-
-
-
-
-
-         
- /* nav rwd */
- @media screen and (max-width:768px) {
+/* nav rwd */
+@media screen and (max-width:768px) {
     .hb{
         width: 35px;
         height: 35px;
@@ -554,7 +532,7 @@ button.active{
         background-color: #eae6e398;
         width: 100%;
         left: -100%;
-        top: 8%;
+        top: 100%;
         opacity: 0;
         transition: opacity 1s 0s,
                     left    0s 1s;
@@ -663,3 +641,4 @@ button.active{
     right: 20px;
     /* outline: 1px solid #fa0; */
 }
+
