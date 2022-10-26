@@ -96,8 +96,6 @@ position: relative;
     display: none;
 }
 
-
-
 /* banner */
 
 .banner {
@@ -1336,12 +1334,12 @@ stroke-dashoffset: 0;
     background: #EEDAD2;
     display: flex;
     transition: 
-        opacity 0.8s ease,
+        opacity 0.5s ease,
         transform 0.8s ease		;
     
     /* show/hide */
         opacity: 0;
-        transform: scale(0.1);
+        transform: scale(0.9);
         transform-origin: top left;
     }
 
