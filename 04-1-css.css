@@ -1181,7 +1181,7 @@ stroke-dashoffset: 0;
 }
 .dr .dr-more {
     margin: auto;
-    width: 18%;
+    width: 15%;
     margin-top: 50px;
     background-color: #346C47;
     font-weight: 300;
@@ -1255,7 +1255,7 @@ stroke-dashoffset: 0;
         margin: 20px 0;
     }
     .dr .dr-more {
-        width: 38%;
+        width: 30%;
         font-size: 1rem;
     }
     .dr .dr-more a {
@@ -1368,7 +1368,7 @@ stroke-dashoffset: 0;
 
 .column .container .dr-more {
     margin: auto;
-    width: 20%;
+    width: 15%;
     margin-top: 30px;
     background-color: #346C47;
     font-weight: 300;
@@ -1469,7 +1469,7 @@ stroke-dashoffset: 0;
         }
 
         .column .container .dr-more {
-            width: 40%;
+            width: 25%;
             font-size: 1rem;
         }
         .column .container .dr-more a {
