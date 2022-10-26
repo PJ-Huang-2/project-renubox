@@ -279,141 +279,145 @@ body {
         }
         .side-bar .menu {
             position: relative;
+            padding-top: 20px;
             width: 100%;
-        
         }
            
-           .side-bar.active{
-            left: 0;
-           }
-           
-           .side-bar .menu{
-            width: 100%;
-            margin-top: 20px;
-           }
-           
-           .side-bar .menu .item{
-            position: relative;
-            cursor: pointer;
-           }
-           
-           .side-bar .menu .item a{
-            color: #8A7867;
-            font-size: 16px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            padding: 5px 30px;
-            line-height: 30px;
-           }
-           .side-bar .menu .item .side-title {
-            font-size: 22px;
-            color: #346C47;
-           }
-           .side-bar .menu .item a:hover{
-            background: #EEDAD2;
-            transition: 0.3s ease;
-           }
-           
-           .side-bar .menu .item i{
-            margin-right: 15px;
-           }
-           
-           .side-bar .menu .item a .dropdown{
-            position: absolute;
-            right: 0;
-            margin: 20px;
-            transition: 0.3s ease;
-           }
-           
-           .side-bar .menu .item .sub-menu{
-            background: rgba(255, 255, 255, 0.1);
-            display: none;
-           }
-           
-           .side-bar .menu .item .sub-menu a{
-            padding-left: 80px;
-           }
-           
-           .rotate{
-            transform: rotate(90deg);
-           }
-
-           @media (max-width: 768px){
-            .open-btn {
-                display: block;
-              }
-            .side-bar {
-                position: fixed;
-                left: -100vw;
-                top: 0;
-                z-index: 100;
-                width: 100vw;
-                height: 100vh;
-              }
-              .side-bar button {
-                display: block;
-              }
-              .open-btn {
-                display: block;
-              }
-              .goal-products{
-                width: 100%;
-                margin:5vh 0;
-              }
-              
-            
-              .sidebar-open {
-                position: fixed;
-                left: 0;
-                top: 0;
-                z-index: 100;
-                width: 100vw;
-                height: 100vh;
-              }
-             
-           }
-     
+        .side-bar.active{
+        left: 0;
+        }
         
-           .main{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-           }
-           
-           .main h1{
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 60px;
-            text-align: center;
-            line-height: 80px;
-           }
-           
-           @media (max-width: 900px){
-            .main h1{
-              font-size: 40px;
-              line-height: 60px;
+        .side-bar .menu{
+        width: 100%;
+        margin-top: 20px;
+        }
+        
+        .side-bar .menu .item{
+        position: relative;
+        cursor: pointer;
+        }
+        
+        .side-bar .menu .item a{
+        color: #8A7867;
+        font-size: 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 5px 30px;
+        line-height: 30px;
+        }
+        .side-bar .menu .item .side-title {
+        font-size: 22px;
+        color: #346C47;
+        }
+        .side-bar .menu .item a:hover{
+        background: #EEDAD2;
+        transition: 0.3s ease;
+        }
+        .side-bar .menu .item:hover {
+
+        }
+
+        
+        .side-bar .menu .item i{
+        margin-right: 15px;
+        }
+        
+        .side-bar .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+        }
+        
+        .side-bar .menu .item .sub-menu{
+        background: rgba(255, 255, 255, 0.1);
+        display: none;
+        }
+        
+        .side-bar .menu .item .sub-menu a{
+        padding-left: 80px;
+        }
+        
+        .rotate{
+        transform: rotate(90deg);
+        }
+
+        @media (max-width: 768px){
+        .open-btn {
+            display: block;
             }
-           }
+        .side-bar {
+            position: fixed;
+            left: -100vw;
+            top: 0;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            }
+            .side-bar button {
+            display: block;
+            }
+            .open-btn {
+            display: block;
+            }
+            .goal-products{
+            width: 100%;
+            margin:5vh 0;
+            }
+            
+        
+            .sidebar-open {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            }
+            
+        }
+    
+    
+        .main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        }
+        
+        .main h1{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 60px;
+        text-align: center;
+        line-height: 80px;
+        }
+        
+        @media (max-width: 900px){
+        .main h1{
+            font-size: 40px;
+            line-height: 60px;
+        }
+        }
 
-           /* setting filter */
+        /* setting filter */
 
-           .filter-area {
-            width: 90%;
-            margin: auto;
-           
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 20px;
-           }
+        .filter-area {
+        width: 90%;
+        margin: auto;
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        }
 
-           .filter-area label {
-            margin-right: 5px;
-            font-size: 14px;
-            line-height: 21px;
-            color: #346C47;
+        .filter-area label {
+        margin-right: 5px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #346C47;
         }
         .filter-area select {
             border: 2px solid #346C47;

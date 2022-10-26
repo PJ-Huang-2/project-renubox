@@ -717,7 +717,8 @@ font-family: 'Noto Sans TC','Noto Sans',  sans-serif, serif;
         margin: auto;
     }
     .support-pic img {
-        margin-left: 17%;
+       width: 100%;
+       margin: auto;
     }
     .support-txt {
         width: 100%;

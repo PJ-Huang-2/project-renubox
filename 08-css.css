@@ -233,6 +233,7 @@ body {
         @media screen and (max-width: 768px){
             .product-value {
                 width: 100%;
+                border-radius: 0;
             }
             .product-value .value-card {
                 flex-wrap: wrap;

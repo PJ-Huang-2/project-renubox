@@ -1,6 +1,6 @@
 * {
     font-family: 'Noto Sans TC', 'Noto Sans Mono','Noto Sans',sans-serif, monospace;
-    box-sizing: border-box;
+    
 }
 body {
 background: url(./main-pic/background.jpg);
@@ -8,46 +8,31 @@ background-attachment: fixed;
 background-position: center top;
 background-size:  auto;
 background-color: #4d593e;
+box-sizing: border-box;
 }
 .chat-btn {
     width: 80px;
     position: fixed;
-    right: 20px;
+    right: 2%;
     bottom: 10px;
     animation: breath 2.5s ease-in-out infinite;
-    z-index: 1;
-   
+    z-index: 4;
 }
-    @keyframes breath {
-    70% {
-        transform: scale(1);
-    }
-    80% {
-        transform: scale(0.96);
-    }
-    90% {
-        transform: scale(1.08);
-    }
-    100% {
-        transform: scale(1);
-    }
-    }
-
-
-.chat-btn a img {
-    width: 100%;
-    filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.2));
-    animation: animation_puni-data-v-9797c524 2s infinite running;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: animation_puni-data-v-9797c524;
-} 
-
+@keyframes breath {
+  70% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.96);
+  }
+  90% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+       
 /* header */
 .header {
     display: flex;
@@ -56,15 +41,13 @@ background-color: #4d593e;
     background-color: transparent;
     position: sticky;
     top: 0;
-    /* margin-bottom: 20px; */
-    
+    margin-bottom: 20px;
     align-items: center;
     z-index: 5;
 }
 .logo img{
     vertical-align: top;
     width:120px;
-    
 
 } 
 .main-nav a{
@@ -97,7 +80,6 @@ background-color: #4d593e;
     display: block;
     align-items: center;
     right: 20px;
-    
     /* padding: 10px; */
 }
 /* .nav-icon .shop-icon {
@@ -106,19 +88,17 @@ background-color: #4d593e;
 .nav-icon img {
     width: 30px;
     margin-left: 20px;
-    
 }
 #menu-switch{
     display: none;
 }
 
+
 /* goal-banner */
 .goal-banner {
-    /*  */
     width:100%;
     height: 400px;
     position: relative;
-    
 }
 .goal-banner img{
     width: 100%;
@@ -127,7 +107,6 @@ background-color: #4d593e;
     object-position: center top;
 }
 .goal-banner .banner-title {
-    
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -137,6 +116,7 @@ background-color: #4d593e;
     top: 200px;
     left: 28%;
 }
+
 .goal-banner .banner-title h1 {
     width: 100%;
     height: 100%;
@@ -167,8 +147,6 @@ background-color: #4d593e;
     border-radius: 30px;
     position: relative;
     left: -30px;
-    -webkit-text-stroke: .5px #598969;
-
 }
 
 .goals-title h3 {
@@ -190,7 +168,6 @@ background-color: #4d593e;
 
 
 .item{
-
     width: 44%;
     height: 250px;
     margin: 3%;

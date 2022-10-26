@@ -7,7 +7,7 @@ background:  url(./main-pic/background.jpg);
 /* linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), */
 background-attachment: fixed;
 background-position: center top;
-background-size: 100% auto;
+background-size: cover;
 background-color: #4d593e;
 z-index: 2;
 font-family: 'Noto Sans TC', 'Noto Sans Mono','Noto Sans',sans-serif, monospace;
@@ -193,6 +193,8 @@ position: relative;
     letter-spacing: 0.05em;
     margin-left: 1%;
     gap: 2%;
+    cursor: pointer;
+    z-index: 3;
 
 }
 .banner .banner-news p {
@@ -204,6 +206,7 @@ position: relative;
     text-align: right;
     margin-right: 2%;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .banner .banner-news a:hover {
@@ -223,14 +226,14 @@ svg {
 path {
 stroke: white;
 stroke-width: 3px;
-stroke-dasharray: 700;
-stroke-dashoffset: 700;
+stroke-dasharray: 500;
+stroke-dashoffset: 500;
 animation: path 5s alternate infinite;
 }
 
 @keyframes path {
 from {
-stroke-dashoffset: 700;
+stroke-dashoffset: 500;
 }
 
 to {
@@ -445,6 +448,10 @@ stroke-dashoffset: 0;
     line-height: 22px;
     color: #fff;           
 }
+.info .wrap .info-txt .btn:hover {
+    background: #979797;
+    border: 1px solid #979797;
+}
 
 @media screen and (max-width: 1200px) {
     .info .wrap .info-txt .btn {
@@ -557,6 +564,10 @@ stroke-dashoffset: 0;
     border: 1px solid #346C47;
     background-color: #346C47;
     white-space: nowrap;
+}
+.goal-more button:hover {
+    border: 1px solid #979797;
+    background-color: #979797;
 }
 .goal-more button a {
     text-decoration: none;
@@ -756,7 +767,6 @@ stroke-dashoffset: 0;
         border-radius: 50px;
      }
      .top-wrap .txt .detail {
-    
         margin: auto;
         background-color: #346C47;
         width: 20%;
@@ -773,6 +783,10 @@ stroke-dashoffset: 0;
         letter-spacing: -0.4px;
         color: #fff;
      }
+     .top-wrap .txt .detail:hover {
+        background-color: #979797;
+     }
+
 
      @media (max-width: 768px) {
         .top-wrap{
@@ -860,22 +874,14 @@ stroke-dashoffset: 0;
 }
 
 .top5-group .top5-txt .capsule-left {
-
     width: 30%;
-
-    
 }
 .top5-group .top5-txt .capsule-right {
-
     width: 30%;
-  
 }
 .top5-group .top5-txt .top5-title {
-
     width: 40%;
     font-family: 'Noto Sans';
-
-    
 }
 .top5-group .top5-txt .top5-title h2 {
     font-weight: 400;
@@ -1185,7 +1191,9 @@ stroke-dashoffset: 0;
     text-align: center;
     border-radius: 30px;
     white-space: nowrap;
-
+}
+.dr .dr-more:hover {
+    background-color: #979797;
 }
 .dr .dr-more a {
     line-height: 8vh;
@@ -1335,8 +1343,7 @@ stroke-dashoffset: 0;
         opacity: 0;
         transform: scale(0.1);
         transform-origin: top left;
-    
-}
+    }
 
 .tabable-tab .tabable-content  {
     display: flex;
@@ -1349,7 +1356,7 @@ stroke-dashoffset: 0;
     object-position: center center;
     /* float: left; */
     margin-right: 20px;
-    border-radius: 8px; 
+
 }
 .tabable-content p span {
     font-size: 2rem;
@@ -1371,7 +1378,9 @@ stroke-dashoffset: 0;
     text-align: center;
     border-radius: 30px;
     white-space: nowrap;
-
+}
+.column .container .dr-more:hover {
+    background-color: #979797;
 }
 .column .container .dr-more a {
     line-height: 8vh;
@@ -1379,7 +1388,6 @@ stroke-dashoffset: 0;
     text-align: center;
     color: #fff;
     text-align: center;
-
 }
 
 
@@ -1428,8 +1436,8 @@ stroke-dashoffset: 0;
         display: block;
         box-sizing: border-box;
         /* tab content must clear this */
-        height: 40px
-        
+        height: 40px;
+        font-size: 15px;
     }
     
     .tabable-tab label:hover {
@@ -1442,9 +1450,7 @@ stroke-dashoffset: 0;
             padding: 0;
             flex-wrap: wrap;
         }
-        .tabable-content p span {
-            font-size: 2rem;
-        }
+        
         .tabable-tab .tabable-content img {
             width: 100%;
             height: 50%;
@@ -1452,13 +1458,15 @@ stroke-dashoffset: 0;
             object-position: center center;
             float: left;
             margin-right:0;
-            border-radius: 8px; 
+        }
+        .tabable-content p span {
+            font-size: 1.5rem;
         }
         .tabable-content p {
             width: 100%;
-
             color: #5F6D5B;
-            line-height: 6vh;
+            line-height: 4vh;
+            padding: 10px;
             margin:auto;
         }
 
@@ -1472,11 +1480,7 @@ stroke-dashoffset: 0;
 }
 
 
-
-
-
-
-/* MAKE IT WORK ----- */
+/* --can tab-- */
 
 .tabable-tab [type=radio] { display: none; }
 [type=radio]:checked ~ label {

@@ -356,6 +356,7 @@ body {
                 bottom: 48px;
                 left: -1px;
                 display:none;
+                outline: 1px solid aquamarine;
             }
             .show .selected-view {
                 display: block;
@@ -371,13 +372,14 @@ body {
                 line-height: 100%;
                 color: #EEDAD2;
                 position: absolute;
-                right: 282px;
+                right: 0;
                 bottom: -15px;
             }
             .cartFooter .selected-view .arrow span {
+                outline: 1px solid deeppink;
                 color: #EEDAD2;
                 position: absolute;
-                left: 0px;
+                right: 0px;
                 bottom: 2px;
             }
             #selectedViewList {
