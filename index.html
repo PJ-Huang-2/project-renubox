@@ -1,534 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./main-pic/page-tag-pic.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./reset.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
-    <link rel="stylesheet" href="./aos.css">  
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="./04-1-css.css">
     <title>RENUBOX</title>
-</head>
-<body>
+    <link rel="icon" href="./images/main-pic/page-tag-pic.ico" type="image/x-icon" />
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="./scripts/main-page.js"></script>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/aos.css">
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
     <!-- chat-btn -->
     <div class="chat-btn">
-        <a href="#"><img src="./main-pic/chat-btn.png" alt=""></a>
+      <a href="#">
+        <img src="./images/main-pic/chat-btn.png" alt="">
+      </a>
     </div>
-
     <input type="checkbox" name="" id="menu-switch">
     <!-- nav-bar -->
     <div class="header">
-        <!-- logo -->
-        <div class="logo">
-            <a href="./index.html"><img src="./main-pic/logo-first.png" alt="RENUBOX-logo"></a>
-        </div>
-        <!-- 漢堡 -->
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <!-- 選單 -->
-        <nav class="main-nav">
-            <a href="./06.html">智能評估</a>
-            <a href="./05-1.html">找功能</a>
-            <a href="./07.html">所有商品</a>
-            <a href="./08.html">我們的承諾</a>
-            <a href="./10.html">健康專欄</a>
-            <a href="./09.html">營養管理計畫</a>
-        </nav>
-        <!-- icons -->
-        <div class="nav-icon">
-            <a href="#">
-                <img src="./main-pic/member_icon.png" alt="nav-mem-icon">
-            </a>
-            <a href="./06-5.html" class="shop-icon">
-                <img src="./main-pic/shopping_icon.png" alt="nav-cart-icon">
-            </a>
-        </div>
+      <!-- logo -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/main-pic/logo-first.png" alt="RENUBOX-logo">
+        </a>
+      </div>
+      <!-- 漢堡 -->
+      <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- 選單 -->
+      <nav class="main-nav">
+        <a href="./06.html">智能評估</a>
+        <a href="./05-1.html">找功能</a>
+        <a href="./07.html">所有商品</a>
+        <a href="./08.html">我們的承諾</a>
+        <a href="./10.html">健康專欄</a>
+        <a href="./09.html">營養管理計畫</a>
+      </nav>
+      <!-- icons -->
+      <div class="nav-icon">
+        <a href="#">
+          <img src="./images/main-pic/member_icon.png" alt="nav-mem-icon">
+        </a>
+        <a href="./06-5.html" class="shop-icon">
+          <img src="./images/main-pic/shopping_icon.png" alt="nav-cart-icon">
+        </a>
+      </div>
     </div>
-    <!-- navbar-scroll -->
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $(".header").css("background" , "#eae6e398");
-            }
-
-            else{
-                $(".header").css("background" , "transparent");  	
-            }
-        })
-        })
-    </script>
-
     <!-- banner -->
-    
     <div class="banner">
-        <div class="bannerpics">
-            <div class="banner-left">
-                <img src="./main-pic/main-pic-top2.jfif" alt="首圖">
-            </div> 
-            <div class="banner-right">
-                <img src="./main-pic/main-top-product2-logo.jpg" alt="首圖2">
-            </div> 
+      <div class="bannerpics">
+        <div class="banner-left">
+          <img src="./images/main-pic/main-pic-top2.jfif" alt="首圖">
         </div>
-
-        <div class="banner-title">
-            <h1>RENUBOX</h1>
-            <p>REplace</p>
-            <p>NUtritions</p>
-            <p>you really</p>
-            <p>need in a</p>
-            <p>BOX。</p>  
+        <div class="banner-right">
+          <img src="./images/main-pic/main-top-product2-logo.jpg" alt="首圖2">
         </div>
-
-        <div class="banner-news">
-            <p>*9/20  2周體驗優惠組合開賣！限量500組 </p>
-        </div>
-        <svg>
-            <g fill="none">
-              <path d="M0,40 L500,40" />
-          </svg>
-       
+      </div>
+      <div class="banner-title">
+        <h1>RENUBOX</h1>
+        <p>REplace</p>
+        <p>NUtritions</p>
+        <p>you really</p>
+        <p>need in a</p>
+        <p>BOX。</p>
+      </div>
+      <div class="banner-news">
+        <p>*9/20 2周體驗優惠組合開賣！限量500組 </p>
+      </div>
+      <svg>
+        <g fill="none" />
+        <path d="M0,40 L500,40" />
+      </svg>
     </div>
-
-    <!-- mainpage-2 -->
-    <script>
-        AOS.init({
-        duration: 1000,
-        });
-    </script>
-
     <!-- main-page-informations -->
     <div class="info">
-        <div class="wrap up" data-aos="fade-up">
-             <div class="info-pics">
-                 <div class="info-pic info-pic1">
-                     <img src="./main-pic/main-2-product.jpg" alt="test-pic" class="pic-down">
-                 </div>
-                 <div class="info-pic info-pic2">
-                     <img src="./main-pic/main-2-product2.jpg" alt="test-pic" class="pic-up">
-                 </div>
-             </div>
-
-             <div class="info-txt">
-                 <div class="title">
-                     <p>替換</p>
-                     <p class="title-tab">真正需要的營養</p>
-                 </div>
-                 <div class="infos">
-                     你時常感到疲倦、注意力不集中呢？吃了瓶瓶罐罐的保健食品還是沒有太大的感覺？其實，身體累不一定只需要補充B群！身體所缺乏的營養物質環環相扣，缺一不可！
-                     RENUBOX結合智慧評估及專業功能醫學、營養師團隊，為您找出身體真正缺乏的營養素，有效補充。
-                 </div>
-                 <div class="btn">
-                     <a href="./06.html">5分鐘智能評估</a>
-                 </div>
-             </div>
+      <div class="wrap up" data-aos="fade-up">
+        <div class="info-pics">
+          <div class="info-pic info-pic1">
+            <img src="./images/main-pic/main-2-product.jpg" alt="test-pic" class="pic-down">
+          </div>
+          <div class="info-pic info-pic2">
+            <img src="./images/main-pic/main-2-product2.jpg" alt="test-pic" class="pic-up">
+          </div>
         </div>
-
-         <div class="wrap down" data-aos="fade-up">
-                 <div class="info-pics">
-                     <div class="info-pic3">
-                         <img src="./main-pic/main-pic3.jpg" alt="" class="pic-down">
-                     </div>
-                 </div>
-                 
-                 <div class="info-txt">
-                     <div class="title title-down">
-                         <p>生活，是你的</p>
-                         <p class="title-tab">其他就交給我們</p>
-                     </div>
-                     <div class="infos">
-                         「生活，是你的。」<br>
-                         把一切美好留給自己，專業的就交由RENUBOX為您準備。RENUBOX的誕生就是想藉由你的內在需求「真實」告訴你的身體所需。我們的免費「客製化」AI問卷系統同樣能為您量身推薦適合的營養保健品。<br>
-
-                         拿掉過度包裝、華麗行銷，我們希望扮演的是「最懂你 」的照顧者。
-                     </div>
-                     <div class="btn">
-                         <a href="./06.html">5分鐘智能評估</a>
-                     </div>
-                 </div>
-         </div>
-
-
-<!-- goals -->
-
-        <div class="goals">
-                <h2>
-                找功能
-                </h2>
-                <p>
-                從自身最需要的功能來挑選自己適合的產品
-                </p>
+        <div class="info-txt">
+          <div class="title">
+            <p>替換</p>
+            <p class="title-tab">真正需要的營養</p>
+          </div>
+          <div class="infos"> 你時常感到疲倦、注意力不集中呢？吃了瓶瓶罐罐的保健食品還是沒有太大的感覺？其實，身體累不一定只需要補充B群！身體所缺乏的營養物質環環相扣，缺一不可！ RENUBOX結合智慧評估及專業功能醫學、營養師團隊，為您找出身體真正缺乏的營養素，有效補充。 </div>
+          <div class="btn">
+            <a href="./06.html">5分鐘智能評估</a>
+          </div>
         </div>
-        <div class="goals-main">
-            <div class="container">
-                <div class="panel active" style="background-image: url('./sub1-pic/goal-fit.jpg')">
-                <h3>體態管理</h3>
-                </div>
-                <div class="panel" style="background-image: url('./sub1-pic/goal-defence.jpg')">
-                <h3>營養補充</h3>
-                </div>
-                <div class="panel" style="background-image: url('./sub1-pic/goal-antiage.webp')">
-                <h3>抗老回春</h3>
-                </div>
-                <div class="panel" style="background-image: url('./sub1-pic/goal-insomnia.jpg')">
-                <h3>失眠焦慮</h3>
-                </div>
-                <div class="panel" style="background-image: url('./sub1-pic/goal-food.jpg')">
-                <h3>健康飲食</h3>
-                </div>
-                <div class="panel" style="background-image: url('./sub1-pic/goal-pretty.jpg')">
-                    <h3>美容保養</h3>
-                </div>
-        
-            </div>
-            <div class="goal-more">
-                <button><a href="./05-1.html">查看內容</a></button>
-            </div>
-
-        </div>
-
-        <!-- goals main JS -->
-        <script>
-            const panels = document.querySelectorAll('.panel')
-
-            panels.forEach(panel => {
-                panel.addEventListener('click', () => {
-                    removeActiveClasses()
-                    panel.classList.add('active')
-                })
-            })
-
-            function removeActiveClasses() {
-                panels.forEach(panel => {
-                    panel.classList.remove('active')
-                })
-            }
-        </script>
-
-    <!-- TOP 3  -->
-
-            <div class="top3" data-aos="fade-up">
-            <h2>
-                熱銷懶人包
-            </h2>
-            <p>無從找起？這些複方組合包為您身體全方位把關</p>
-            </div>
-
-        <div class="top-wrap" data-aos="fade-up">
-            <div class="item">
-                <div class="pic">
-                    <img src="./main-pic/top3-1.jpg">
-                </div>
-                <div class="txt">
-                    <div class="title">活力滿滿 +</div>
-
-                    <div class="top-info">
-                        由多種維生素和礦物質高品質的維生素和礦物質所組成，提供全面的營養平衡。一種基本補充劑，含有獨特配方的維生素和礦物質，可支持您的飲食並消除營養失衡。
-                    </div>
-                    <div class="tags">
-                        <div class="tag">#抗氧化</div>
-                        <div class="tag">#抵抗力</div>
-                        <div class="tag">#一日所需</div>
-                    </div>
-                    <div class="detail">
-                        <a href="#">產品詳情</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-up">
-                <div class="pic">
-                    <img src="./main-pic/product-main.jpg">
-                </div>
-                <div class="txt">
-                    <div class="title">身體防護 +</div>
-
-                    <div class="top-info">Power+基礎補充劑，內涵維生素及抗氧化礦物質，如鐵、葉酸、維生素 B12、鋅和銅，均衡且豐富混合。採用不加熱、加壓的特殊製造方法製成，維持礦物質活性。補足一日維他命所需，抗氧化效果佳！
-                    </div>
-                    <div class="tags">
-                        <div class="tag">#抗氧化</div>
-                        <div class="tag">#抵抗力</div>
-                        <div class="tag">#一日所需</div>
-                    </div>
-                    <div class="detail">
-                        <a href="#">產品詳情</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-up">
-                <div class="pic">
-                    <img src="./main-pic/top3-3.jpg">
-                </div>
-                <div class="txt">
-                    <div class="title">代謝輕盈 +</div>
-
-                    <div class="top-info">Fit+提供活細菌和真菌食物的基礎補充劑，支持身體內部環境，並與個性化補充劑作用。由特殊的兩層膠囊，可保護和輸送活細菌抵達腸道，使有益腸道瘦菌恢復活力，打造易瘦體質。
-                    </div>
-                    <div class="tags">
-                        <div class="tag">#益生菌</div>
-                        <div class="tag">#加速代謝</div>
-                        <div class="tag">#腸道健康</div>
-                    </div>
-                    <div class="detail">
-                        <a href="#">產品詳情</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-      
- </div> 
-
-
- <!-- TOP5 -->
- <div class="top5-group">
-
-     <div class="top5-txt">
-         <div class="capsule-left">
-            <img src="./main-pic/capsule-left.png" alt="capsule-left-pic" >
-         </div>
-         <div class="top5-title">
-             <h2>TOP5</h2>
-             <p>送給身體的Gift BOX</p>
-         </div>
-         <div class="capsule-right">
-            <img src="./main-pic/capsule-right.png" alt="capsule-right-pic">
-         </div>
-     </div>
-
-     <div class="top5-pics">
-            <div class="top5-2">
-                <div class="top2 top2-1">
-                    <a href="./05-3.html">
-                        <img src="./main-pic/Canteen9_05.jpg" alt="">
-                        <div class="top5-info">
-                            <p>精神滿滿(28天)</p>
-                            <p>NT$2,140</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="top2 top2-2">
-                    <a href="./05-3.html">
-                        <img src="./main-pic/img-kaiso01.jpg" alt="">
-                        <div class="top5-info">
-                            <p>黃金保護力(28天)</p>
-                            <p>NT$2,140</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="top5-3">
-                <div class="top3 top3-1">
-                    <a href="./05-3.html">
-                        <img src="./main-pic/main-3-product-2.jpg" alt="">
-                        <div class="top3-info">
-                            <p>吃的保養(28天)</p>
-                            <p>NT$2,965</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="top3 top3-1">
-                    <a href="./05-3.html">
-                        <img src="./main-pic/os2_v1.jpg" alt="">
-                        <div class="top3-info">
-                            <p>吃的保養(28天)</p>
-                            <p>NT$2,965</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="top3 top3-1">
-                    <a href="./05-3.html">
-                        <img src="./main-pic/800x.jpg" alt="">
-                        <div class="top3-info">
-                            <p>吃的保養(28天)</p>
-                            <p>NT$2,965</p>
-                    </div>
-                    </a> 
-                </div>
-         </div>
-     </div>
-
-<!-- doctor -->
-     <div class="dr">
-         
-         <div class="dr-tag">
-             <h2>專業醫療團隊</h2>
-         </div>
-         <div class="dr-slogan">
-             <h3 class="dr-title">
-                 「從整合角度出發，找出疾病的根源，改善病因而非症狀，提供醫學新思維與實踐！」
-             </h3>
-             <h4 class="dr-info">
-                 整合功能醫學以病患為中心的健康照護，並整合其他醫療模式，注重以人為本，並非僅專於症狀治療而已，加上專業營養師及減重醫師團隊共同為您的健康把關。
-             </h4>
-         </div>
-         <div class="dr-cards">
-            <div class="dr-card">
-                <div class="dr-pic">
-                    <img src="./main-pic/dr-male.jpg" alt="醫師照片2">
-                </div>
-                <h3>專業營養師<br>
-                    陳學文
-                </h3>
-            </div>
-             <div class="dr-card">
-                 <div class="dr-pic">
-                    <img src="./main-pic/dr-female2.jpg" alt="醫師照片2">
-                </div>
-                 <h3>專業營養師<br>
-                     林沛瑤
-                 </h3>
-             </div>
-             <div class="dr-card">
-                 <div class="dr-pic">
-                    <img src="./main-pic/dr-male2.jpg" alt="醫師照片3">
-                </div>
-                 <h3>減重名醫<br>
-                     蕭建和
-                 </h3>
-             </div>
-         </div>
-
-         <div class="dr-more">
-             <a href="#">查看更多醫學專家</a>
-         </div>
-       
-     </div>
-
-   
-
-<!-- health column -->
-
-     <div class="column">
-
-
-        <div class="container">
-	
-            <h2>健康專欄</h2>
-        
-            <div class="tabs">
-                <div class="tabable-tab">
-                    <input type="radio" id="tab-1" name="tabable-tabs" checked>
-                    <label for="tab-1">免疫抵抗力</label>
-                    <div class="tabable-content">
-                        <img src="./main-pic/clm3.jpg">
-                        <p><span>過敏總是不會好？</span><br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p>
-                    </div>
-                </div>
-        
-                <div class="tabable-tab">
-                    <input type="radio" id="tab-2" name="tabable-tabs">
-                    <label for="tab-2">新陳代謝</label>
-                    <div class="tabable-content">
-                        <img src="./main-pic/clm2.jpg"/>
-                        <p><span>每天正確喝水好處多</span><br> 人類可以10天不吃飯，但只要3天不喝水，恐怕就要有見上帝的準備了！水分是維持人體運作的重要條件，ex. 水可以將養份運送到細胞、新陳代謝系統需要水將身體廢棄物排出、水能協助人體調節體溫…等等。每天喝水不足的壞處很多，隨便列舉都是落落一長條，ex. 以酷熱的夏天來說，喝水能協助身體排出足夠汗水將熱能帶出，避免中暑。</p>
-                    </div>
-                </div>
-        
-                <div class="tabable-tab">
-                    <input type="radio" id="tab-3" name="tabable-tabs">
-                    <label for="tab-3">飲食保健</label>
-                    <div class="tabable-content">
-                            <img src="./main-pic/clm1.jpeg"/>
-                            <p><span>過敏總是不會好？</span><br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p>
-                    </div>
-                </div>
-        
-                <div class="tabable-tab">
-                    <input type="radio" id="tab-4" name="tabable-tabs">
-                    <label for="tab-4">營養補充</label>
-                    <div class="tabable-content">
-                        <img src="./main-pic/clm4.jpg"/>
-                        <p><span>保健品吃多反傷身！</span><br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！</p>
-                        
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="dr-more">
-                <a href="./10.html">查看更多文章</a>
-            </div>
-        </div>   
-
- </div> 
- 
-   <!-- footer -->
-   <div class="main-footer">
-
-      <!-- footer-icons -->
-      <div class="footer-icons">
-         <a href="#"><img src="./main-pic/fb-icon.png" alt="RENUBOX的臉書"></a>
-         <a href="#"><img src="./main-pic/ig-icon.png" alt="RENUBOX的IG"></a>
-         <a href="#"><img src="./main-pic/line_icon.png" alt="RENUBOX的LINE"></a>
-         <a href="#"><img src="./main-pic/twitter-icon.png" alt="RENUBOX的twitter"></a>
       </div>
-
-
-
-
-     <div class="container">
-         <div class="footer-item">
-             <h4>RENUBOX</h4>
-             <nav>
-                 <a href="#"><i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F</a>
-                 <a href="#"><i class="fa fa-angle-right"></i> (02)23326052</a>
-                 <a href="#"><i class="fa fa-angle-right"></i> 來信洽詢</a>
-             </nav>
-         </div>
-         <div class="footer-item">
-             <h4>關於我們</h4>
-             <nav>
-                 <a href="./08.html"><i class="fa fa-angle-right"></i> 品牌使命</a>
-                 <a href="./08.html"><i class="fa fa-angle-right"></i> 醫療團隊</a>
-                 <a href="./08.html"><i class="fa fa-angle-right"></i> 安心證明</a>
-             </nav>
-         </div>
-         <div class="footer-item">
-             <h4>智能評估</h4>
-             <nav>
-                 <a href="./06.html"><i class="fa fa-angle-right"></i> AI智能評估</a>
-                 <a href="./09.html"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
-                 <a href="./09.html"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
-                 <a href="./09.html"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
-             </nav>
-         </div>
-  
-         <div class="footer-item">
-             <h4>找功能</h4>
-             <nav class="footer-goal">
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 體態管理</a>
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 抗老</a>
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 營養補充</a>
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 健康飲食</a>
-                 <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 美容保養</a>
-             </nav>
-         </div>
-         <div class="footer-item footer-subs">
-             <h4>健康電子報</h4>
-             <form>
-                 <input type="text" name="">
-                 <input type="submit" value="訂閱">
-             </form>
-         </div>
-     </div>
-     
- </div>
-
-
-
-
-
-</body>
+      <div class="wrap down" data-aos="fade-up">
+        <div class="info-pics">
+          <div class="info-pic3">
+            <img src="./images/main-pic/main-pic3.jpg" alt="" class="pic-down">
+          </div>
+        </div>
+        <div class="info-txt">
+          <div class="title title-down">
+            <p>生活，是你的</p>
+            <p class="title-tab">其他就交給我們</p>
+          </div>
+          <div class="infos"> 「生活，是你的。」 <br> 把一切美好留給自己，專業的就交由RENUBOX為您準備。RENUBOX的誕生就是想藉由你的內在需求「真實」告訴你的身體所需。我們的免費「客製化」AI問卷系統同樣能為您量身推薦適合的營養保健品。 <br> 拿掉過度包裝、華麗行銷，我們希望扮演的是「最懂你 」的照顧者。 </div>
+          <div class="btn">
+            <a href="./06.html">5分鐘智能評估</a>
+          </div>
+        </div>
+      </div>
+      <!-- goals -->
+      <div class="goals">
+        <h2> 找功能 </h2>
+        <p> 從自身最需要的功能來挑選自己適合的產品 </p>
+      </div>
+      <div class="goals-main">
+        <div class="container">
+          <div class="panel active" style="background-image: url('./sub1-pic/goal-fit.jpg')">
+            <h3>體態管理</h3>
+          </div>
+          <div class="panel" style="background-image: url('./sub1-pic/goal-defence.jpg')">
+            <h3>營養補充</h3>
+          </div>
+          <div class="panel" style="background-image: url('./sub1-pic/goal-antiage.webp')">
+            <h3>抗老回春</h3>
+          </div>
+          <div class="panel" style="background-image: url('./sub1-pic/goal-insomnia.jpg')">
+            <h3>失眠焦慮</h3>
+          </div>
+          <div class="panel" style="background-image: url('./sub1-pic/goal-food.jpg')">
+            <h3>健康飲食</h3>
+          </div>
+          <div class="panel" style="background-image: url('./sub1-pic/goal-pretty.jpg')">
+            <h3>美容保養</h3>
+          </div>
+        </div>
+        <div class="goal-more">
+          <button>
+            <a href="./05-1.html">查看內容</a>
+          </button>
+        </div>
+      </div>
+      <!-- TOP 3  -->
+      <div class="top3" data-aos="fade-up">
+        <h2> 熱銷懶人包 </h2>
+        <p>無從找起？這些複方組合包為您身體全方位把關</p>
+      </div>
+      <div class="top-wrap" data-aos="fade-up">
+        <div class="item">
+          <div class="pic">
+            <img src="./images/main-pic/top3-1.jpg">
+          </div>
+          <div class="txt">
+            <div class="title">活力滿滿 +</div>
+            <div class="top-info"> 由多種維生素和礦物質高品質的維生素和礦物質所組成，提供全面的營養平衡。一種基本補充劑，含有獨特配方的維生素和礦物質，可支持您的飲食並消除營養失衡。 </div>
+            <div class="tags">
+              <div class="tag">#抗氧化</div>
+              <div class="tag">#抵抗力</div>
+              <div class="tag">#一日所需</div>
+            </div>
+            <div class="detail">
+              <a href="#">產品詳情</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up">
+          <div class="pic">
+            <img src="./images/main-pic/product-main.jpg">
+          </div>
+          <div class="txt">
+            <div class="title">身體防護 +</div>
+            <div class="top-info">Power+基礎補充劑，內涵維生素及抗氧化礦物質，如鐵、葉酸、維生素 B12、鋅和銅，均衡且豐富混合。採用不加熱、加壓的特殊製造方法製成，維持礦物質活性。補足一日維他命所需，抗氧化效果佳！ </div>
+            <div class="tags">
+              <div class="tag">#抗氧化</div>
+              <div class="tag">#抵抗力</div>
+              <div class="tag">#一日所需</div>
+            </div>
+            <div class="detail">
+              <a href="#">產品詳情</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up">
+          <div class="pic">
+            <img src="./images/main-pic/top3-3.jpg">
+          </div>
+          <div class="txt">
+            <div class="title">代謝輕盈 +</div>
+            <div class="top-info">Fit+提供活細菌和真菌食物的基礎補充劑，支持身體內部環境，並與個性化補充劑作用。由特殊的兩層膠囊，可保護和輸送活細菌抵達腸道，使有益腸道瘦菌恢復活力，打造易瘦體質。 </div>
+            <div class="tags">
+              <div class="tag">#益生菌</div>
+              <div class="tag">#加速代謝</div>
+              <div class="tag">#腸道健康</div>
+            </div>
+            <div class="detail">
+              <a href="#">產品詳情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOP5 -->
+    <div class="top5-group">
+      <div class="top5-txt">
+        <div class="capsule-left">
+          <img src="./images/main-pic/capsule-left.png" alt="capsule-left-pic">
+        </div>
+        <div class="top5-title">
+          <h2>TOP5</h2>
+          <p>送給身體的Gift BOX</p>
+        </div>
+        <div class="capsule-right">
+          <img src="./images/main-pic/capsule-right.png" alt="capsule-right-pic">
+        </div>
+      </div>
+      <div class="top5-pics">
+        <div class="top5-2">
+          <div class="top2 top2-1">
+            <a href="./05-3.html">
+              <img src="./images/main-pic/Canteen9_05.jpg" alt="">
+              <div class="top5-info">
+                <p>精神滿滿(28天)</p>
+                <p>NT$2,140</p>
+              </div>
+            </a>
+          </div>
+          <div class="top2 top2-2">
+            <a href="./05-3.html">
+              <img src="./images/main-pic/img-kaiso01.jpg" alt="">
+              <div class="top5-info">
+                <p>黃金保護力(28天)</p>
+                <p>NT$2,140</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="top5-3">
+          <div class="top3 top3-1">
+            <a href="./05-3.html">
+              <img src="./images/main-pic/main-3-product-2.jpg" alt="">
+              <div class="top3-info">
+                <p>吃的保養(28天)</p>
+                <p>NT$2,965</p>
+              </div>
+            </a>
+          </div>
+          <div class="top3 top3-1">
+            <a href="./05-3.html">
+              <img src="./images/main-pic/os2_v1.jpg" alt="">
+              <div class="top3-info">
+                <p>吃的保養(28天)</p>
+                <p>NT$2,965</p>
+              </div>
+            </a>
+          </div>
+          <div class="top3 top3-1">
+            <a href="./05-3.html">
+              <img src="./images/main-pic/800x.jpg" alt="">
+              <div class="top3-info">
+                <p>吃的保養(28天)</p>
+                <p>NT$2,965</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- doctor -->
+      <div class="dr">
+        <div class="dr-tag">
+          <h2>專業醫療團隊</h2>
+        </div>
+        <div class="dr-slogan">
+          <h3 class="dr-title"> 「從整合角度出發，找出疾病的根源，改善病因而非症狀，提供醫學新思維與實踐！」 </h3>
+          <h4 class="dr-info"> 整合功能醫學以病患為中心的健康照護，並整合其他醫療模式，注重以人為本，並非僅專於症狀治療而已，加上專業營養師及減重醫師團隊共同為您的健康把關。 </h4>
+        </div>
+        <div class="dr-cards">
+          <div class="dr-card">
+            <div class="dr-pic">
+              <img src="./images/main-pic/dr-male.jpg" alt="醫師照片2">
+            </div>
+            <h3>專業營養師 <br> 陳學文 </h3>
+          </div>
+          <div class="dr-card">
+            <div class="dr-pic">
+              <img src="./images/main-pic/dr-female2.jpg" alt="醫師照片2">
+            </div>
+            <h3>專業營養師 <br> 林沛瑤 </h3>
+          </div>
+          <div class="dr-card">
+            <div class="dr-pic">
+              <img src="./images/main-pic/dr-male2.jpg" alt="醫師照片3">
+            </div>
+            <h3>減重名醫 <br> 蕭建和 </h3>
+          </div>
+        </div>
+        <div class="dr-more">
+          <a href="#">查看更多醫學專家</a>
+        </div>
+      </div>
+      <!-- health column -->
+      <div class="column">
+        <div class="container">
+          <h2>健康專欄</h2>
+          <div class="tabs">
+            <div class="tabable-tab">
+              <input type="radio" id="tab-1" name="tabable-tabs" checked>
+              <label for="tab-1">免疫抵抗力</label>
+              <div class="tabable-content">
+                <img src="./images/main-pic/clm3.jpg">
+                <p>
+                  <span>過敏總是不會好？</span>
+                  <br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！
+                </p>
+              </div>
+            </div>
+            <div class="tabable-tab">
+              <input type="radio" id="tab-2" name="tabable-tabs">
+              <label for="tab-2">新陳代謝</label>
+              <div class="tabable-content">
+                <img src="./images/main-pic/clm2.jpg" />
+                <p>
+                  <span>每天正確喝水好處多</span>
+                  <br> 人類可以10天不吃飯，但只要3天不喝水，恐怕就要有見上帝的準備了！水分是維持人體運作的重要條件，ex. 水可以將養份運送到細胞、新陳代謝系統需要水將身體廢棄物排出、水能協助人體調節體溫…等等。每天喝水不足的壞處很多，隨便列舉都是落落一長條，ex. 以酷熱的夏天來說，喝水能協助身體排出足夠汗水將熱能帶出，避免中暑。
+                </p>
+              </div>
+            </div>
+            <div class="tabable-tab">
+              <input type="radio" id="tab-3" name="tabable-tabs">
+              <label for="tab-3">飲食保健</label>
+              <div class="tabable-content">
+                <img src="./images/main-pic/clm1.jpeg" />
+                <p>
+                  <span>過敏總是不會好？</span>
+                  <br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！
+                </p>
+              </div>
+            </div>
+            <div class="tabable-tab">
+              <input type="radio" id="tab-4" name="tabable-tabs">
+              <label for="tab-4">營養補充</label>
+              <div class="tabable-content">
+                <img src="./images/main-pic/clm4.jpg" />
+                <p>
+                  <span>保健品吃多反傷身！</span>
+                  <br> 這陣子一波接著一波寒流報到，尤其是過敏族群遇上冬天，真的很困擾，尤其許多診所到醫學中心，過敏相關疾病門診病友有增多趨勢，醫師提醒本來就有異位性皮膚炎，或者是皮膚疾病的病患，在冬天到的時候更容易過敏，還是要特別注意！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dr-more">
+            <a href="./10.html">查看更多文章</a>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="main-footer">
+        <!-- footer-icons -->
+        <div class="footer-icons">
+          <a href="#">
+            <img src="./images/main-pic/fb-icon.png" alt="RENUBOX的臉書">
+          </a>
+          <a href="#">
+            <img src="./images/main-pic/ig-icon.png" alt="RENUBOX的IG">
+          </a>
+          <a href="#">
+            <img src="./images/main-pic/line_icon.png" alt="RENUBOX的LINE">
+          </a>
+          <a href="#">
+            <img src="./images/main-pic/twitter-icon.png" alt="RENUBOX的twitter">
+          </a>
+        </div>
+        <div class="container">
+          <div class="footer-item">
+            <h4>RENUBOX</h4>
+            <nav>
+              <a href="#">
+                <i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F </a>
+              <a href="#">
+                <i class="fa fa-angle-right"></i> (02)23326052 </a>
+              <a href="#">
+                <i class="fa fa-angle-right"></i> 來信洽詢 </a>
+            </nav>
+          </div>
+          <div class="footer-item">
+            <h4>關於我們</h4>
+            <nav>
+              <a href="./08.html">
+                <i class="fa fa-angle-right"></i> 品牌使命 </a>
+              <a href="./08.html">
+                <i class="fa fa-angle-right"></i> 醫療團隊 </a>
+              <a href="./08.html">
+                <i class="fa fa-angle-right"></i> 安心證明 </a>
+            </nav>
+          </div>
+          <div class="footer-item">
+            <h4>智能評估</h4>
+            <nav>
+              <a href="./06.html">
+                <i class="fa fa-angle-right"></i> AI智能評估 </a>
+              <a href="./09.html">
+                <i class="fa fa-angle-right"></i> 醫師諮詢 </a>
+              <a href="./09.html">
+                <i class="fa fa-angle-right"></i> 營養師諮詢 </a>
+              <a href="./09.html">
+                <i class="fa fa-angle-right"></i> 客製健康計畫 </a>
+            </nav>
+          </div>
+          <div class="footer-item">
+            <h4>找功能</h4>
+            <nav class="footer-goal">
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 體態管理 </a>
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 抗老 </a>
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 失眠焦慮 </a>
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 營養補充 </a>
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 健康飲食 </a>
+              <a href="./05-2-2.html">
+                <i class="fa fa-angle-right"></i> 美容保養 </a>
+            </nav>
+          </div>
+          <div class="footer-item footer-subs">
+            <h4>健康電子報</h4>
+            <form>
+              <input type="text" name="">
+              <input type="submit" value="訂閱">
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
