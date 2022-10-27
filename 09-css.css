@@ -1,5 +1,5 @@
 body {
-  background: url(./sub3-pic/sub3-bgp.jpg);
+  background: url(./images/sub3-pic/sub3-bgp.jpg);
   background-attachment: fixed;
   background-position: top center;
   background-size: 100% 100%;
@@ -100,7 +100,7 @@ body {
 }
 
 .banner-area {
-  background: url(./sub5-pic/chat-online.jpg) no-repeat;
+  background: url(./images/sub5-pic/chat-online.jpg) no-repeat;
   height: 450px;
   background-position: center center;
   display: flex;

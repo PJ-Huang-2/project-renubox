@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/main-pic/page-tag-pic.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages/evaluate/06-2-css.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>智能評估-測驗 | RENUBOX</title>
+</head>
+<body>
+    <!-- chat-btn -->
+    <div class="chat-btn">
+        <a href="#"><img src="./images/main-pic/chat-btn.png" alt=""></a>
+    </div>
+    
+    <input type="checkbox" name="" id="menu-switch">
+    <!-- nav-bar -->
+    <div class="header">
+        <!-- logo -->
+        <div class="logo">
+            <a href="/index.html"><img src="./images/main-pic/logo-first.png" alt="renubox-logo"></a>
+        </div>
+        <!-- 漢堡 -->
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="./pages/evaluate/06.html">智能評估</a>
+            <a href="./05-1.html">找功能</a>
+            <a href="./07.html">所有商品</a>
+            <a href="./08.html">我們的承諾</a>
+            <a href="./10.html">健康專欄</a>
+            <a href="./09.html">營養管理計畫</a>
+        </nav>
+        <!-- icons -->
+        <div class="nav-icon">
+            <a href="#">
+                <img src="./images/main-pic/member_icon.png" alt="nav-mem-icon">
+            </a>
+            <a href="./pages/evaluate/06-5.html" class="shop-icon">
+                <img src="./images/main-pic/shopping_icon.png" alt="nav-cart-icon">
+            </a>
+        </div>
+    </div>
+
+  
+<!-- survey -->
+
+    <div class="survey">
+        <div class="q1">
+            <h3>您希望透過保健品達到什麼改善？</h3>
+            <ul class="option1">
+                <li>抵抗力</li>
+                <li>工作不當機</li>
+                <li>入眠幫助</li>
+                <li>養顏美容</li>
+            </ul>
+        </div>
+        <div class="q2">
+            <h3>您平時有攝取足夠的蔬果嗎？</h3>
+            <ul class="option2">
+                <li>每天都吃足夠</li>
+                <li>每天至少吃2份蔬果</li>
+                <li>偶爾</li>
+                <li>很少吃</li>
+            </ul>
+        </div>
+        <div class="q3">
+            <h3>平時有足夠的運動量嗎？</h3>
+            <ul class="option3">
+                <li>一周超過3次</li>
+                <li>1周1~2次</li>
+                <li>偶爾運動</li>
+                <li>幾乎不運動</li>
+            </ul>
+        </div>
+        <div class="q4">
+            <h3>皮膚有出現什麼狀況？</h3>
+            <ul class="option4">
+                <li>時常泛油</li>
+                <li>變得乾澀</li>
+                <li>常長痘痘</li>
+                <li>泛紅乾癢</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="product-soon">
+            <div class="product-img">
+                <img src="./images/sub2-pic/product-soon-edit.png" alt="">
+                <label>FOR: <span id="show"></span></label>
+            </div>
+            
+        </div>
+        <div class="product-name">
+            <h2>您的RENUBOX即將完成</h2>
+            <label>請輸入您的名稱：<input type="text" id="text" placeholder="*名稱不超過6個字"></label>
+            <p>您的營養素分包上將印上您的名字！</p> 
+            <a href="./pages/evaluate/06-3.html"><button>趕快看看推薦您的BOX</button></a>
+
+        </div>
+       
+        
+    </div>
+
+
+    <script>
+        $("#text").on("input", function() {
+        $("#show").html($(this).val());
+        });
+    </script>
+
+    <script>
+        const ul_1 = document.querySelector(".option1"); 
+        const ul_2 = document.querySelector(".option2"); 
+        const ul_3 = document.querySelector(".option3");
+        const ul_4 = document.querySelector(".option4");
+        
+        const q1 = document.querySelector(".q1");
+        const q2 = document.querySelector(".q2");
+        const q3 = document.querySelector(".q3");
+        const q4 = document.querySelector(".q4");
+
+        const survey = document.querySelector(".survey");
+        const end = document.querySelector(".end");
+
+        // 1st q
+        ul_1.addEventListener("click", function(){
+            q1.style.display = "none";
+            q2.style.display = "block";
+        });
+         // 2nd q
+        ul_2.addEventListener("click", function(){
+            q2.style.display = "none";
+            q3.style.display = "block";
+        });
+         // 3rd q
+         ul_3.addEventListener("click", function(){
+            q3.style.display = "none";
+            q4.style.display = "block";
+        });
+         // THX 
+        ul_4.addEventListener("click", function(){
+            q4.style.display = "none";
+            survey.style.display = "none";
+            end.style.display = "flex";
+        });
+
+    </script>
+
+ <!-- footer -->
+ <div class="main-footer">
+
+    <!-- footer-icons -->
+    <div class="footer-icons">
+       <a href="#"><img src="./images/main-pic/fb-icon.png" alt="RENUBOX的臉書"></a>
+       <a href="#"><img src="./images/main-pic/ig-icon.png" alt="RENUBOX的IG"></a>
+       <a href="#"><img src="./images/main-pic/line_icon.png" alt="RENUBOX的LINE"></a>
+       <a href="#"><img src="./images/main-pic/twitter-icon.png" alt="RENUBOX的twitter"></a>
+    </div>
+
+
+
+
+   <div class="container">
+       <div class="footer-item">
+           <h4>RENUBOX</h4>
+           <nav>
+               <a href="#"><i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F</a>
+               <a href="#"><i class="fa fa-angle-right"></i> (02)23326052</a>
+               <a href="#"><i class="fa fa-angle-right"></i> 來信洽詢</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>關於我們</h4>
+           <nav>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 品牌使命</a>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 醫療團隊</a>
+               <a href="./08.html"><i class="fa fa-angle-right"></i> 安心證明</a>
+           </nav>
+       </div>
+       <div class="footer-item">
+           <h4>智能評估</h4>
+           <nav>
+               <a href="./pages/evaluate/06.html"><i class="fa fa-angle-right"></i> AI智能評估</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 醫師諮詢</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 營養師諮詢</a>
+               <a href="./09.html"><i class="fa fa-angle-right"></i> 客製健康計畫</a>
+           </nav>
+       </div>
+
+       <div class="footer-item">
+           <h4>找功能</h4>
+           <nav class="footer-goal">
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 體態管理</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 抗老</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 失眠焦慮</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 營養補充</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 健康飲食</a>
+               <a href="./05-2-2.html"><i class="fa fa-angle-right"></i> 美容保養</a>
+           </nav>
+       </div>
+       <div class="footer-item footer-subs">
+           <h4>健康電子報</h4>
+           <form>
+               <input type="text" name="">
+               <input type="submit" value="訂閱">
+           </form>
+       </div>
+   </div>
+   
+</div>
+
+
+
+
+
+</body>
+</html>
