@@ -1,5 +1,5 @@
 body {
-  background: url(./images/sub4-pic/08background-edited.png);
+  background: url(/images/sub4-pic/08background-edited.png);
   background-attachment: fixed;
   background-position: top center;
   background-size: 100% 100%;
@@ -95,7 +95,7 @@ body {
 }
 
 .banner-area {
-  background: url(./images/sub4-pic/banner.jpg) no-repeat;
+  background: url(/images/sub4-pic/banner.jpg) no-repeat;
   height: 450px;
   background-position: center center;
   display: flex;
@@ -394,7 +394,7 @@ body {
 .main-footer {
   width: 100%;
   padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
+  background-image: url(/images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {

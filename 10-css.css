@@ -1,5 +1,5 @@
 body {
-  background: url(./images/sub3-pic/sub3-bgp.jpg);
+  background: url(/images/sub3-pic/sub3-bgp.jpg);
   background-attachment: fixed;
   background-position: top center;
   background-size: 100% 100%;
@@ -384,7 +384,7 @@ a {
 .main-footer {
   width: 100%;
   padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
+  background-image: url(/images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {

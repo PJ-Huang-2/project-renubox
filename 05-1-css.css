@@ -3,7 +3,7 @@
     monospace;
 }
 body {
-  background: url(./images/main-pic/background.jpg);
+  background: url(/images/main-pic/background.jpg);
   background-attachment: fixed;
   background-position: center top;
   background-size: auto;
@@ -278,7 +278,7 @@ body {
 .main-footer {
   width: 100%;
   padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
+  background-image: url(/images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {

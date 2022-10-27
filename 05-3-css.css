@@ -1,5 +1,5 @@
 body {
-  background: url(./images/sub1-pic/sub-bgp.png);
+  background: url(/images/sub1-pic/sub-bgp.png);
   background-attachment: scroll;
   background-position: center top contain;
   background-size: 100% 100%;
@@ -716,7 +716,7 @@ h4 {
   position: relative;
   width: 100%;
   padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
+  background-image: url(/images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {
