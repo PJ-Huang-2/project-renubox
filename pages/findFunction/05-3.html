@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/main-pic/page-tag-pic.ico" type="image/x-icon" />
+    <title>商品詳情 | RENUBOX</title>
+    <!--JS-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/scripts/base.js"></script>
+    <script src="/scripts/product-info.js"></script>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="./05-3-css.css">
+  </head>
+  <body>
+    <!-- chat-btn -->
+    <div class="chat-btn">
+      <a href="#">
+        <img src="/images/main-pic/chat-btn.png" alt="">
+      </a>
+    </div>
+    <input type="checkbox" name="" id="menu-switch">
+    <!-- nav-bar -->
+    <div class="header">
+      <!-- logo -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="/images/main-pic/logo-first.png" alt="RENUBOX-logo">
+        </a>
+      </div>
+      <!-- 漢堡 -->
+      <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- 選單 -->
+      <nav class="main-nav">
+        <a href="./pages/evaluate/06.html">智能評估</a>
+        <a href="./pages/findFunction/05-1.html">找功能</a>
+        <a href="./07.html">所有商品</a>
+        <a href="./08.html">我們的承諾</a>
+        <a href="./10.html">健康專欄</a>
+        <a href="./pages/projects/09.html">營養管理計畫</a>
+      </nav>
+      <!-- icons -->
+      <div class="nav-icon">
+        <a href="#">
+          <img src="/images/main-pic/member_icon.png" alt="nav-mem-icon">
+        </a>
+        <a href="./pages/evaluate/06-5.html" class="shop-icon">
+          <img src="/images/main-pic/shopping_icon.png" alt="nav-cart-icon">
+        </a>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="goal-banner">
+      <img src="/images/sub1-pic/banner-new.png">
+    </div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb-wrap">
+      <ol class="breadcrumb">
+        <li>
+          <a href="#">首頁</a>
+        </li>
+        <li>
+          <a href="#">找功能</a>
+        </li>
+        <li>
+          <a href="#">營養補充</a>
+        </li>
+        <li>
+          <a href="#">綜合維生素錠</a>
+        </li>
+      </ol>
+    </div>
+    <div class="main-area">
+      <div class="product-pic">
+        <img id="large" src="/images/sub1-pic/product-main.jpg" alt="商品大圖">
+        <div class="else-pic" id="smallPanel">
+          <img src="/images/sub1-pic/product-main.jpg" alt="">
+          <img src="/images/sub1-pic/else1.jpg" alt="">
+          <img src="/images/sub1-pic/else2.jpg" alt="">
+          <img src="/images/sub1-pic/else3.jpg" alt="">
+        </div>
+      </div>
+      <!-- product-info -->
+      <div class="product-info">
+        <div class="subject">
+          <h1>營養補充</h1>
+        </div>
+        <div class="name">
+          <h2>綜合維生素錠</h2>
+        </div>
+        <div class="tag">
+          <a href="#">#一日所需</a>
+          <a href="#">#綜合</a>
+          <a href="#">#維生素</a>
+        </div>
+        <div class="intro"> ▸ 12種國際高吸收率成分、17種關鍵營養素 <br> ▸ 天然、優質！嚴選原料榮獲10項國際專利 <br> ▸ 奢華重金添加風靡日本的超級營養素 SOD <br> ▸ 高效率補充維生素C、B、D群、多種植化素 </div>
+        <div class="price">
+          <span>NT$980</span>
+          <div class="icons">
+            <img src="/images/sub1-pic/price-icon1.png" alt="加入收藏icon" title="加入收藏" id="heart">
+            <img src="/images/sub1-pic/price-icon2.png" alt="分享icon">
+          </div>
+        </div>
+        <!-- many -->
+        <div class="many">
+          <input type="button" class="btnMinus" value="-">
+          <input type="text" class="qty" size="4" value="0" id="qty0">
+          <input type="button" class="btnPlus" value="+">
+        </div>
+        <div class="footer-btn">
+          <a href="./pages/evaluate/06-5.html">
+            <button class="car">
+              <p>加入購物車</p>
+            </button>
+          </a>
+          <a href="./pages/evaluate/06-5.html">
+            <button class="buy">
+              <p>立即購買</p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+      <div class="nos">
+        <div class="no">
+          <img src="/images/sub1-pic/elements-1gmo.jpg" alt="非基改">
+          <h3>不使用基改原料</h3>
+        </div>
+        <div class="no">
+          <img src="/images/sub1-pic/elements-1vege.jpg" alt="可以素食">
+          <h3>素食者可以使用</h3>
+        </div>
+        <div class="no">
+          <img src="/images/sub1-pic/elements-3nolactose.jpg" alt="不含乳品成分">
+          <h3>不含乳品成分</h3>
+        </div>
+        <div class="no">
+          <img src="/images/sub1-pic/elements-4nogluten.jpg" alt="不含麩質">
+          <h3>不含麩質</h3>
+        </div>
+      </div>
+      <h4>我們相信您的維生素應該只包含您需要的最佳成分。</h4>
+      <div class='disclaimer'>
+        <div class="accordion">
+          <div class="accordion__single">
+            <input class="accordion__single__hidden" type="checkbox" id="question-one">
+            <label class="accordion__single__question" for="question-one">【原料】由專業醫師及營養師團隊精心設計</label>
+            <p class="accordion__single__answer"> 原料： 甲鈷胺（共甲基鈷胺素）、酵母维他命B群、荔枝綠茶多酚、鼠尾草蘆筍磷脂醯 </p>
+          </div>
+          <div class="accordion__single">
+            <input class="accordion__single__hidden" type="checkbox" id="question-two">
+            <label class="accordion__single__question" for="question-two">【效用】由專業功能醫學團隊研發設計</label>
+            <p class="accordion__single__answer"> ◉酵母维他命B群：加拿大酵母生產專家LALLEMAND，增強體力，精神旺盛 <br> ◉荔枝綠茶多酚：滋補強身，增強體力，精神旺盛，養顏美容、青春美麗 <br> ◉鼠尾草蘆筍磷脂醯：國際原料，優選複方，工作不當機，輕鬆應對，競爭力再進化 </p>
+          </div>
+          <div class="accordion__single">
+            <input class="accordion__single__hidden" type="checkbox" id="question-three">
+            <label class="accordion__single__question" for="question-three">【免責聲明】</label>
+            <p class="accordion__single__answer"> 使用前，務必閱讀產品明細，並按照使用說明使用。維生素和營養素不應取代均衡飲食。如果您有任何預先存在的健康條件，或正在服用任何藥物，請務必在使用前諮詢您的醫療專家。 </p>
+          </div>
+        </div>
+      </div>
+      <div class="support">
+        <div class="support-pic">
+          <img src="/images/sub1-pic/elements-1.png" alt="支持健康示意圖">
+        </div>
+        <div class="support-txt">
+          <h4>支持能量生產及大腦認知功能</h4>
+          <p>我們的維生素以甲基鈷胺素的形式存在，這是一種天然存在的維生素形式，對最佳身體功能至關重要。我們的單劑量配方支持能量產生、神經系統健康和大腦功能。</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="main-footer">
+      <!-- footer-icons -->
+      <div class="footer-icons">
+        <a href="#">
+          <img src="/images/main-pic/fb-icon.png" alt="RENUBOX的臉書">
+        </a>
+        <a href="#">
+          <img src="/images/main-pic/ig-icon.png" alt="RENUBOX的IG">
+        </a>
+        <a href="#">
+          <img src="/images/main-pic/line_icon.png" alt="RENUBOX的LINE">
+        </a>
+        <a href="#">
+          <img src="/images/main-pic/twitter-icon.png" alt="RENUBOX的twitter">
+        </a>
+      </div>
+      <div class="container">
+        <div class="footer-item">
+          <h4>RENUBOX</h4>
+          <nav>
+            <a href="#">
+              <i class="fa fa-angle-right"></i> 台北市大安區信義路三段220號12F </a>
+            <a href="#">
+              <i class="fa fa-angle-right"></i> (02)23326052 </a>
+            <a href="#">
+              <i class="fa fa-angle-right"></i> 來信洽詢 </a>
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>關於我們</h4>
+          <nav>
+            <a href="./08.html">
+              <i class="fa fa-angle-right"></i> 品牌使命 </a>
+            <a href="./08.html">
+              <i class="fa fa-angle-right"></i> 醫療團隊 </a>
+            <a href="./08.html">
+              <i class="fa fa-angle-right"></i> 安心證明 </a>
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>智能評估</h4>
+          <nav>
+            <a href="./pages/evaluate/06.html">
+              <i class="fa fa-angle-right"></i> AI智能評估 </a>
+            <a href="./pages/projects/09.html">
+              <i class="fa fa-angle-right"></i> 醫師諮詢 </a>
+            <a href="./pages/projects/09.html">
+              <i class="fa fa-angle-right"></i> 營養師諮詢 </a>
+            <a href="./pages/projects/09.html">
+              <i class="fa fa-angle-right"></i> 客製健康計畫 </a>
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>找功能</h4>
+          <nav class="footer-goal">
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 體態管理 </a>
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 抗老 </a>
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 失眠焦慮 </a>
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 營養補充 </a>
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 健康飲食 </a>
+            <a href="./05-2-2.html">
+              <i class="fa fa-angle-right"></i> 美容保養 </a>
+          </nav>
+        </div>
+        <div class="footer-item footer-subs">
+          <h4>健康電子報</h4>
+          <form>
+            <input type="text" name="">
+            <input type="submit" value="訂閱">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

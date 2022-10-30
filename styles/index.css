@@ -1,7 +1,5 @@
 * {
-  font-family: "Noto Sans TC", "Noto Sans Mono", "Noto Sans", sans-serif,
-    monospace;
-  box-sizing: border-box;
+  font-family: "Noto Sans TC", "Noto Sans Mono", "Noto Sans", sans-serif, monospace;
 }
 body {
   background: url(/images/main-pic/background.jpg);
@@ -14,28 +12,8 @@ body {
   font-family: "Noto Sans TC", "Noto Sans Mono", "Noto Sans", sans-serif,
     monospace;
   position: relative;
-}
-.chat-btn {
-  width: 80px;
-  position: fixed;
-  right: 2%;
-  bottom: 10px;
-  animation: breath 2.5s ease-in-out infinite;
-  z-index: 4;
-}
-@keyframes breath {
-  70% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(0.96);
-  }
-  90% {
-    transform: scale(1.08);
-  }
-  100% {
-    transform: scale(1);
-  }
+  box-sizing: border-box;
+
 }
 
 /* banner */
@@ -1349,82 +1327,4 @@ path {
     margin-right: 0;
     margin-bottom: 20px;
   }
-}
-
-/* footer */
-
-.main-footer {
-  width: 100%;
-  padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
-}
-
-.main-footer .footer-icons {
-  /* outline: 1px solid #fa0;  */
-  width: 15rem;
-  margin: auto;
-  display: flex;
-  gap: 30px;
-  padding: 40px 0;
-}
-.main-footer .footer-icons img {
-  width: 100%;
-  vertical-align: middle;
-  opacity: 50%;
-}
-
-.main-footer .container {
-  /* outline: 1px solid #fa0;  */
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-}
-.footer-item {
-  flex-grow: 1;
-  margin: 10px 20px;
-}
-.footer-item h4 {
-  font-size: 24px;
-  color: #fff;
-  border-bottom: 1px dotted #fff;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
-}
-.footer-item nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-item nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 0;
-}
-
-.footer-item nav a:hover {
-  color: #ffd9c9;
-}
-.footer-subs {
-  display: flex;
-  flex-direction: column;
-}
-.footer-subs form {
-  display: flex;
-  width: 100%;
-  margin: auto 0px;
-}
-.footer-subs input[type="text"],
-.footer-subs input[type="submit"] {
-  border: none;
-  padding: 5px 10px;
-}
-
-.footer-subs input[type="text"] {
-  width: 0;
-  flex-grow: 1;
-}
-.footer-subs input[type="submit"] {
-  color: #ffd9c9;
-  background-color: #598969;
 }

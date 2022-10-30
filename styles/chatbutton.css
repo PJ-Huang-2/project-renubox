@@ -1,0 +1,26 @@
+body .chat-btn {
+    width: 80px;
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+    animation: breath 2.5s ease-in-out infinite;
+    z-index: 4;
+}
+
+@keyframes breath {
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.96);
+    }
+
+    90% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
