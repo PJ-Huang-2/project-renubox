@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url(../images/main-pic/background.jpg);
+  background: url(/images/main-pic/background.jpg);
   /* linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), */
   background-attachment: fixed;
   background-position: center top;
@@ -36,26 +36,6 @@ body {
   100% {
     transform: scale(1);
   }
-}
-/* header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: transparent;
-  position: sticky;
-  top: 0;
-  margin-bottom: 20px;
-  align-items: center;
-  z-index: 5;
-}
-.logo img {
-  vertical-align: top;
-  width: 120px;
-}
-
-#menu-switch {
-  display: none;
 }
 
 /* banner */
@@ -1376,7 +1356,7 @@ path {
 .main-footer {
   width: 100%;
   padding: 0 0 50px 0;
-  background-image: url(../images/main-pic/background2.jpg);
+  background-image: url(./images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {

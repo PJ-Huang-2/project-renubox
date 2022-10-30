@@ -355,7 +355,7 @@ button.active {
   width: 100%;
   margin-top: 40px;
   padding: 0 0 50px 0;
-  background-image: url(./images/main-pic/background2.jpg);
+  background-image: url(/images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {
