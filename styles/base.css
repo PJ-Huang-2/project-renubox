@@ -1,5 +1,7 @@
 @import "reset.css";
 @import "aos.css";
-@import "grid.css";
+/* @import "grid.css"; */
 
 @import "nav.css";
+@import "footer.css";
+@import "chatbutton.css"
