@@ -7,7 +7,7 @@ $(document).ready(function () {
 function changeNavBg() {
   var scroll = $(window).scrollTop();
   if (scroll > 100) {
-    $(".header").css("background", "#eae6e398");
+    $(".header").css("background", "#FFF8EB");
   } else {
     $(".header").css("background", "transparent");
   }
