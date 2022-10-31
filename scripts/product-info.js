@@ -19,10 +19,10 @@ function switchFavorite(e) {
   let heart = document.getElementById("heart");
 
   if (heart.title == "加入收藏") {
-    heart.src = "/images/sub1-pic/price-icon1-2.png";
+    heart.src = "../images/sub1-pic/price-icon1-2.png";
     heart.title = "取消收藏";
   } else { //取消(紅心)
-    heart.src = "/images/sub1-pic/price-icon1.png";
+    heart.src = "../images/sub1-pic/price-icon1.png";
     heart.title = "加入收藏";
   }
 }
