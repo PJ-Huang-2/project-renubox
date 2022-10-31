@@ -2,7 +2,7 @@
   font-family: "Noto Sans TC", "Noto Sans Mono", "Noto Sans", sans-serif, monospace;
 }
 body {
-  background: url(/images/main-pic/background.jpg);
+  background: url(./images/main-pic/background.jpg);
   /* linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), */
   background-attachment: fixed;
   background-position: center top;

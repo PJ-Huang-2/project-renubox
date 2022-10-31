@@ -1,7 +1,7 @@
 .main-footer {
     width: 100%;
     padding: 0 0 50px 0;
-    background-image: url(/images/main-pic/background2.jpg);
+    background-image: url(./images/main-pic/background2.jpg);
 }
 
 .main-footer .footer-icons {
