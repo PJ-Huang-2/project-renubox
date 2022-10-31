@@ -67,6 +67,7 @@
     align-items: center;
     position: relative;
     border-radius: 30px;
+    cursor: pointer;
   }
 
   .nav-icon {
