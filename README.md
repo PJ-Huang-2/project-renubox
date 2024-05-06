@@ -9,6 +9,6 @@
     |
     <a href="">Contact</a>
   </p>
-
+<img src="https://github.com/PJ-Huang-2/renubox-readme/blob/master/readme-title-img.png" alt="Logo">
 </div>
 
