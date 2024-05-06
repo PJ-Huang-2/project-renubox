@@ -3,11 +3,11 @@
     <img src="https://github.com/PJ-Huang-2/project-renubox/blob/master/images/main-pic/logo-first.png" alt="Logo" width="250px">
   </a>
   <p align="center">
-    <a href="https://github.com/PJ-Huang-2/project-renubox#About">About</a>
-    |
-    <a href="">Demo</a>
-    |
-    <a href="">Contact</a>
+    <a href="https://github.com/PJ-Huang-2/project-renubox#About"><strong>About</strong></a>
+    ·
+    <a href=""><strong>Demo</strong></a>
+    ·
+    <a href=""><strong>Contact</strong></a>
   </p>
 <img src="https://github.com/PJ-Huang-2/renubox-readme/blob/master/readme-title-img.png" alt="Logo">
 </div>
@@ -26,7 +26,7 @@ RENUBOX is a health supplement brand website that offers users to customize thei
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 ## Site Map
-![image](https://github.com/PJ-Huang-2/renubox-readme/blob/master/Company%20Structure-Company%20Structure.png)
+![image](https://github.com/PJ-Huang-2/project-renubox/assets/80494887/6cbeb9ef-8a96-406d-94b9-20ffec2e549a)
 
 ## Demo
 #### Main-page attracts users' attention with captivating design and encourages further exploration of the brand's characteristics.
@@ -47,7 +47,11 @@ RENUBOX is a health supplement brand website that offers users to customize thei
 #### Shopping Cart
 ![image](https://github.com/PJ-Huang-2/project-renubox/assets/80494887/98de77b5-8bec-41b2-9cff-3412782507a5)
 
+## Contact
 
+  <a href="mailto:natehuang0913@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-8fbc8f?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
 
 
 
