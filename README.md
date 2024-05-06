@@ -15,3 +15,6 @@
 ## RENUBOX 
 RENUBOX is a health supplement brand website that offers users to customize their own dietary supplements based on their individual needs or through a simple quiz. The site packages the daily required supplements into single servings. Additionally, it provides professional consultations with doctors and nutritionists.
 
+## About Lank.at
+- Developed websites using pure **HTML**, **CSS**, **JavaScript**, and **jQuery**.
+- Implemented **Responsive Web Design (RWD)** to create attractive UI design for desktops, tablets, and mobile devices.
