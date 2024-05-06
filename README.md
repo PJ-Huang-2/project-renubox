@@ -34,3 +34,6 @@ RENUBOX is a health supplement brand website that offers users to customize thei
 
 #### Smart Assessment: Receive recommended products through a simple quiz.
 ![REBUBOXQuizPage](https://github.com/PJ-Huang-2/renubox-readme/blob/master/quiz-gif.gif?raw=true)
+
+#### Customization: Offering users personalized product packaging.
+![REBUBOXCustomization](https://github.com/PJ-Huang-2/renubox-readme/blob/master/Customization-gif.gif?raw=true)
