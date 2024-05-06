@@ -25,3 +25,12 @@ RENUBOX is a health supplement brand website that offers users to customize thei
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
+## Site Map
+![image](https://github.com/PJ-Huang-2/renubox-readme/blob/master/Company%20Structure-Company%20Structure.png)
+
+## Demo
+#### Main-page attracts users' attention with captivating design and encourages further exploration of the brand's characteristics.
+![REBUBOXMainPage](https://github.com/PJ-Huang-2/renubox-readme/blob/master/main-page-gif.gif)
+
+#### Smart Assessment: Receive recommended products through a simple quiz.
+![REBUBOXQuizPage](https://github.com/PJ-Huang-2/renubox-readme/blob/master/quiz-gif.gif?raw=true)
