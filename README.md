@@ -5,9 +5,9 @@
   <p align="center">
     <a href="https://github.com/PJ-Huang-2/project-renubox#About"><strong>About</strong></a>
     ·
-    <a href=""><strong>Demo</strong></a>
+    <a href="https://github.com/PJ-Huang-2/project-renubox#Demo"><strong>Demo</strong></a>
     ·
-    <a href=""><strong>Contact</strong></a>
+    <a href="https://github.com/PJ-Huang-2/project-renubox#Contact"><strong>Contact</strong></a>
   </p>
 <img src="https://github.com/PJ-Huang-2/renubox-readme/blob/master/readme-title-img.png" alt="Logo">
 </div>
