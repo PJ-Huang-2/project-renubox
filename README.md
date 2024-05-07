@@ -3,6 +3,8 @@
     <img src="https://github.com/PJ-Huang-2/project-renubox/blob/master/images/main-pic/logo-first.png" alt="Logo" width="250px">
   </a>
   <p align="center">
+    <a href="https://pj-huang-2.github.io/project-renubox/"><strong>RENUBOX »</strong></a>
+    <br />
     <a href="https://github.com/PJ-Huang-2/project-renubox#About"><strong>About</strong></a>
     ·
     <a href="https://github.com/PJ-Huang-2/project-renubox#Demo"><strong>Demo</strong></a>
